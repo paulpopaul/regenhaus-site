@@ -1,0 +1,1 @@
+cat mysql.sql | docker exec -i [nombre contenedor bd] /usr/bin/mysql -u wordpress --password=wordpress wordpress
