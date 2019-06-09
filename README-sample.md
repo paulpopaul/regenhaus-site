@@ -14,7 +14,7 @@
 Abrir Terminal, navegar hasta directorio personal de Proyectos y ejecutar:
 
 ```bash
-curl -L [url install.sh] | sh
+curl -L [url install] | bash
 ```
 
 ## Paso 2. Levantar Servicios.
@@ -22,7 +22,7 @@ curl -L [url install.sh] | sh
 En directorio del proyecto "[nombre repositorio]" ejecutar:
 
 ```
-docker-compuse up
+docker-compose up
 ```
 
 --
