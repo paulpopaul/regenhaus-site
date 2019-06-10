@@ -47,15 +47,18 @@ gitb import
 
 ## 1. Construcción Variables del Proyecto.
 
-- **PASO 1**: En *docker-compose.yml* agregar nombres de contenedores únicos en cada "*container_name*" de cada servicio.
+- **PASO 1**: En *docker-compose.yml* modificar
+	- ___[nombre contenedor]___ únicos para cada servicio.
+	- ___[puerto]___ único para servicios de wordpress y mysql. Se recomienda partir desde 8080 y 8000 respectivamente de forma creciente.
 
 - **PASO 2**: Modificar
 	- *.git-hooks/pre-commit* con ___[nombre contenedor bd]___ definido en paso 1.
 	- *.git-hooks/post-merge* con ___[nombre contenedor bd]___ definido en paso 1.
 	- *.git-hooks/post-checkout* con ___[nombre contenedor bd]___ definido en paso 1.
-- **PASO 3**: En *install.sh* modificar los valores
+- **PASO 3**: En *install* modificar los valores
 	- ___[nombre repositorio]___ con nombre del repositorio creado para el proyecto.
 	- ___[nombre contenedor bd]___ con nombre de contenedor db definido en paso 1.
+	- ___[puerto wp]___ con número de puerto definido para servicio wordpress en paso 1.
 - **PASO 4**: En *README-sample.md* modificar los valores
 	- ___[nombre desarrollo]___ con un nombre descriptivo para el Desarrollo.
 	- **[desarrollador n]** con nombre de Desarrolladores involucrados en el Proyecto.
