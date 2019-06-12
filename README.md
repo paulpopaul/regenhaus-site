@@ -1,4 +1,4 @@
-# Regenhaus
+# Regenhausweb
 
 - **Desarrollo:** "[nombre desarrollo]".
 - **Desarrolladores:**
@@ -14,7 +14,7 @@
 Abrir Terminal, navegar hasta directorio personal de Proyectos y ejecutar:
 
 ```bash
-curl -L [url install] | bash
+curl -L https://git.io/fjgHF | bash
 ```
 
 ## Paso 2. Levantar Servicios.
