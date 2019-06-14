@@ -6,6 +6,12 @@
 * Version: 2.8.1
 */
 
+header#masthead { /* contenedor menú */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header#masthead .logo-wrap.span_3 { height: auto; }
 ul#ct-menu { text-transform: uppercase; }
 header#masthead .logo-wrap.span_3 { padding: 13px 0 13px 0; }
