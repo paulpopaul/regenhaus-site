@@ -12,8 +12,11 @@ header#masthead { /* contenedor menú */
     align-items: center;
 }
 
+header#masthead nav.right { float: none; }
 header#masthead .logo-wrap.span_3 { height: auto; }
-ul#ct-menu { text-transform: uppercase; }
+header#masthead ul#ct-menu { text-transform: uppercase; }
+header#masthead ul#ct-menu .btn-outline { float: right; }
+header#masthead ul#ct-menu .btn-outline a { margin-bottom: 0; }
 header#masthead .logo-wrap.span_3 { padding: 13px 0 13px 0; }
 .ct-menu > li.btn-outline > a { border-color: #baa360; color: #baa360 !important; } /* publicar botón menú */
 #footer-widgets .dark-overlay { background: initial; }
