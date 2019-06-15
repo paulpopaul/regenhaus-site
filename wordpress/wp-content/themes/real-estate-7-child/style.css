@@ -38,24 +38,24 @@
 
 @font-face {
     font-family: 'DIN Pro';
-    src: url('DINPro-Bold.woff2') format('woff2'),
-        url('DINPro-Bold.woff') format('woff');
+    src: url('fonts/DINPro-Bold.woff2') format('woff2'),
+        url('fonts/DINPro-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DIN Pro';
-    src: url('DINPro-Medium.woff2') format('woff2'),
-        url('DINPro-Medium.woff') format('woff');
+    src: url('fonts/DINPro-Medium.woff2') format('woff2'),
+        url('fonts/DINPro-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DIN Pro';
-    src: url('DINPro.woff2') format('woff2'),
-        url('DINPro.woff') format('woff');
+    src: url('fonts/DINPro.woff2') format('woff2'),
+        url('fonts/DINPro.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -88,6 +88,8 @@ header#masthead .logo-wrap.span_3 { padding: 13px 0 13px 0; }
 
 /* FOOTER ----------------------- */
 
+#footer-widgets { color: #848484; }
+#footer-widgets .container { padding-top: 90px; padding-bottom: 90px; }
 #footer-widgets .dark-overlay { background: initial; }
 #footer-widgets h5 {
 	font-family:'Brandon Grotesque';
@@ -100,23 +102,30 @@ header#masthead .logo-wrap.span_3 { padding: 13px 0 13px 0; }
 	text-transform: capitalize;
 }
 
-#footer-widgets  {
-	font-family:'DIN Pro';
-	font-weight: 600;
-	font-size: 20px;
-	color: #848484;
-}
+#footer-widgets a { font-family:'DIN Pro'; font-weight: 500; }
+#footer-widgets a,
+#footer-widgets a:visited { color: #848484; }
+#footer-widgets a:hover { color: #daa360; }
 
 #footer-widgets ul#menu-footer { padding-left: 0; }
 #footer-widgets ul#menu-footer li { border-bottom: none; padding-left: 0; }
 #footer-widgets ul#menu-footer li a { text-transform: uppercase; }
 #footer-widgets ul#menu-footer li a::before { content: "> "; }
-#footer-widgets ul.contact-social { margin-top: 100px; }
-#footer-widgets ul.contact-social a { border: none; min-width: initial; }
-#footer-widgets ul.contact-social li:first-child a { padding-left: 0; }
+/* info */
 #footer-widgets ul.contact-info li i.fa { display: none; } /* oculta iconos de contacto datos en footer */
+/* social */
+#footer-widgets ul.contact-social { margin-top: 100px; }
+#footer-widgets ul.contact-social a { border: none; min-width: initial; color: #fff; }
+#footer-widgets ul.contact-social a:hover { background: none; color: #848484 !important; }
+#footer-widgets ul.contact-social li:first-child a { padding-left: 0; }
 
-footer.footer { border-top: 1px solid #848484; }
-footer.footer .marB0.right { float: none; text-align: center; }
+footer.footer { border-top: 1px solid #333; }
+footer.footer .container { padding-top: 20px; padding-bottom: 20px; }
+footer.footer .marB0.right {
+	float: none;
+	text-align: center;
+	font-size: 14px;
+	color: #484848;
+}
 
 .page-template-template-full-width ul { margin: 0; } /* quita margen de elementos del footer. Podría generar conflicto con otros elementos del tema */
