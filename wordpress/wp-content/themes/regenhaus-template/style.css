@@ -14,7 +14,8 @@
 
 @font-face {
     font-family: 'Brandon Grotesque';
-    src: url('fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
+    src:
+        url('fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
         url('fonts/BrandonGrotesque-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
@@ -22,7 +23,8 @@
 
 @font-face {
     font-family: 'Brandon Grotesque';
-    src: url('fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
+    src:
+        url('fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
         url('fonts/BrandonGrotesque-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -30,7 +32,8 @@
 
 @font-face {
     font-family: 'Brandon Grotesque';
-    src: url('fonts/BrandonGrotesque-Medium.woff2') format('woff2'),
+    src:
+        url('fonts/BrandonGrotesque-Medium.woff2') format('woff2'),
         url('fonts/BrandonGrotesque-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
@@ -38,7 +41,8 @@
 
 @font-face {
     font-family: 'DIN Pro';
-    src: url('fonts/DINPro-Bold.woff2') format('woff2'),
+    src:
+        url('fonts/DINPro-Bold.woff2') format('woff2'),
         url('fonts/DINPro-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
@@ -46,7 +50,8 @@
 
 @font-face {
     font-family: 'DIN Pro';
-    src: url('fonts/DINPro-Medium.woff2') format('woff2'),
+    src:
+        url('fonts/DINPro-Medium.woff2') format('woff2'),
         url('fonts/DINPro-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
@@ -54,7 +59,8 @@
 
 @font-face {
     font-family: 'DIN Pro';
-    src: url('fonts/DINPro.woff2') format('woff2'),
+    src:
+        url('fonts/DINPro.woff2') format('woff2'),
         url('fonts/DINPro.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -85,10 +91,11 @@ header#masthead ul#ct-menu .btn-outline { float: right; }
 header#masthead ul#ct-menu .btn-outline a { margin-bottom: 0; }
 header#masthead .logo-wrap.span_3 { padding: 13px 0 13px 0; }
 
-.ct-menu > li.btn-outline{ margin-top: 25px; } /* publicar botón menú contenedor */
+.ct-menu > li.btn-outline { margin-top: 25px; } /* publicar botón menú contenedor */
 .ct-menu > li.btn-outline > a { border-color: #baa360; color: #baa360 !important; } /* publicar botón menú */
 
-form#advanced_search input[type="text"],
+.ct-menu > li > a,
+form#advanced_search input[type="text"]::placeholder,
 form#advanced_search span.customSelect,
 form#advanced_search input.btn {
     text-transform: uppercase;
@@ -97,10 +104,29 @@ form#advanced_search input.btn {
     font-weight: 500;
 }
 
-form#advanced_search input[type="text"],
-form#advanced_search span.customSelect { color: #000; }
-form#advanced_search span.customSelect { padding-top: 8px; }
+form#advanced_search input#ct_keyword,
+form#advanced_search span.customSelect,
+form#advanced_search input[type="text"]::placeholder { color: #000 !important; }
+form#advanced_search select.hasCustomSelect { position: relative; z-index: 2; }
+form#advanced_search span.customSelect { position: relative; padding-top: 8px; width: auto; background: #fff; } /* background sobreescribe flecha del selector (imágen de fondo) */
+form#advanced_search span.customSelect::after {
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    top: 32%;
+}
+
 form#advanced_search i.fa-search { display: none; }
+form#advanced_search.header-search #ct_keyword { padding-left: 10px; }
+form#advanced_search.header-search #submit { font-weight: 500 !important; }
+
+
+
+/* CONTENT ----------------------- */
+
+section#main-content p.lead.muted { margin-bottom: 24px; }
 
 
 

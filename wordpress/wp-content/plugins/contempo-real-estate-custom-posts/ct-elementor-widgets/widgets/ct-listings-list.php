@@ -610,7 +610,10 @@ class CT_Listings_List extends Widget_Base {
 												}
 								    		echo '</span>';
 								    		echo '<span class="right">';
-								                 echo get_post_meta($post->ID, "_ct_sqft", true);
+													$value = get_post_meta($post->ID, "_ct_sqft", true);
+													if($value != '') {
+														echo number_format($value, 0);
+													}
 								            echo '</span>';
 								        echo '</li>';
 								    } else {

@@ -26,6 +26,8 @@ This plugin does NOT come with template files those will need to be created for 
 
 == Changelog ==
 
+= 2.1.2 =
+* Added number formatting to Sq Ft/Sq Meters for Elementor CT Listing Modules
 = 2.1.1 =
 * Added "Random" to the Order By options for WP Bakery CT Listing Modules
 = 2.1.0 =

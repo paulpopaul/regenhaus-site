@@ -3,14 +3,14 @@
 /**
  *
  * @link              http://contempographicdesign.com
- * @since             2.1.1
+ * @since             2.1.2
  * @package           CT_Real_Estate_Custom_Posts
  *
  * @wordpress-plugin
  * Plugin Name:       Contempo Real Estate Custom Posts
  * Plugin URI:        http://wordpress.org/contempo-real-estate-custom-posts/
  * Description:       This plugin registers listings, brokerages & testimonials custom post types, along with related custom fields & taxonomies.
- * Version:           2.1.1
+ * Version:           2.1.2
  * Author:            Contempo
  * Author URI:        http://contempographicdesign.com
  * License:           GPL-2.0+
