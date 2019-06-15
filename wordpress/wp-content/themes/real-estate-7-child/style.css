@@ -6,6 +6,59 @@
 * Version: 2.8.1
 */
 
+/*- Fonts -*/
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
+        url('fonts/BrandonGrotesque-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
+        url('fonts/BrandonGrotesque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('fonts/BrandonGrotesque-Medium.woff2') format('woff2'),
+        url('fonts/BrandonGrotesque-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: url('DINPro-Bold.woff2') format('woff2'),
+        url('DINPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: url('DINPro-Medium.woff2') format('woff2'),
+        url('DINPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: url('DINPro.woff2') format('woff2'),
+        url('DINPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*- Fin Fonts -*/
+
 header#masthead { /* contenedor menú */
     display: flex;
     justify-content: center;
@@ -20,3 +73,8 @@ header#masthead ul#ct-menu .btn-outline a { margin-bottom: 0; }
 header#masthead .logo-wrap.span_3 { padding: 13px 0 13px 0; }
 .ct-menu > li.btn-outline > a { border-color: #baa360; color: #baa360 !important; } /* publicar botón menú */
 #footer-widgets .dark-overlay { background: initial; }
+
+#footer-widgets h5 { font-family:'Brandon Grotesque'; font-weight: 600; font-size: 20px; color: #fff; border: none; padding: 0; margin: 0 0 25px 0; text-transform: capitalize;}
+#footer-widgets { font-family:'DIN Pro'; margin: 0;color: #999;background: url(../images/footer-bg.jpg) no-repeat center center;background-size: cover;}
+
+
