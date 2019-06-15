@@ -89,6 +89,7 @@ header#masthead .logo-wrap.span_3 { padding: 13px 0 13px 0; }
 /* FOOTER ----------------------- */
 
 #footer-widgets { color: #848484; }
+#footer-widgets aside { margin-bottom: 0; }
 #footer-widgets .container { padding-top: 90px; padding-bottom: 90px; }
 #footer-widgets .dark-overlay { background: initial; }
 #footer-widgets h5 {
