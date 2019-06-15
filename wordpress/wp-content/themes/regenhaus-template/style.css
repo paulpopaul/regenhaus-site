@@ -12,61 +12,9 @@
 
 /*- Fonts -*/
 
-@font-face {
-    font-family: 'Brandon Grotesque';
-    src:
-        url('fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
-        url('fonts/BrandonGrotesque-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
+    @import url('fonts/fonts.css');
 
-@font-face {
-    font-family: 'Brandon Grotesque';
-    src:
-        url('fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
-        url('fonts/BrandonGrotesque-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Brandon Grotesque';
-    src:
-        url('fonts/BrandonGrotesque-Medium.woff2') format('woff2'),
-        url('fonts/BrandonGrotesque-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'DIN Pro';
-    src:
-        url('fonts/DINPro-Bold.woff2') format('woff2'),
-        url('fonts/DINPro-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'DIN Pro';
-    src:
-        url('fonts/DINPro-Medium.woff2') format('woff2'),
-        url('fonts/DINPro-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'DIN Pro';
-    src:
-        url('fonts/DINPro.woff2') format('woff2'),
-        url('fonts/DINPro.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/*- Fin Fonts -*/
+/*- End Fonts -*/
 
 
 
