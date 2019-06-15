@@ -70,9 +70,38 @@
 
 
 
+/* GENERAL ----------------------- */
+
+/* Responsive */
+@media only screen and (min-width: 1099px) {
+    .container {
+        max-width: 1100px;
+    }
+}
+/* End Responsive */
+
+
 
 /* HEADER ----------------------- */
 
+#topbar-wrap {
+    height: 54px;
+    font-family: Brandon Grotesque;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+#topbar-wrap .container { height: 100%; display: flex; vertical-align: middle; }
+#topbar-wrap .container > div { margin: auto 0; width: 50%; }
+#topbar-wrap .container > div.clear { display: none; } /* div.clear: desaparición podría provocar algunos problemas en algunas resoluciones */
+#topbar-wrap ul.social { float: right; }
+#topbar-wrap ul.social li { margin-right: 56px; }
+#topbar-wrap ul.social li:last-child { margin-right:0; }
+#topbar-wrap ul.social a { border-right: none; color: #fff; padding: 0; min-width: inherit; }
+#topbar-wrap ul.social a:visited:hover,
+#topbar-wrap ul.social a:hover { background: none; color: #848484 !important; }
+#topbar-wrap .contact-phone i.fa { color: #baa360; font-size: 18px; top: 1px; }
 #header-search-wrap {
     border-top: 1px solid #d5d9dd;
     border-bottom: 1px solid #d5d9dd;
@@ -121,6 +150,25 @@ form#advanced_search span.customSelect::after {
 form#advanced_search i.fa-search { display: none; }
 form#advanced_search.header-search #ct_keyword { padding-left: 10px; }
 form#advanced_search.header-search #submit { font-weight: 500 !important; }
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+    /**
+
+    REGLAS QUE SE APLICAN EN TEMA PADRE:
+
+    #topbar-wrap div.contact-phone.left {
+        display: none;
+    }
+
+    #topbar-wrap div.top-links.right {
+        float: none;
+        width: 100%;
+    }
+
+    **/
+}
+/* End Responsive */
 
 
 
