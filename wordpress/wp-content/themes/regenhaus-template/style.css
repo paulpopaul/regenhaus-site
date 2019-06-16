@@ -91,10 +91,11 @@ form#advanced_search span.customSelect { /* background sobreescribe flecha del s
     position: relative;
     padding-top: 8px;
     width: auto;
-    background: #fff; 
-    overflow: hidden;
+    background: #fff;
+    overflow: hidden; /* NO REMOVER. Soluciona problema de scroll al lado derecho del site */
 }
 
+form#advanced_search #more-search-options span.customSelect { overflow: initial; } /* NO REMOVER. Previene descuadre de inputs en filtros avanzados de búsqueda */
 form#advanced_search span.customSelect::after {
     content: "\f078";
     font-family: "Font Awesome 5 Free";
@@ -132,7 +133,13 @@ form#advanced_search.header-search #submit { font-weight: 500 !important; }
 /* CONTENT ----------------------- */
 
 section#main-content p.lead.muted { margin-bottom: 24px; }
-
+header#title-header { background: #EFEFEF !important; }
+header#title-header h5 {
+    font-size: 14px;
+    font-family: Brandon Grotesque;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 
 
 
