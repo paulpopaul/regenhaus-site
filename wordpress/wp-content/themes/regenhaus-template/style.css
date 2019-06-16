@@ -87,7 +87,14 @@ form#advanced_search input#ct_keyword,
 form#advanced_search span.customSelect,
 form#advanced_search input[type="text"]::placeholder { color: #000 !important; }
 form#advanced_search select.hasCustomSelect { position: relative; z-index: 2; }
-form#advanced_search span.customSelect { position: relative; padding-top: 8px; width: auto; background: #fff; } /* background sobreescribe flecha del selector (imágen de fondo) */
+form#advanced_search span.customSelect { /* background sobreescribe flecha del selector (imágen de fondo) */
+    position: relative;
+    padding-top: 8px;
+    width: auto;
+    background: #fff; 
+    overflow: hidden;
+}
+
 form#advanced_search span.customSelect::after {
     content: "\f078";
     font-family: "Font Awesome 5 Free";
