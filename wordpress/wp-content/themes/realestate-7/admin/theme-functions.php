@@ -4610,7 +4610,7 @@ if(!function_exists('ct_search_form_select')) {
 			$tax_name_stripped = str_replace('ct ', '', $tax_label);
 
 			if($tax_name_stripped == 'property type') {
-				$tax_name = __('Property Type', 'contempo');
+				$tax_name = __('Categoría', 'contempo');
 			} elseif($tax_name_stripped == 'country') {
 				$tax_name = __('Country', 'contempo');
 			} elseif($tax_name_stripped == 'county') {

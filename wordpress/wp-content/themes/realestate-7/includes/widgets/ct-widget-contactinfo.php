@@ -73,22 +73,22 @@ class ct_ContactInfo extends WP_Widget {
 
 	        <ul class="contact-social">
 				<?php if($facebook != '') { ?>
-	                <li class="facebook"><a href="<?php echo esc_url($facebook); ?>"><i class="fa fa-facebook"></i></a></li>
+	                <li class="facebook"><a href="<?php echo esc_url($facebook); ?>"><i class="fab fa-facebook-f"></i></a></li>
 	            <?php } ?>
 	            <?php if($twitter != '') { ?>
-	                <li class="twitter"><a href="<?php echo esc_url($twitter); ?>"><i class="fa fa-twitter"></i></a></li>
+	                <li class="twitter"><a href="<?php echo esc_url($twitter); ?>"><i class="fab fa-twitter"></i></a></li>
 	            <?php } ?>
 	            <?php if($linkedin != '') { ?>
-	                <li class="linkedin"><a href="<?php echo esc_url($linkedin); ?>"><i class="fa fa-linkedin"></i></a></li>
+	                <li class="linkedin"><a href="<?php echo esc_url($linkedin); ?>"><i class="fab fa-linkedin-in"></i></a></li>
 	            <?php } ?>
 	            <?php if($googleplus != '') { ?>
-	                <li class="google"><a href="<?php echo esc_url($googleplus); ?>"><i class="fa fa-google-plus"></i></a></li>
+	                <li class="google"><a href="<?php echo esc_url($googleplus); ?>"><i class="fab fa-google-plus-g"></i></a></li>
 	            <?php } ?>
 	            <?php if($pinterest != '') { ?>
-	                <li class="pinterest"><a href="<?php echo esc_url($pinterest); ?>"><i class="fa fa-pinterest"></i></a></li>
+	                <li class="pinterest"><a href="<?php echo esc_url($pinterest); ?>"><i class="fab fa-pinterest"></i></a></li>
 	            <?php } ?>
 	            <?php if($instagram != '') { ?>
-	                <li class="instagram"><a href="<?php echo esc_url($instagram); ?>"><i class="fa fa-instagram"></i></a></li>
+	                <li class="instagram"><a href="<?php echo esc_url($instagram); ?>"><i class="fab fa-instagram"></i></a></li>
 	            <?php } ?>
 	        </ul>
 	    </div>

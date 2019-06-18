@@ -205,7 +205,7 @@ $ct_home_adv_search_fields = isset( $ct_options['ct_home_adv_search_fields']['en
 			            	<div id="keyword-wrap">					
 			            		<i class="fa fa-search"></i>
 				                <label for="ct_keyword"><?php _e('Keyword', 'contempo'); ?></label>
-				                <input type="text" id="ct_keyword" class="number header_keyword_search" name="ct_keyword" size="8" placeholder="<?php esc_html_e('Street, City, State, Zip or keyword', 'contempo'); ?>" />
+				                <input type="text" id="ct_keyword" class="number header_keyword_search" name="ct_keyword" size="8" placeholder="<?php esc_html_e('Buscar...', 'contempo'); ?>" />
 			                </div>
 							<div class="listing-search" style="display: none"><i class="fa fa-spinner fa-spin fa-fw"></i><?php _e('Searching...', 'contempo'); ?></div>
 							<div id="suggestion-box" style="display: none;"></div>
@@ -230,7 +230,7 @@ $ct_home_adv_search_fields = isset( $ct_options['ct_home_adv_search_fields']['en
 
 	            <div class="col span_3">
 		            <input id="submit" class="btn left" type="submit" value="<?php esc_html_e('Search', 'contempo'); ?>" />
-		            <span id="more-search-options-toggle" class="btn right"><i class="fa fa-plus-square-o"></i></span>
+		            <span id="more-search-options-toggle" class="btn right"><i class="far fa-plus-square"></i></span>
 	            </div>
 
 		            <div class="clear"></div>
@@ -262,7 +262,7 @@ $ct_home_adv_search_fields = isset( $ct_options['ct_home_adv_search_fields']['en
 
 	            <div class="col span_2">
 		            <input id="submit" class="btn left" type="submit" value="<?php esc_html_e('Search', 'contempo'); ?>" />
-		            <span id="more-search-options-toggle" class="btn right"><i class="fa fa-plus-square-o"></i></span>
+		            <span id="more-search-options-toggle" class="btn right"><i class="far fa-plus-square"></i></span>
 	            </div>
 
 	            	<div class="clear"></div>

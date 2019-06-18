@@ -989,6 +989,42 @@
     ) );
 
     Redux::setSection( $opt_name, array(
+    'title'            => __( 'Contact Email', 'contempo' ),
+    'id'               => 'contact-email',
+    'subsection'       => true,
+    'customizer_width' => '450px',
+    'fields'           => array(
+            array (
+                'desc' => 'Choose if you would like to display an icon.',
+                'id' => 'ct_contact_email_header_display_icon',
+                'type' => 'select',
+                'options' => array (
+                    'yes' => 'Yes',
+                    'no' => 'No',
+                ),
+                'title' => 'Display Icon?',
+                'default' => 'yes',
+            ),
+            array(
+                'id'=>'ct_contact_email_header_icon',
+                'type' => 'select', 
+                'required' => array('ct_contact_email_header_display_icon','equals','yes'),   
+                'title' => __('Icon', 'contempo'),
+                'subtitle'  => __('Select an icon.', 'contempo'),
+                'default'     => 'fa-envelope',
+                'options' => ct_font_awesome(),
+            ),
+            array (
+                'desc' => 'Enter your Email Address Here, or anything else you\'d like company slogan, site description, etc&hellip;',
+                'id' => 'ct_contact_email_header',
+                'type' => 'text',
+                'title' => 'Text',
+                'default' => 'Contact us: contacto@yourbusiness.com',
+            ),
+        )
+    ) );
+
+    Redux::setSection( $opt_name, array(
     'title'            => __( 'Currency Switcher', 'contempo' ),
     'id'               => 'currency-switcher',
     'subsection'       => true,

@@ -41,7 +41,13 @@
 }
 
 #topbar-wrap .container { height: 100%; display: flex; vertical-align: middle; }
-#topbar-wrap .container > div { margin: auto 0; width: 50%; }
+#topbar-wrap .container > div { margin: auto 0; width: auto; }
+#topbar-wrap .container > div.contact-phone,
+#topbar-wrap .container > div.contact-email { width: 20%; }
+#topbar-wrap .container > div.contact-email { padding-left: 20px; }
+#topbar-wrap .container > div.contact-email a:link { color: #fff; }
+#topbar-wrap .container > div.contact-email a:hover { /* @overwrite hover color */ }
+#topbar-wrap .container > div.top-links { width: 60%; }
 #topbar-wrap .container > div.clear { display: none; } /* div.clear: desaparición podría provocar algunos problemas en algunas resoluciones */
 #topbar-wrap ul.social { float: right; }
 #topbar-wrap ul.social li { margin-right: 56px; }
@@ -49,7 +55,8 @@
 #topbar-wrap ul.social a { border-right: none; color: #fff; padding: 0; min-width: inherit; }
 #topbar-wrap ul.social a:visited:hover,
 #topbar-wrap ul.social a:hover { background: none; color: #848484 !important; }
-#topbar-wrap .contact-phone i.fa { color: #baa360; font-size: 18px; top: 1px; }
+#topbar-wrap .contact-phone i.fa,
+#topbar-wrap .contact-email i.fa { color: #baa360; font-size: 18px; top: 1px; padding-right: 8px; }
 #header-search-wrap {
     border-top: 1px solid #d5d9dd;
     border-bottom: 1px solid #d5d9dd;
