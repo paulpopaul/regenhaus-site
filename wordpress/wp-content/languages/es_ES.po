@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-06-14 17:18:19+0000\n"
+"PO-Revision-Date: 2019-06-18 12:06:18+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -507,7 +507,7 @@ msgstr "Color personalizado"
 
 #: wp-includes/class-wp-recovery-mode.php:246
 msgid "Failed to exit recovery mode. Please try again later."
-msgstr "Error al salir del modo de recuperación. Por favor, inténtelo de nuevo más tarde."
+msgstr "Error al salir del modo de recuperación. Por favor, inténtalo de nuevo más tarde."
 
 #: wp-includes/class-wp-recovery-mode.php:242
 msgid "Exit recovery mode link expired."
@@ -909,7 +909,7 @@ msgstr "Documento (seleccionado)"
 
 #: wp-includes/js/dist/block-library.js:12700
 msgid "Create content, and save it for you and other contributors to reuse across your site. Update the block, and the changes apply everywhere it’s used."
-msgstr "Crea contenido, y guárdalo para ti y otros colaboradores para reutilizarlo en tu sitio. Actualiza el bloque y l os cambios se aplicarán en todas las partes donde esté en uso."
+msgstr "Crea contenido y guárdalo para ti y otros colaboradores para reutilizarlo en tu sitio. Actualiza el bloque y los cambios se aplicarán en todas las partes donde esté en uso."
 
 #: wp-includes/js/dist/edit-post.js:3046
 msgid "Top Toolbar"
@@ -1503,7 +1503,7 @@ msgstr "Dimensiones de la imagen"
 #: wp-includes/js/dist/block-library.js:9282
 #: wp-includes/js/dist/block-library.js:10326
 msgid "Alternative text describes your image to people who can’t see it. Add a short description with its key details."
-msgstr "El texto alternativa describe tu imagen a la gente que no puede verla. Añade una descripción corta con sus detalles clave."
+msgstr "El texto alternativo describe tu imagen a la gente que no puede verla. Añade una descripción corta con sus detalles clave."
 
 #: wp-includes/js/dist/block-library.js:9279
 #: wp-includes/js/dist/block-library.js:10323
@@ -1655,7 +1655,7 @@ msgstr "Añade un bloque que muestra contenido extraído de otros sitios, como T
 
 #: wp-includes/js/dist/block-library.js:4496
 msgid "Embed videos, images, tweets, audio, and other content from external sources."
-msgstr "Incrusta vídeos, imágenes, tweets, audios, y otros contenidos desde fuentes externas."
+msgstr "Incrusta vídeos, imágenes, tuits, audios y otros contenidos desde fuentes externas."
 
 #: wp-includes/js/dist/block-library.js:4495
 msgctxt "block title"
