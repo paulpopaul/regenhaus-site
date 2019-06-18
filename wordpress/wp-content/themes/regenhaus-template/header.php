@@ -54,6 +54,19 @@ $ct_listings_login_register_after_x_views = isset( $ct_options['ct_listings_logi
 	<?php if($ct_listings_login_register_after_x_views == 'yes' && !is_user_logged_in()) {
 		ct_display_login_register_after_x_views();
 	} ?>
+
+	<? $current_page = explode( $_SERVER['HTTP_HOST'], home_url($wp->request) )[1] ?>
+
+	<script>
+		jQuery(document).ready(function() {
+			var current_page = "<? echo $current_page ?>";
+			var is_home = <? echo is_front_page() ? "true": "false" ?>;
+
+			if ( current_page == "" && !is_home ) {
+				jQuery('#ct-menu').find('a:contains("Propiedades")').parent().addClass("current-menu-item");
+			}
+		});
+	</script>
     
 </head>
 
