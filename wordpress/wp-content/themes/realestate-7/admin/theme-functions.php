@@ -1811,13 +1811,13 @@ if(!function_exists('ct_sort_by')) {
 		<form action="<?php get_site_url(); ?>"  name="order "class="formsrch right" method="get">
 		    <?php echo $extraVars;?>
 		    <select class="ct_orderby" id="ct_orderby" name="ct_orderby">
-			    <option value=""><?php esc_html_e('Sort By', 'contempo'); ?></option>
-			    <option value="&nbsp;" <?php if(isset($_GET['ct_orderby']) && $_GET['ct_orderby'] == ''){ ?> selected="selected" <?php } ?>><?php esc_html_e('Default Order', 'contempo'); ?></option>
-			    <option value="priceASC" <?php if(isset($_GET['ct_orderby']) && $_GET['ct_orderby'] == 'priceASC'){ ?> selected="selected" <?php } ?>><?php esc_html_e('Price - Low to High', 'contempo'); ?></option>
-		        <option value="priceDESC" <?php if(isset($_GET['ct_orderby']) && $_GET['ct_orderby'] == 'priceDESC'){ ?> selected="selected" <?php } ?>><?php esc_html_e('Price - High to Low', 'contempo'); ?></option>
-		        <option value="dateASC" <?php if(isset($_GET['ct_orderby']) && $_GET['ct_orderby'] == 'dateASC'){ ?> selected="selected" <?php } ?>><?php esc_html_e('Date - Old to New', 'contempo'); ?></option>
-		        <option value="dateDESC" <?php if(isset($_GET['ct_orderby']) && $_GET['ct_orderby'] == 'dateDESC'){ ?> selected="selected" <?php } ?>><?php esc_html_e('Date - New to Old', 'contempo'); ?></option>
-		        <option value="featured" <?php if(isset($_GET['ct_orderby']) && $_GET['ct_orderby'] == 'featured'){ ?> selected="selected" <?php } ?>><?php esc_html_e('Featured', 'contempo'); ?></option>
+			    <option value=""><?php esc_html_e('Ordenar por', 'contempo'); ?></option>
+			    <option value="&nbsp;" <?php if(isset($_GET['ct_orderby']) && $_GET['ct_orderby'] == ''){ ?> selected="selected" <?php } ?>><?php esc_html_e('Por defecto', 'contempo'); ?></option>
+			    <option value="priceASC" <?php if(isset($_GET['ct_orderby']) && $_GET['ct_orderby'] == 'priceASC'){ ?> selected="selected" <?php } ?>><?php esc_html_e('Menor a mayor precio', 'contempo'); ?></option>
+		        <option value="priceDESC" <?php if(isset($_GET['ct_orderby']) && $_GET['ct_orderby'] == 'priceDESC'){ ?> selected="selected" <?php } ?>><?php esc_html_e('Mayor a menor precio', 'contempo'); ?></option>
+		        <option value="dateASC" <?php if(isset($_GET['ct_orderby']) && $_GET['ct_orderby'] == 'dateASC'){ ?> selected="selected" <?php } ?>><?php esc_html_e('Primeros publicados', 'contempo'); ?></option>
+		        <option value="dateDESC" <?php if(isset($_GET['ct_orderby']) && $_GET['ct_orderby'] == 'dateDESC'){ ?> selected="selected" <?php } ?>><?php esc_html_e('Más recientes', 'contempo'); ?></option>
+		        <option value="featured" <?php if(isset($_GET['ct_orderby']) && $_GET['ct_orderby'] == 'featured'){ ?> selected="selected" <?php } ?>><?php esc_html_e('Destacados', 'contempo'); ?></option>
 		    </select>
 		</form>
 
@@ -4044,10 +4044,10 @@ if(!function_exists('ct_listing_creation_date')) {
 		if($ct_listing_creation_date == 'yes') {
 			echo '<div class="creation-date">';
 				echo '<span class="left muted">';
-					echo '<i class="fa fa-calendar"></i>';
+					echo '<i class="far fa-calendar-alt"></i>';
 				echo '</span>';
 				echo '<span class="right">';
-					printf( __( '%s ago', 'contempo' ), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) );
+					printf( __( '%s atrás', 'contempo' ), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) );
 				echo '</span>';
 					echo '<div class="clear"></div>';
 			echo '</div>';

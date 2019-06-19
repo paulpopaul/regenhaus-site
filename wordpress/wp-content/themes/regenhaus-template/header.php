@@ -62,7 +62,7 @@ $ct_listings_login_register_after_x_views = isset( $ct_options['ct_listings_logi
 			var current_page = "<? echo $current_page ?>";
 			var is_home = <? echo is_front_page() ? "true": "false" ?>;
 
-			if ( current_page == "" && !is_home ) {
+			if ( (current_page == "" && !is_home) || current_page.indexOf("/page/") != -1 ) {
 				jQuery('#ct-menu').find('a:contains("Propiedades")').parent().addClass("current-menu-item");
 			}
 		});
