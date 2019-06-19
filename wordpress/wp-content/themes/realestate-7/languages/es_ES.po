@@ -189,11 +189,11 @@ msgstr "listados encontrados"
 
 #: search-listings.php:391 search-listings.php:466
 msgid "listing found"
-msgstr "listado encontrado"
+msgstr "resultados"
 
 #: search-listings.php:394 search-listings.php:469
 msgid "Find A Home"
-msgstr "Encuentra una casa"
+msgstr "Encuentra un hogar"
 
 #: search-listings.php:406 search-listings.php:480 search-listings.php:505
 msgid "Searching:"

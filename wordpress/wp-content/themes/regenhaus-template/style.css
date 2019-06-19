@@ -105,7 +105,7 @@
         overflow: hidden !important; /* NO REMOVER. Soluciona problema de scroll al lado derecho del site */
     }
 
-    span.customSelect { overflow: initial; } /* NO REMOVER. Previene descuadre de inputs en filtros avanzados de búsqueda */
+    #more-search-options span.customSelect { overflow: initial !important; } /* NO REMOVER. Previene descuadre de inputs en filtros avanzados de búsqueda */
     span.customSelect::after {
         content: "\f078";
         font-family: "Font Awesome 5 Free";
@@ -188,6 +188,25 @@
     section#main-content .searching-on .searching { background: #D8D8D8 !important; }
     section#main-content .searching-on .search-params { background: #EFEFEF !important; }
     section#main-content header#title-header .muted.right { color: #000 !important; }
+    section#main-content #listings-results .pagination { background-color: #EFEFEF !important; }
+    section#main-content #listings-results .pagination li a {
+        text-transform: uppercase;
+        color: #979797;
+        font-family: Brandon Grotesque;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    section#main-content #listings-results .pagination li.current a {
+        background-color: #000 !important;
+        color: #fff;
+    }
+
+    section#main-content #listings-results .pagination li:not(.current) a:hover {
+        background-color: #000 !important;
+        color: #fff;
+        opacity: 1;
+    }
 
 /* CONTENT ----------------------- */
 
