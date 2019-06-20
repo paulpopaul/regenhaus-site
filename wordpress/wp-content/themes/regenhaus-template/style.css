@@ -402,14 +402,19 @@
         
 
     /* Barra compartir redes/imprimir */
-        div#tools { /* estilos aquí */ }
-        div#tools ul.social li { /* estilos contenedor lista icono aquí */ }
-        div#tools ul.social li a { /* estilos contenedor <a> icono aquí */ }
-        div#tools ul.social li a i.fab { /* estilos iconos aquí */ }
+        div#tools {position: fixed;left: 0;z-index: 999;padding: 10px; border: none; background: none; border-top-right-radius: 3px;border-bottom-right-radius: 3px;}
+
+        div#tools .social li a {display: inline-block; min-width: 44px; padding: 8px;color: #000;border-radius: 0;}
+        div#tools .social li a:hover{background: black !important; color:#fff !important; opacity: 1;}
+
+        div#tools .social .facebook a:hover,
+        div#tools .social .print a:hover,
+        div#tools .social .twitter a:hover { border-color: transparent !important; }
 
 
 
-    /* Contacto ----------------------- */
+
+/* Contacto ----------------------- */
 
     .widget h5 {
         padding: 14px 20px;
@@ -422,7 +427,7 @@
 
     .contact-info i { float: none;margin: 0 6px 0 0; }
     .contact-social { margin: 12px 0 0 0;}
-    .contact-social li a { display: inline-block; min-width: 1px; padding: 10px 17px 0 0; border: none; color: #000; }
+    .contact-social li a { display: inline-block; min-width: 1px; padding: 10px 17px 0 0; border: none !important; color: #000; }
     .contact-social li a:hover { color: #baa360; }
 
     aside#ct_contactinfo-1 ul.contact-info li { font-family: Brandon Grotesque; font-size: 16px; }
