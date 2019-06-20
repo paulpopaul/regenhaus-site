@@ -265,6 +265,27 @@
     section#main-content #listings-results .listing ul.listing-actions,
     section#main-content #listings-results .listing span.prop-type-icon { display: none; }
 
+
+
+    /* Contacto widget ----------------------- */
+
+    .widget h5 {
+        padding: 14px 20px;
+        font-family: Brandon Grotesque;
+        font-size:14px;
+        background: none;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .contact-info i {float: none;margin: 0 6px 0 0;}
+    .contact-social { margin: 12px 0 0 0;}
+    .contact-social li a {display: inline-block;min-width: 1px;padding: 10px 17px 0 0;border:none;color: #000;}
+    .contact-social li a:hover {color: #baa360;}
+
+
+
+
 /* CONTENT ----------------------- */
 
 

@@ -67,28 +67,28 @@ class ct_ContactInfo extends WP_Widget {
 
 	        <ul class="contact-info">
 	            <?php if($street) { ?><li class="company-address"><!-- <i class="fa fa-home"></i> --><?php echo esc_html($street); ?><br /><?php echo esc_html($city); ?>, <?php echo esc_html($state); ?> <?php echo esc_html($postal); ?><br /><?php echo esc_html($country); ?></li><?php } ?>
-	            <?php if($phone) { ?><li class="company-phone"><!-- <i class="fa fa-phone"></i>--> <?php echo esc_html($phone); ?></li><?php } ?>
+	            <?php if($phone) { ?><li class="company-phone"><i class="fab fa-whatsapp"></i> <?php echo esc_html($phone); ?></li><?php } ?>
 	            <?php if($email) { ?><li class="company-email"><!-- <i class="fa fa-envelope-o"></i>--> <a href="mailto:<?php echo antispambot($email); ?>"><?php echo antispambot($email); ?></a></li><?php } ?>
 	        </ul>
 
 	        <ul class="contact-social">
 				<?php if($facebook != '') { ?>
-	                <li class="facebook"><a href="<?php echo esc_url($facebook); ?>"><i class="fab fa-facebook-f"></i></a></li>
+	                <li class=""><a href="<?php echo esc_url($facebook); ?>"><i class="fab fa-facebook-f"></i></a></li>
 	            <?php } ?>
 	            <?php if($twitter != '') { ?>
-	                <li class="twitter"><a href="<?php echo esc_url($twitter); ?>"><i class="fab fa-twitter"></i></a></li>
+	                <li class=""><a href="<?php echo esc_url($twitter); ?>"><i class="fab fa-twitter"></i></a></li>
 	            <?php } ?>
 	            <?php if($linkedin != '') { ?>
-	                <li class="linkedin"><a href="<?php echo esc_url($linkedin); ?>"><i class="fab fa-linkedin-in"></i></a></li>
+	                <li class=""><a href="<?php echo esc_url($linkedin); ?>"><i class="fab fa-linkedin-in"></i></a></li>
 	            <?php } ?>
 	            <?php if($googleplus != '') { ?>
-	                <li class="google"><a href="<?php echo esc_url($googleplus); ?>"><i class="fab fa-google-plus-g"></i></a></li>
+	                <li class=""><a href="<?php echo esc_url($googleplus); ?>"><i class="fab fa-google-plus-g"></i></a></li>
 	            <?php } ?>
 	            <?php if($pinterest != '') { ?>
-	                <li class="pinterest"><a href="<?php echo esc_url($pinterest); ?>"><i class="fab fa-pinterest"></i></a></li>
+	                <li class=""><a href="<?php echo esc_url($pinterest); ?>"><i class="fab fa-pinterest"></i></a></li>
 	            <?php } ?>
 	            <?php if($instagram != '') { ?>
-	                <li class="instagram"><a href="<?php echo esc_url($instagram); ?>"><i class="fab fa-instagram"></i></a></li>
+	                <li class=""><a href="<?php echo esc_url($instagram); ?>"><i class="fab fa-instagram"></i></a></li>
 	            <?php } ?>
 	        </ul>
 	    </div>
