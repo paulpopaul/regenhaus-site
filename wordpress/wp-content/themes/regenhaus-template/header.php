@@ -128,11 +128,10 @@ echo '<div class="container main">';
 								if(!empty($ct_contact_phone_header_icon)) {
 									echo '<i class="fa ' . $ct_contact_phone_header_icon . '"></i>';
 								} else {
-									echo '<i class="fa fa-mobile-phone"></i>';
+									echo '<i class="fab fa-whatsapp-square"></i>'; # original: fa fa-mobile-phone
 								}
-							}
-							echo stripslashes($phone);
-						?>
+							}?>
+							<a href="https://wa.me/<? echo esc_html(preg_replace('/\D/',"",$phone)) ?>" target="_blank"><? echo stripslashes($phone) ?></a>
                     </div>
                     <?php } ?>
 

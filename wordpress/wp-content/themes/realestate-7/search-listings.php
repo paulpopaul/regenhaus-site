@@ -551,6 +551,7 @@ get_header();
 							echo '</div>';
 						 } ?>
 						<div class="col <?php if (function_exists('ctea_show_alert_creation') && $ct_enable_front_end_login != 'no') { echo 'span_3'; } else { echo 'span_12 first'; } ?>">
+							<? if (!is_home()) { ?><a href="<? echo home_url() ?>" class="back-to btn left"><i class="fas fa-arrow-left"></i>Volver</a><? } ?>
 							<?php ct_sort_by(); ?>
 						</div>
 					</div>

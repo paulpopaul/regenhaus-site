@@ -46,7 +46,11 @@
     #topbar-wrap .container > div.contact-phone,
     #topbar-wrap .container > div.contact-email { width: 20%; }
     #topbar-wrap .container > div.contact-email { padding-left: 20px; }
-    #topbar-wrap .container > div.contact-email a:link { color: #fff; }
+    #topbar-wrap .container > div.contact-phone a:link,
+    #topbar-wrap .container > div.contact-email a:link,
+    #topbar-wrap .container > div.contact-phone a:visited,
+    #topbar-wrap .container > div.contact-email a:visited { color: #fff; }
+    #topbar-wrap .container > div.contact-phone a:hover,
     #topbar-wrap .container > div.contact-email a:hover { /* @overwrite hover color */ }
     #topbar-wrap .container > div.top-links { width: 60%; }
     #topbar-wrap .container > div.clear { display: none; } /* div.clear: desaparición podría provocar algunos problemas en algunas resoluciones */
@@ -57,6 +61,7 @@
     #topbar-wrap ul.social a:visited:hover,
     #topbar-wrap ul.social a:hover { background: none; color: #848484 !important; }
     #topbar-wrap .contact-phone i.fa,
+    #topbar-wrap .contact-phone i.fab,
     #topbar-wrap .contact-email i.fa { color: #baa360; font-size: 18px; top: 1px; padding-right: 8px; }
     #header-search-wrap {
         border-top: 1px solid #d5d9dd;
@@ -127,33 +132,31 @@
     form#advanced_search.header-search #submit { font-weight: 500 !important; }
 
     /* Responsive */
-
-    @media only screen and (max-width: 1098px) {
-        .ct-menu > li.btn-outline { display: block; } /* publicar botón menú contenedor */
-    }
-    /* End Responsive */
-
-    @media only screen and (max-width: 1053px) {
-        .ct-menu > li.btn-outline { display: block; } /* publicar botón menú contenedor */
-    }
-    /* End Responsive */
-
-    @media only screen and (max-width: 767px) {
-        /**
-
-        REGLAS QUE SE APLICAN EN TEMA PADRE:
-
-        #topbar-wrap div.contact-phone.left {
-            display: none;
+        @media only screen and (max-width: 1098px) {
+            .ct-menu > li.btn-outline { display: block; } /* publicar botón menú contenedor */
         }
 
-        #topbar-wrap div.top-links.right {
-            float: none;
-            width: 100%;
+        @media only screen and (max-width: 1053px) {
+            .ct-menu > li.btn-outline { display: block; } /* publicar botón menú contenedor */
         }
+    /* End Responsive */
 
-        **/
-    }
+        @media only screen and (max-width: 767px) {
+            /**
+
+            REGLAS QUE SE APLICAN EN TEMA PADRE:
+
+            #topbar-wrap div.contact-phone.left {
+                display: none;
+            }
+
+            #topbar-wrap div.top-links.right {
+                float: none;
+                width: 100%;
+            }
+
+            **/
+        }
     
 /* HEADER ----------------------- */
 
@@ -162,7 +165,8 @@
 
 
 /* CONTENT ----------------------- */
-
+    
+    section#main-content .breadcrumb #bread-home { color: #000; }
     section#main-content p.lead.muted { margin-bottom: 24px; }
     header#title-header { background: #EFEFEF !important; }
     header#title-header h5 {
@@ -260,31 +264,61 @@
         transition: all 0.3s ease;
         -webkit-transition: all 0.3s ease;
     }
-    
+
+    section#main-content #listings-results .listing figure { overflow: hidden !important; }
+    /* animación hover en caja de propiedad */
+    section#main-content #listings-results .listing a.listing-featured-image img { transition: transform 1s ease; }
+    section#main-content #listings-results .listing:hover a.listing-featured-image img { transform: scale(1.1); }
+    /* animación hover en caja de propiedad */
     section#main-content #listings-results .listing { margin-bottom: 3%; }
     section#main-content #listings-results .listing ul.listing-actions,
     section#main-content #listings-results .listing span.prop-type-icon { display: none; }
+    section#main-content #listings-results .listing .status span { background: #000; }
+    section#main-content #listings-results .back-to {
+        background: #000 !important;
+        color: #fff !important;
+        font-family: Brandon Grotesque;
+        /*font-size: 14px;*/
+        font-weight: 500 !important;
+    }
+
+    section#main-content #listings-results .back-to i.fas { margin-right: 5px; }
 
 
 
-    /* Contacto widget ----------------------- */
+    /* Contacto ----------------------- */
 
     .widget h5 {
         padding: 14px 20px;
         font-family: Brandon Grotesque;
-        font-size:14px;
+        font-size: 14px;
         background: none;
         text-transform: uppercase;
         font-weight: 500;
     }
 
-    .contact-info i {float: none;margin: 0 6px 0 0;}
+    .contact-info i { float: none;margin: 0 6px 0 0; }
     .contact-social { margin: 12px 0 0 0;}
-    .contact-social li a {display: inline-block;min-width: 1px;padding: 10px 17px 0 0;border:none;color: #000;}
-    .contact-social li a:hover {color: #baa360;}
+    .contact-social li a { display: inline-block; min-width: 1px; padding: 10px 17px 0 0; border: none; color: #000; }
+    .contact-social li a:hover { color: #baa360; }
 
+    aside#ct_contactinfo-1 ul.contact-info li { font-family: Brandon Grotesque; font-size: 16px; }
+    
+    #contactform input,
+    #contactform textarea { /* estilos campos de texto form al escribir */ }
 
+    #contactform input::placeholder,
+    #contactform textarea::placeholder {
+        color: #000 !important;
+        text-transform: uppercase;
+        font-family: Brandon Grotesque;
+        font-size: 14px;
+        font-weight: 500;
+    }
 
+    #contactform input:focus::placeholder,
+    #contactform textarea:focus::placeholder { color: #555 !important; }
+    #contactform #submit { font-family: Brandon Grotesque; font-size: 14px; font-weight: 500 !important; }
 
 /* CONTENT ----------------------- */
 
@@ -297,7 +331,7 @@
     #pre-footer .pre-footer-middletext,
     #pre-footer .pre-footer-button { float: left; text-align: right; }
     #pre-footer .pre-footer-logo { width: 25%; position: relative; bottom: 10px; }
-    #pre-footer .pre-footer-middletext { width: 50%; text-align: center; text-transform: uppercase; }
+    #pre-footer .pre-footer-middletext { width: 50%; /*text-align: center;*/ text-transform: uppercase; }
     #pre-footer .pre-footer-button { width: 25%; }
     #pre-footer .pre-footer-logo img { width: 221px; height: 53px; }
     #pre-footer .pre-footer-middletext h5 { font-size: 21px; }
@@ -348,6 +382,7 @@
     #footer-widgets ul.contact-social a { border: none; min-width: initial; color: #fff; }
     #footer-widgets ul.contact-social a:hover { background: none; color: #848484 !important; }
     #footer-widgets ul.contact-social li:first-child a { padding-left: 0; }
+    #footer-widgets #ct_contactinfo-2 .company-phone .fab { display: none; }
 
     footer.footer { border-top: 1px solid #333; }
     footer.footer .container { padding-top: 20px; padding-bottom: 20px; }
