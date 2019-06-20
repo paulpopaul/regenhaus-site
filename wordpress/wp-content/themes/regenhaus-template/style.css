@@ -219,40 +219,42 @@
     }
 
     section#main-content #listings-results .col.span_9.first { display: none !important; }
-    section#main-content #listings-results .grid-listing-info header {
+    section#main-content .grid-listing-info header,
+    section#main-content header.listing-location {
         background: #fff !important;
     }
 
-    section#main-content #listings-results .grid-listing-info h5 a {
+    section#main-content .grid-listing-info h5 a {
         font-family: Brandon Grotesque;
         font-weight: bold;
         font-size: 24px;
         color: #000;
     }
 
-    section#main-content #listings-results .grid-listing-info h5 a:hover { color: #baa360; opacity: 1; }
-    section#main-content #listings-results .grid-listing-info p.location {
+    /*section#main-content .grid-listing-info h5 a:hover { color: #baa360; opacity: 1; }*/
+    section#main-content .grid-listing-info p.location {
         color: #878C92;
         font-size: 12px;
         font-family: Lato;
     }
 
-    section#main-content #listings-results .grid-listing-info p.price {
+    section#main-content .grid-listing-info p.price {
         font-family: Brandon Grotesque;
         font-size: 18px;
         font-weight: 500;
         color: #fff;
     }
 
-    section#main-content #listings-results .grid-listing-info .propinfo {
+    section#main-content .grid-listing-info .propinfo {
         color: #000;
         font-size: 12px !important;
         font-family: Lato !important;
     }
-
-    section#main-content #listings-results .grid-listing-info .creation-date { background: #EFEFEF; }
-    section#main-content #listings-results .grid-listing-info .creation-date .left.muted { color: #848484; }
-    section#main-content #listings-results .grid-listing-info .creation-date .right {
+    
+    section#main-content .grid-listing-info .propinfo li { font-size: 12px; }
+    section#main-content .grid-listing-info .creation-date { background: #EFEFEF; }
+    section#main-content .grid-listing-info .creation-date .left.muted { color: #848484; }
+    section#main-content .grid-listing-info .creation-date .right {
         text-transform: lowercase;
         color: #878C92;
         font-family: Lato;
@@ -267,13 +269,14 @@
 
     section#main-content #listings-results .listing figure { overflow: hidden !important; }
     /* animación hover en caja de propiedad */
-    section#main-content #listings-results .listing a.listing-featured-image img { transition: transform 1s ease; }
-    section#main-content #listings-results .listing:hover a.listing-featured-image img { transform: scale(1.1); }
+        section#main-content .listing:hover .grid-listing-info h5 a { color: #baa360; opacity: 1; }
+        section#main-content #listings-results .listing a.listing-featured-image img { transition: transform 0.8s ease; }
+        section#main-content #listings-results .listing:hover a.listing-featured-image img { transform: scale(1.1); }
     /* animación hover en caja de propiedad */
-    section#main-content #listings-results .listing { margin-bottom: 3%; }
-    section#main-content #listings-results .listing ul.listing-actions,
-    section#main-content #listings-results .listing span.prop-type-icon { display: none; }
-    section#main-content #listings-results .listing .status span { background: #000; }
+    section#main-content .listing { margin-bottom: 3%; }
+    section#main-content .listing ul.listing-actions,
+    section#main-content .listing span.prop-type-icon { display: none; }
+    section#main-content .listing .status span { background: #000; }
     section#main-content #listings-results .back-to {
         background: #000 !important;
         color: #fff !important;
@@ -283,6 +286,112 @@
     }
 
     section#main-content #listings-results .back-to i.fas { margin-right: 5px; }
+    
+
+
+    /* Detalle Propiedad ----------------------- */
+
+    section#main-content #lead-carousel { background-color: #fff; margin-bottom: 50px; }
+    section#main-content #lead-carousel .owl-item { overflow: hidden !important; }
+    /* animación hover en imágen en detalle de propiedad */
+        section#main-content #lead-carousel .owl-item img.attachment-listings-slider-image { transition: transform 0.8s ease; }
+        section#main-content #lead-carousel .owl-item:hover img.attachment-listings-slider-image { transform: scale(1.1); }
+    /* animación hover en imágen en detalle de propiedad */
+
+    section#main-content .listing-location h2 {
+        text-transform: uppercase;
+        font-family: Brandon Grotesque;
+        font-size: 24px;
+        font-weight: bold;
+        color: #000;
+        margin-top: 25px !important;
+    }
+
+    section#main-content .listing-location p.location { font-family: Lato; font-size: 12px; color: #878C92; margin-top: 15px; }
+    section#main-content h4.price {
+        font-family: Brandon Grotesque;
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    section#main-content .listing-location .snipe-wrap { top: 63px; }
+    section#main-content .listing-location .snipe-wrap h6 span {
+        background: #baa360;
+        width: 77px;
+        height: 25px;
+        color: #fff;
+        font-family: Lato;
+        font-size: 12px;
+    }
+
+    section#main-content .propinfo li { font-size: 12px; }
+    section#main-content .propinfo .right { color: #000; }
+    section#main-content #listing-sections { background: #baa360; border-bottom: none; }
+    section#main-content #listing-sections li a {
+        color: #fff;
+        text-transform: uppercase;
+        font-family: Lato;
+        font-size: 12px;
+    }
+
+    section#main-content #listing-sections .listing-nav-icon { border-right: none; padding-right: 10px; }
+    section#main-content #listing-sections .listing-nav-icon i.fas { color: #fff; }
+    section#main-content .post-content #listing-content { color: #878C92; font-family: Lato; font-size: 12px; line-height: 21px; }
+    section#main-content h4.border-bottom {
+        font-family: Brandon Grotesque;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #000;
+    }
+
+    section#main-content .creation-date { display: none; } /* día de creación al fondo de detalle de propiedad */
+    section#main-content #listing-contact { margin-top: 120px; padding-bottom: 5px; background-color: #EFEFEF !important; }
+    section#main-content #listing-contact h4.border-bottom { border-bottom: none; margin-bottom: 15px !important; }
+    section#main-content #listing-contact #submit { font-size: 12px; font-family: Lato; margin-top: 8px; }
+
+    section#main-content #listing-contact input:focus,
+    section#main-content #listing-contact textarea:focus { background: #fff; }
+
+    section#main-content #listing-contact input::placeholder,
+    section#main-content #listing-contact textarea::placeholder {
+        color: #000 !important;
+        text-transform: uppercase;
+        font-family: Brandon Grotesque;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.2s;
+    }
+
+    section#main-content #listing-contact div.col.span_12:first-child { display: none !important; } /* *Oculta asunto del formulario de contacto de detalle de propiedad. Podría provocar problema al tratar de enviarse! */
+
+    section#main-content #listing-contact input:focus::placeholder,
+    section#main-content #listing-contact textarea:focus::placeholder { color: #555 !important; }
+    section#main-content #listing-contact .main-agent ul li { border-bottom: none; }
+    section#main-content #listing-contact .main-agent ul li i.fa { color: #baa360; }
+    section#main-content #listing-contact .main-agent ul li a {
+        font-family: Brandon Grotesque;
+        font-weight: 500;
+        font-size: 16px;
+        color: #000;
+    }
+
+    section#main-content #listing-contact-bottom-space { height: 67px; background: #EFEFEF; border-top: 1px solid #D5D9DD; }
+    
+    #sidebar #sidebar-contact-buttons { margin: 12px; }
+    #sidebar #sidebar-contact-buttons input:first-child { margin-bottom: 20px; }
+
+    #sidebar .grid-listing-info header h5 a { font-size: 17px; }
+    #sidebar .listing { margin-bottom: 30px !important; }
+    #sidebar .listing:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+    }
+
+    #sidebar .listing .snipe.status { padding: 12px 9px; }
+    #sidebar .listing .status span { font-size: 10px; padding: 3px 5px; }
 
 
 

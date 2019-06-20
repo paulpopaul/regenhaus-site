@@ -17,7 +17,7 @@ if($ct_single_listing_content_layout_type == 'tabbed') {
     echo '<ul id="listing-sections">';
 }
 
-    	echo '<li class="listing-nav-icon"><i class="fa fa-navicon"></i></li>';
+    	echo '<li class="listing-nav-icon"><i class="fas fa-bars"></i></li>';
 
 		if(!empty($ct_single_listing_content_layout)) {
 

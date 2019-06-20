@@ -77,7 +77,7 @@ $youtubeurl = get_the_author_meta('youtubeurl');
 
                              <ul class="marB0">
                                 <?php if($mobile) { ?>
-                                    <li class="marT3 marB0 row"><span class="left"><i class="fa fa-phone"></i></span><span class="right"><a href="tel:<?php echo esc_html($mobile); ?>"><?php echo esc_html($mobile); ?></a></span></li>
+                                    <li class="marT3 marB0 row"><span class="left"><i class="fa fa-phone"></i></span><span class="right"><a href="https://wa.me/<? echo esc_html(preg_replace('/\D/',"",$mobile)) ?>?text=<?echo esc_html("Hola $first_name, quisiera obtener más información acerca de la siguiente propiedad: ".home_url($wp->request)) ?>" target="_blank"><?php echo esc_html($mobile); ?></a></span></li>
                                 <?php } ?>
                                 <?php if($office) { ?>
                                     <li class="marT3 marB0 row"><span class="left"><i class="fa fa-building"></i></span><span class="right"><a href="tel:<?php echo esc_html($office); ?>"><?php echo esc_html($office); ?></a></span></li>
@@ -86,7 +86,7 @@ $youtubeurl = get_the_author_meta('youtubeurl');
                                     <li class="marT3 marB0 row"><span class="left"><i class="fa fa-print"></i></span><span class="right"><a href="tel:<?php echo esc_html($fax); ?>"><?php echo esc_html($fax); ?></a></span></li>
                                 <?php } ?>
                                 <?php if($email) { ?>
-                                    <li class="marT3 marB0 row"><span class="left"><i class="fa fa-envelope"></i></span><span class="right"><a href="mailto:<?php echo antispambot($email,1) ?>"><?php esc_html_e('Email', 'contempo'); ?></a></span></li>
+                                    <li class="marT3 marB0 row"><span class="left"><i class="fa fa-envelope"></i></span><span class="right"><a href="mailto:<?php echo antispambot($email,1) ?>?subject=Solicitud de información sobre propiedad regenhaus.cl&body=<?echo esc_html("Hola $first_name, quisiera obtener más información acerca de la siguiente propiedad: ".home_url($wp->request)) ?>"><?php esc_html_e($email, 'contempo'); ?></a></span></li>
                                 <?php } ?>
                                 <?php if($ct_user_url) {
                                     $ct_user_url = trim($ct_user_url, '/');
@@ -98,7 +98,8 @@ $youtubeurl = get_the_author_meta('youtubeurl');
                                     $ct_urlParts = parse_url($ct_user_url);
 
                                     // remove www
-                                    $ct_domain = preg_replace('/^www\./', '', $ct_urlParts['host']);
+                                    # $ct_domain = preg_replace('/^www\./', '', $ct_urlParts['host']);
+                                    $ct_domain = $ct_urlParts['host']; # añadido al no remover www.
                                 ?>
                                     <li class="row"><span class="left"><i class="fa fa-globe"></i></span> <span class="right"><a href="<?php echo esc_html($ct_user_url); ?>"><?php echo esc_html($ct_domain); ?></a></span></li>
                                 <?php } ?>
@@ -234,7 +235,7 @@ $youtubeurl = get_the_author_meta('youtubeurl');
                                 </div>
 
                                 <div class="col span_12 first">
-                					<textarea class="validate[required,length[2,1000]] text-input" name="message" id="message" rows="6" cols="10"></textarea>
+                					<textarea class="validate[required,length[2,1000]] text-input" name="message" id="message" rows="6" cols="10" placeholder="<?php esc_html_e('Message', 'contempo'); ?>"></textarea>
                                 </div>
 
             					<input type="hidden" id="ctyouremail" name="ctyouremail" value="<?php the_author_meta('user_email'); ?>" />
@@ -336,4 +337,5 @@ $youtubeurl = get_the_author_meta('youtubeurl');
         } ?>
 
 </div>
+<div id="listing-contact-bottom-space"></div>
 <!-- //Agent Contact -->
