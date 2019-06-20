@@ -66,9 +66,9 @@ class ct_ContactInfo extends WP_Widget {
 	        <?php if($blurb) { ?><p class="marB15"><?php echo wp_kses(stripslashes($blurb), $ct_allowed_html); ?></p><?php } ?>
 
 	        <ul class="contact-info">
-	            <?php if($street) { ?><li class="company-address"><i class="fa fa-home"></i> <?php echo esc_html($street); ?><br /><?php echo esc_html($city); ?>, <?php echo esc_html($state); ?> <?php echo esc_html($postal); ?><br /><?php echo esc_html($country); ?></li><?php } ?>
-	            <?php if($phone) { ?><li class="company-phone"><i class="fa fa-phone"></i> <?php echo esc_html($phone); ?></li><?php } ?>
-	            <?php if($email) { ?><li class="company-email"><i class="fa fa-envelope-o"></i> <a href="mailto:<?php echo antispambot($email); ?>"><?php echo antispambot($email); ?></a></li><?php } ?>
+	            <?php if($street) { ?><li class="company-address"><!-- <i class="fa fa-home"></i> --><?php echo esc_html($street); ?><br /><?php echo esc_html($city); ?>, <?php echo esc_html($state); ?> <?php echo esc_html($postal); ?><br /><?php echo esc_html($country); ?></li><?php } ?>
+	            <?php if($phone) { ?><li class="company-phone"><!-- <i class="fa fa-phone"></i>--> <?php echo esc_html($phone); ?></li><?php } ?>
+	            <?php if($email) { ?><li class="company-email"><!-- <i class="fa fa-envelope-o"></i>--> <a href="mailto:<?php echo antispambot($email); ?>"><?php echo antispambot($email); ?></a></li><?php } ?>
 	        </ul>
 
 	        <ul class="contact-social">
