@@ -38,20 +38,20 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 
 		// Property Type
 		$ptlabels = array(
-			'name' => __( 'Property Type', 'contempo' ),
-			'singular_name' => __( 'Property Type', 'contempo' ),
-			'search_items' =>  __( 'Search Property Types', 'contempo' ),
-			'popular_items' => __( 'Popular Property Types', 'contempo' ),
-			'all_items' => __( 'All Property Types', 'contempo' ),
+			'name' => __( 'Tipo', 'contempo' ),
+			'singular_name' => __( 'Tipo', 'contempo' ),
+			'search_items' =>  __( 'Buscar por tipo', 'contempo' ),
+			'popular_items' => __( 'Tipos más usados', 'contempo' ),
+			'all_items' => __( 'Todos los tipos', 'contempo' ),
 			'parent_item' => null,
 			'parent_item_colon' => null,
-			'edit_item' => __( 'Edit Property Type', 'contempo' ),
-			'update_item' => __( 'Update Property Type', 'contempo' ),
-			'add_new_item' => __( 'Add New Property Type', 'contempo' ),
-			'new_item_name' => __( 'New Property Type Name', 'contempo' ),
-			'separate_items_with_commas' => __( 'Separate Property Types with commas', 'contempo' ),
-			'add_or_remove_items' => __( 'Add or remove Property Types', 'contempo' ),
-			'choose_from_most_used' => __( 'Choose from the most used Property Types', 'contempo' )
+			'edit_item' => __( 'Editar tipo', 'contempo' ),
+			'update_item' => __( 'Modificar tipo', 'contempo' ),
+			'add_new_item' => __( 'Añadir nuevo tipo', 'contempo' ),
+			'new_item_name' => __( 'Agregar nuevo tipo', 'contempo' ),
+			'separate_items_with_commas' => __( 'Separar tipos por comas', 'contempo' ),
+			'add_or_remove_items' => __( 'Añadir o remover tipos', 'contempo' ),
+			'choose_from_most_used' => __( 'Seleccionar de los tipos más usados', 'contempo' )
 		);
 		register_taxonomy( 'property_type', 'listings', array(
 			'hierarchical' => false,
@@ -427,20 +427,20 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 		} else {
 
 			$statelabels = array(
-				'name' => __( 'State', 'contempo' ),
-				'singular_name' => __( 'State', 'contempo' ),
-				'search_items' =>  __( 'Search States', 'contempo' ),
-				'popular_items' => __( 'Popular States', 'contempo' ),
-				'all_items' => __( 'All States', 'contempo' ),
+				'name' => __( 'Regiones', 'contempo' ),
+				'singular_name' => __( 'Región', 'contempo' ),
+				'search_items' =>  __( 'Buscar regiones', 'contempo' ),
+				'popular_items' => __( 'Regiones polulares', 'contempo' ),
+				'all_items' => __( 'Todas las regiones', 'contempo' ),
 				'parent_item' => null,
 				'parent_item_colon' => null,
-				'edit_item' => __( 'Edit States', 'contempo' ),
-				'update_item' => __( 'Update State', 'contempo' ),
-				'add_new_item' => __( 'Add New State', 'contempo' ),
-				'new_item_name' => __( 'New State Name', 'contempo' ),
-				'separate_items_with_commas' => __( 'Separate States with commas', 'contempo' ),
-				'add_or_remove_items' => __( 'Add or remove States', 'contempo' ),
-				'choose_from_most_used' => __( 'Choose from the most used States', 'contempo' )
+				'edit_item' => __( 'Editar region', 'contempo' ),
+				'update_item' => __( 'Modificar región', 'contempo' ),
+				'add_new_item' => __( 'Añadir región', 'contempo' ),
+				'new_item_name' => __( 'Nueva región', 'contempo' ),
+				'separate_items_with_commas' => __( 'Separados por coma', 'contempo' ),
+				'add_or_remove_items' => __( 'Añadir o remover región', 'contempo' ),
+				'choose_from_most_used' => __( 'Escoger región de las más usadas', 'contempo' )
 			);
 			register_taxonomy( 'state', 'listings', array(
 				'hierarchical' => false,

@@ -32,16 +32,16 @@ add_action( 'admin_menu', 'ct_remove_listing_meta_boxes' );
 
 	function ct_listings_init() {
 		$labels = array(
-			'name'                => _x( 'Listings', 'Post Type General Name', 'contempo' ),
-			'singular_name'       => _x( 'Listing', 'Post Type Singular Name', 'contempo' ),
-			'add_new' => __( 'Add New', 'contempo'),
-			'add_new_item' => __( 'Add New Listing', 'contempo'),
-			'edit_item' => __( 'Edit Listing', 'contempo'),
-			'new_item' => __( 'New Listing', 'contempo'),
-			'view_item' => __( 'View Listing', 'contempo'),
-			'search_items' => __( 'Search Listings', 'contempo'),
-			'not_found' =>  __( 'No listings items found', 'contempo'),
-			'not_found_in_trash' => __( 'No listings found in Trash', 'contempo'),
+			'name'                => _x( 'Propiedades', 'Post Type General Name', 'contempo' ),
+			'singular_name'       => _x( 'Propiedad', 'Post Type Singular Name', 'contempo' ),
+			'add_new' => __( 'Añadir propiedad', 'contempo'),
+			'add_new_item' => __( 'Añadir nueva propiedad', 'contempo'),
+			'edit_item' => __( 'Editar propiedad', 'contempo'),
+			'new_item' => __( 'Nueva propiedad', 'contempo'),
+			'view_item' => __( 'Ver propiedad', 'contempo'),
+			'search_items' => __( 'Buscar propiedades', 'contempo'),
+			'not_found' =>  __( 'No hay propiedades encontradas', 'contempo'),
+			'not_found_in_trash' => __( 'No hay propiedades encontradas en la papelera', 'contempo'),
 			'parent_item_colon' => ''
 		);
 
@@ -334,16 +334,16 @@ add_action( 'admin_menu', 'ct_remove_listing_meta_boxes' );
 
 	function ct_brokerage_init() {
 		$labels = array(
-			'name'                => _x( 'Brokerages', 'Post Type General Name', 'contempo' ),
-			'singular_name'       => _x( 'Brokerage', 'Post Type Singular Name', 'contempo' ),
-			'add_new' => __( 'Add New', 'contempo'),
-			'add_new_item' => __( 'Add New Brokerage', 'contempo'),
-			'edit_item' => __( 'Edit Brokerage', 'contempo'),
-			'new_item' => __( 'New Brokerage', 'contempo'),
-			'view_item' => __( 'View Brokerage', 'contempo'),
-			'search_items' => __( 'Search Brokerages', 'contempo'),
-			'not_found' =>  __( 'No Brokerages found', 'contempo'),
-			'not_found_in_trash' => __( 'No Brokerages found in Trash', 'contempo'),
+			'name'                => _x( 'Corredoras', 'Post Type General Name', 'contempo' ),
+			'singular_name'       => _x( 'Corredora', 'Post Type Singular Name', 'contempo' ),
+			'add_new' => __( 'Añadir corredora', 'contempo'),
+			'add_new_item' => __( 'Añadir nueva corredora', 'contempo'),
+			'edit_item' => __( 'Editar corredora', 'contempo'),
+			'new_item' => __( 'Nueva corredora', 'contempo'),
+			'view_item' => __( 'Ver corredora', 'contempo'),
+			'search_items' => __( 'Buscar corredoras', 'contempo'),
+			'not_found' =>  __( 'Corredoras no encontradas', 'contempo'),
+			'not_found_in_trash' => __( 'No hay corredoras en papelera', 'contempo'),
 			'parent_item_colon' => ''
 		);
 
@@ -385,8 +385,8 @@ add_action( 'admin_menu', 'ct_remove_listing_meta_boxes' );
 			//Create custom columns
 			'cb' => '<input type="checkbox" />',
 			'logo' => __('Logo', 'contempo'),
-			'title' => __('Brokerage Name', 'contempo'),
-			'brokerage_location' => __('Location', 'contempo'),
+			'title' => __('Nombre corredora', 'contempo'),
+			'brokerage_location' => __('Ubicación', 'contempo'),
 		);
 		return $columns;
 	}
@@ -427,16 +427,16 @@ add_action( 'admin_menu', 'ct_remove_listing_meta_boxes' );
 
 	function ct_testimonial_init() {
 		$labels = array(
-			'name'                => _x( 'Testimonials', 'Post Type General Name', 'contempo' ),
-			'singular_name'       => _x( 'Testimonial', 'Post Type Singular Name', 'contempo' ),
-			'add_new' => __( 'Add New', 'contempo'),
-			'add_new_item' => __( 'Add New Testimonial', 'contempo'),
-			'edit_item' => __( 'Edit Testimonial', 'contempo'),
-			'new_item' => __( 'New Testimonial', 'contempo'),
-			'view_item' => __( 'View Testimonial', 'contempo'),
-			'search_items' => __( 'Search Testimonials', 'contempo'),
-			'not_found' =>  __( 'No Testimonials found', 'contempo'),
-			'not_found_in_trash' => __( 'No Testimonials found in Trash', 'contempo'),
+			'name'                => _x( 'Testimonios', 'Post Type General Name', 'contempo' ),
+			'singular_name'       => _x( 'Testimonio', 'Post Type Singular Name', 'contempo' ),
+			'add_new' => __( 'Añadir testimonio', 'contempo'),
+			'add_new_item' => __( 'Añadir nuevo testimonio', 'contempo'),
+			'edit_item' => __( 'Editar testimonio', 'contempo'),
+			'new_item' => __( 'Nuevo testimonio', 'contempo'),
+			'view_item' => __( 'Ver testimonio', 'contempo'),
+			'search_items' => __( 'Encontrar testimonio', 'contempo'),
+			'not_found' =>  __( 'No testimonios encontrados', 'contempo'),
+			'not_found_in_trash' => __( 'No hay testimonios en la papelera', 'contempo'),
 			'parent_item_colon' => ''
 		);
 
