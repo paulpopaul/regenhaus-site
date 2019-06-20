@@ -285,13 +285,7 @@ echo '<div class="container main">';
 		                    </div>
 		                    
 		                <?php } else { ?>
-		                    
-		                    <?php if(!empty($ct_options['ct_logo']['url'])) { ?>
-		                        <a href="<?php echo home_url(); ?>"><img class="logo left" src="<?php echo esc_url($ct_logo); ?>" <?php if(!empty($ct_logo_highres)) { ?>srcset="<?php echo esc_url($ct_logo_highres); ?> 2x"<?php } ?> alt="<?php bloginfo('name'); ?>" /></a>
-		                    <?php } else { ?>
-		                        <a href="<?php echo home_url(); ?>"><img class="logo left" src="<?php echo get_stylesheet_directory_uri(); ?>/images/re7-logo.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/re7-logo@2x.png 2x" alt="WP Pro Real Estate 7, a WordPress theme by Contempo" /></a>
-		                    <?php } ?>
-		                    
+		                    <a href="<?php echo home_url() ?>"><img class="logo left" src="<?php echo get_stylesheet_directory_uri() ?>/img/header-logo.svg" alt=""></a>
 		                <?php } ?>
 	                </div>
 	                <!-- //Logo -->
@@ -319,13 +313,7 @@ echo '<div class="container main">';
 			                            </div>
 			                            
 			                        <?php } else { ?>
-			                            
-			                            <?php if(!empty($ct_options['ct_logo']['url'])) { ?>
-			                                <a href="<?php echo home_url(); ?>"><img class="logo left" src="<?php echo esc_url($ct_options['ct_logo']['url']); ?>" <?php if(!empty($ct_logo_highres)) { ?>srcset="<?php echo esc_url($ct_logo_highres); ?> 2x"<?php } ?> alt="<?php bloginfo('name'); ?>" /></a>
-			                            <?php } else { ?>
-			                                <a href="<?php echo home_url(); ?>"><img class="logo left" src="<?php echo get_template_directory_uri(); ?>/images/re7-logo.png" srcset="<?php echo get_template_directory_uri(); ?>/images/re7-logo@2x.png 2x" alt="WP Pro Real Estate 7, a WordPress theme by Contempo" /></a>
-			                            <?php } ?>
-			                            
+			                            <a href="<?php echo home_url() ?>"><img class="logo left" src="<?php echo get_stylesheet_directory_uri() ?>/img/header-logo.svg" alt=""></a>
 			                        <?php } ?>
 			                    </div>
 			                    <!-- //Logo -->
@@ -419,13 +407,7 @@ echo '<div class="container main">';
 			                            </div>
 			                            
 			                        <?php } else { ?>
-			                            
-			                            <?php if(!empty($ct_options['ct_logo']['url'])) { ?>
-			                                <a href="<?php echo home_url(); ?>"><img class="logo left" src="<?php echo esc_url($ct_options['ct_logo']['url']); ?>" <?php if(!empty($ct_logo_highres)) { ?>srcset="<?php echo esc_url($ct_logo_highres); ?> 2x"<?php } ?> alt="<?php bloginfo('name'); ?>" /></a>
-			                            <?php } else { ?>
-			                                <a href="<?php echo home_url(); ?>"><img class="logo left" src="<?php echo get_template_directory_uri(); ?>/images/re7-logo.png" srcset="<?php echo get_template_directory_uri(); ?>/images/re7-logo@2x.png 2x" alt="WP Pro Real Estate 7, a WordPress theme by Contempo" /></a>
-			                            <?php } ?>
-			                            
+			                            <a href="<?php echo home_url() ?>"><img class="logo left" src="<?php echo get_stylesheet_directory_uri() ?>/img/header-logo.svg" alt=""></a>
 			                        <?php } ?>
 			                    </div>
 			                    <!-- //Logo -->
@@ -538,13 +520,7 @@ echo '<div class="container main">';
 			                            </div>
 			                            
 			                        <?php } else { ?>
-			                            
-			                            <?php if(!empty($ct_options['ct_logo']['url'])) { ?>
-			                                <a href="<?php echo home_url(); ?>"><img class="logo left" src="<?php echo esc_url($ct_options['ct_logo']['url']); ?>" <?php if(!empty($ct_logo_highres)) { ?>srcset="<?php echo esc_url($ct_logo_highres); ?> 2x"<?php } ?> alt="<?php bloginfo('name'); ?>" /></a>
-			                            <?php } else { ?>
-			                                <a href="<?php echo home_url(); ?>"><img class="logo left" src="<?php echo get_template_directory_uri(); ?>/images/re7-logo.png" srcset="<?php echo get_template_directory_uri(); ?>/images/re7-logo@2x.png 2x" alt="WP Pro Real Estate 7, a WordPress theme by Contempo" /></a>
-			                            <?php } ?>
-			                            
+			                            <a href="<?php echo home_url() ?>"><img class="logo left" src="<?php echo get_stylesheet_directory_uri() ?>/img/header-logo.svg" alt=""></a>
 			                        <?php } ?>
 			                    </div>
 			                    <!-- //Logo -->
@@ -572,13 +548,7 @@ echo '<div class="container main">';
 			                            </div>
 			                            
 			                        <?php } else { ?>
-			                            
-			                            <?php if(!empty($ct_options['ct_logo']['url'])) { ?>
-			                                <a href="<?php echo home_url(); ?>"><img class="logo left" src="<?php echo esc_url($ct_options['ct_logo']['url']); ?>" <?php if(!empty($ct_logo_highres)) { ?>srcset="<?php echo esc_url($ct_logo_highres); ?> 2x"<?php } ?> alt="<?php bloginfo('name'); ?>" /></a>
-			                            <?php } else { ?>
-			                                <a href="<?php echo home_url(); ?>"><img class="logo left" src="<?php echo get_template_directory_uri(); ?>/images/re7-logo.png" srcset="<?php echo get_template_directory_uri(); ?>/images/re7-logo@2x.png 2x" alt="WP Pro Real Estate 7, a WordPress theme by Contempo" /></a>
-			                            <?php } ?>
-			                            
+			                            <a href="<?php echo home_url() ?>"><img class="logo left" src="<?php echo get_stylesheet_directory_uri() ?>/img/header-logo.svg" alt=""></a>
 			                        <?php } ?>
 			                    </div>
 			                    <!-- //Logo -->
@@ -606,13 +576,7 @@ echo '<div class="container main">';
 			                            </div>
 			                            
 			                        <?php } else { ?>
-			                            
-			                            <?php if(!empty($ct_options['ct_logo']['url'])) { ?>
-			                                <a href="<?php echo home_url(); ?>"><img class="logo right" src="<?php echo esc_url($ct_options['ct_logo']['url']); ?>" <?php if(!empty($ct_logo_highres)) { ?>srcset="<?php echo esc_url($ct_logo_highres); ?> 2x"<?php } ?> alt="<?php bloginfo('name'); ?>" /></a>
-			                            <?php } else { ?>
-			                                <a href="<?php echo home_url(); ?>"><img class="logo right" src="<?php echo get_template_directory_uri(); ?>/images/re7-logo.png" srcset="<?php echo get_template_directory_uri(); ?>/images/re7-logo@2x.png 2x" alt="WP Pro Real Estate 7, a WordPress theme by Contempo" /></a>
-			                            <?php } ?>
-			                            
+			                            <a href="<?php echo home_url() ?>"><img class="logo left" src="<?php echo get_stylesheet_directory_uri() ?>/img/header-logo.svg" alt=""></a>
 			                        <?php } ?>
 			                    </div>
 			                    <!-- //Logo -->

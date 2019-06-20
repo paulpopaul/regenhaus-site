@@ -80,6 +80,8 @@
     header#masthead ul#ct-menu .btn-outline { float: right; }
     header#masthead ul#ct-menu .btn-outline a { margin-bottom: 0; }
     header#masthead .logo-wrap.span_3 { padding: 13px 0 13px 0; }
+    header#masthead .logo-wrap.span_3 img.logo { width: 246px; height: 160px; }
+    header#masthead .logo-wrap.span_3 a:hover { opacity: 1 !important; }
     
     .ct-menu > li > a {
         display: inline-block;
