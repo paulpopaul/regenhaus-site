@@ -350,6 +350,8 @@
     section#main-content #listing-contact { margin-top: 120px; padding-bottom: 5px; background-color: #EFEFEF !important; }
     section#main-content #listing-contact h4.border-bottom { border-bottom: none; margin-bottom: 15px !important; }
     section#main-content #listing-contact #submit { font-size: 12px; font-family: Lato; margin-top: 8px; }
+    
+    section#main-content #listing-contact textarea { resize: none !important; }
 
     section#main-content #listing-contact input:focus,
     section#main-content #listing-contact textarea:focus { background: #fff; }
@@ -392,6 +394,18 @@
 
     #sidebar .listing .snipe.status { padding: 12px 9px; }
     #sidebar .listing .status span { font-size: 10px; padding: 3px 5px; }
+
+    /* Fullscreen imagenes */
+        .mfp-gallery .mfp-arrow::after { font-family: "Font Awesome 5 Free"; font-weight: 900; /* font-size: px; */ }
+        .mfp-gallery .mfp-counter { /* font-size: px; */ }
+        .mfp-gallery .mfp-close { /* font-size: px; */ }
+        
+
+    /* Barra compartir redes/imprimir */
+        div#tools { /* estilos aquí */ }
+        div#tools ul.social li { /* estilos contenedor lista icono aquí */ }
+        div#tools ul.social li a { /* estilos contenedor <a> icono aquí */ }
+        div#tools ul.social li a i.fab { /* estilos iconos aquí */ }
 
 
 
