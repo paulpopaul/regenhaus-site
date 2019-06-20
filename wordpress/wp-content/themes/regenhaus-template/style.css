@@ -349,7 +349,7 @@
     }
 
     section#main-content .creation-date { display: none; } /* día de creación al fondo de detalle de propiedad */
-    section#main-content #listing-contact { margin-top: 120px; padding-bottom: 5px; background-color: #EFEFEF !important; }
+    section#main-content #listing-contact { background-color: #EFEFEF !important; }
     section#main-content #listing-contact h4.border-bottom { border-bottom: none; margin-bottom: 15px !important; }
     section#main-content #listing-contact #submit { font-size: 12px; font-family: Lato; margin-top: 8px; }
     
