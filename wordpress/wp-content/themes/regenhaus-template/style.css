@@ -403,9 +403,9 @@
     #sidebar .listing .status span { font-size: 10px; padding: 3px 5px; }
 
     /* Fullscreen imagenes */
-        .mfp-gallery .mfp-arrow::after { font-family: "Font Awesome 5 Free"; font-weight: 900; /* font-size: px; */ }
-        .mfp-gallery .mfp-counter { /* font-size: px; */ }
-        .mfp-gallery .mfp-close { /* font-size: px; */ }
+        .mfp-gallery .mfp-arrow::after { font-family: "Font Awesome 5 Free"; font-size: 40px; font-weight: 800; }
+        .mfp-gallery .mfp-counter { font-size: 22px; font-weight: 900 !important; }
+        .mfp-gallery .mfp-close { font-size: 46px; }
         
 
     /* Barra compartir redes/imprimir */

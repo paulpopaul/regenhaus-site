@@ -91,6 +91,7 @@ class ct_ContactInfo extends WP_Widget {
 	                <li class=""><a href="<?php echo esc_url($instagram); ?>"><i class="fab fa-instagram"></i></a></li>
 	            <?php } ?>
 	        </ul>
+
 	    </div>
 		<?php echo $after_widget; ?>   
     <?php
