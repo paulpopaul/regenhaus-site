@@ -381,7 +381,12 @@
         color: #000;
     }
 
-    section#main-content #listing-contact-bottom-space { height: 67px; background: #EFEFEF; border-top: 1px solid #D5D9DD; }
+    section#main-content #listing-contact-bottom-space {
+        background: #EFEFEF;
+        border-top: 1px solid #D5D9DD;
+    }
+
+    section#main-content #listing-contact-bottom-space img { width: 113px; height: 76px; padding: 8px; margin: 0 auto; }
     
     #sidebar #sidebar-contact-buttons { margin: 12px; }
     #sidebar #sidebar-contact-buttons input:first-child { margin-bottom: 20px; }
@@ -404,14 +409,22 @@
         
 
     /* Barra compartir redes/imprimir */
-        div#tools {position: fixed;left: 0;z-index: 999;padding: 10px; border: none; background: none; border-top-right-radius: 3px;border-bottom-right-radius: 3px;}
+        div#tools {
+            position: fixed;
+            left: 0;
+            z-index: 999;
+            padding: 10px;
+            border: none;
+            background: none;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
 
-        div#tools .social li a {display: inline-block; min-width: 44px; padding: 8px;color: #000;border-radius: 0;}
-        div#tools .social li a:hover{background: black !important; color:#fff !important; opacity: 1;}
-
+        div#tools .social li a { display: inline-block; min-width: 44px; padding: 8px; color: #000; border-radius: 0; }
+        div#tools .social li a:hover{ background: black !important; color: #fff !important; opacity: 1; }
         div#tools .social .facebook a:hover,
-        div#tools .social .print a:hover,
-        div#tools .social .twitter a:hover { border-color: transparent !important; }
+        div#tools .social .twitter a:hover,
+        div#tools .social .print a:hover { border-color: transparent !important; }
 
 
 

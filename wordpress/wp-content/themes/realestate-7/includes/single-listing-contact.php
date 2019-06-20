@@ -337,5 +337,8 @@ $youtubeurl = get_the_author_meta('youtubeurl');
         } ?>
 
 </div>
-<div id="listing-contact-bottom-space"></div>
+
+<div id="listing-contact-bottom-space">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/header-logo.svg" alt="">
+</div>
 <!-- //Agent Contact -->
