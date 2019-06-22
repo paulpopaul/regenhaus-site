@@ -150,20 +150,20 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 		} else {
 			// Bed
 			$bedslabels = array(
-				'name' => __( 'Bed', 'contempo' ),
-				'singular_name' => __( 'Bed', 'contempo' ),
-				'search_items' =>  __( 'Search Beds', 'contempo' ),
-				'popular_items' => __( 'Popular Beds', 'contempo' ),
-				'all_items' => __( 'All Beds', 'contempo' ),
+				'name' => __( 'Dormitorios', 'contempo' ),
+				'singular_name' => __( 'Dormitorio', 'contempo' ),
+				'search_items' =>  __( 'Buscar número dormitorios', 'contempo' ),
+				'popular_items' => __( 'Número dormitorios más comunes', 'contempo' ),
+				'all_items' => __( 'Todos los números de dormitorios', 'contempo' ),
 				'parent_item' => null,
 				'parent_item_colon' => null,
-				'edit_item' => __( 'Edit Beds', 'contempo' ),
-				'update_item' => __( 'Update Beds', 'contempo' ),
-				'add_new_item' => __( 'Add New Beds', 'contempo' ),
-				'new_item_name' => __( 'New Beds Name', 'contempo' ),
-				'separate_items_with_commas' => __( 'Separate Beds with commas', 'contempo' ),
-				'add_or_remove_items' => __( 'Add or remove Beds', 'contempo' ),
-				'choose_from_most_used' => __( 'Choose from the most used Beds', 'contempo' )
+				'edit_item' => __( 'Editar número de dormitorio', 'contempo' ),
+				'update_item' => __( 'Modificar números de dormitorio', 'contempo' ),
+				'add_new_item' => __( 'Agregar nuevo número de dormitorio', 'contempo' ),
+				'new_item_name' => __( 'Agregar nuevo número de dormitorio', 'contempo' ),
+				'separate_items_with_commas' => __( 'Separar número de dormitorios por comas', 'contempo' ),
+				'add_or_remove_items' => __( 'Agregar o remover número de dormitorios', 'contempo' ),
+				'choose_from_most_used' => __( 'Escoger los números de dormitorio más usados', 'contempo' )
 			);
 			register_taxonomy( 'beds', 'listings', array(
 				'hierarchical' => false,
