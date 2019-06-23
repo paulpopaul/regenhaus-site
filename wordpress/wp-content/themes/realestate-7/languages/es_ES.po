@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-06 21:13+0000\n"
 "POT-Revision-Date: Wed Jul 27 2016 08:19:42 GMT-0700 (PDT)\n"
-"PO-Revision-Date: 2019-06-23 09:19-0400\n"
+"PO-Revision-Date: 2019-06-23 11:13-0400\n"
 "Last-Translator: pericon <cpericon@gmail.com>\n"
 "Language-Team: Español\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
@@ -289,7 +289,7 @@ msgstr "Enviar"
 
 #: single-brokerage.php:147 single-listings.php:38
 msgid "Listings"
-msgstr "Anuncios"
+msgstr "Detalle"
 
 #: single-brokerage.php:148
 msgid "Agents"
@@ -1717,7 +1717,7 @@ msgstr "Calle, ciudad, estado, código postal o palabra clave"
 
 #: includes/header-advanced-search.php:363
 msgid "Addtional Features"
-msgstr "Funciones adicionales"
+msgstr "Características adicionales"
 
 #: includes/single-listing-virtual-tour.php:18
 msgid "Virtual Tour"

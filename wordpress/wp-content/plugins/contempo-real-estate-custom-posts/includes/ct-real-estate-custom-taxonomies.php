@@ -38,20 +38,20 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 
 		// Property Type
 		$ptlabels = array(
-			'name' => __( 'Tipo', 'contempo' ),
-			'singular_name' => __( 'Tipo', 'contempo' ),
-			'search_items' =>  __( 'Buscar por tipo', 'contempo' ),
-			'popular_items' => __( 'Tipos más usados', 'contempo' ),
-			'all_items' => __( 'Todos los tipos', 'contempo' ),
+			'name' => __( 'Tipos propiedades', 'contempo' ),
+			'singular_name' => __( 'Tipo propiedad', 'contempo' ),
+			'search_items' =>  __( 'Buscar por tipo de propiedad', 'contempo' ),
+			'popular_items' => __( 'Tipos de propiedad más usados', 'contempo' ),
+			'all_items' => __( 'Todos los tipos de propiedad', 'contempo' ),
 			'parent_item' => null,
 			'parent_item_colon' => null,
-			'edit_item' => __( 'Editar tipo', 'contempo' ),
-			'update_item' => __( 'Modificar tipo', 'contempo' ),
-			'add_new_item' => __( 'Añadir nuevo tipo', 'contempo' ),
-			'new_item_name' => __( 'Agregar nuevo tipo', 'contempo' ),
-			'separate_items_with_commas' => __( 'Separar tipos por comas', 'contempo' ),
-			'add_or_remove_items' => __( 'Añadir o remover tipos', 'contempo' ),
-			'choose_from_most_used' => __( 'Seleccionar de los tipos más usados', 'contempo' )
+			'edit_item' => __( 'Editar tipo de propiedad', 'contempo' ),
+			'update_item' => __( 'Modificar tipo de propiedad', 'contempo' ),
+			'add_new_item' => __( 'Añadir nuevo tipo de propiedad', 'contempo' ),
+			'new_item_name' => __( 'Agregar nuevo tipo de propiedad', 'contempo' ),
+			'separate_items_with_commas' => __( 'Separar tipos de propiedades por comas', 'contempo' ),
+			'add_or_remove_items' => __( 'Añadir o remover tipos de propiedad', 'contempo' ),
+			'choose_from_most_used' => __( 'Seleccionar de los tipos de propiedad más usados', 'contempo' )
 		);
 		register_taxonomy( 'property_type', 'listings', array(
 			'hierarchical' => false,
@@ -240,20 +240,20 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 		} else {
 			// Baths
 			$bathslabels = array(
-				'name' => __( 'Baths', 'contempo' ),
-				'singular_name' => __( 'Baths', 'contempo' ),
-				'search_items' =>  __( 'Search Baths', 'contempo' ),
-				'popular_items' => __( 'Popular Baths', 'contempo' ),
-				'all_items' => __( 'All Baths', 'contempo' ),
+				'name' => __( 'Baños', 'contempo' ),
+				'singular_name' => __( 'Baño', 'contempo' ),
+				'search_items' =>  __( 'Buscar baños', 'contempo' ),
+				'popular_items' => __( 'Baños más usados', 'contempo' ),
+				'all_items' => __( 'Todos los baños', 'contempo' ),
 				'parent_item' => null,
 				'parent_item_colon' => null,
-				'edit_item' => __( 'Edit Baths', 'contempo' ),
-				'update_item' => __( 'Update Baths', 'contempo' ),
-				'add_new_item' => __( 'Add New Baths', 'contempo' ),
-				'new_item_name' => __( 'New Baths Name', 'contempo' ),
-				'separate_items_with_commas' => __( 'Separate Baths with commas', 'contempo' ),
-				'add_or_remove_items' => __( 'Add or remove Baths', 'contempo' ),
-				'choose_from_most_used' => __( 'Choose from the most used Baths', 'contempo' )
+				'edit_item' => __( 'Editar baño', 'contempo' ),
+				'update_item' => __( 'Modificar baño', 'contempo' ),
+				'add_new_item' => __( 'Añadir nuevo baño', 'contempo' ),
+				'new_item_name' => __( 'Nuevo baño', 'contempo' ),
+				'separate_items_with_commas' => __( 'Separar baños por comas', 'contempo' ),
+				'add_or_remove_items' => __( 'Añadir o remover baños', 'contempo' ),
+				'choose_from_most_used' => __( 'Escoger baños de los más usados', 'contempo' )
 			);
 			register_taxonomy( 'baths', 'listings', array(
 				'hierarchical' => false,
@@ -277,20 +277,20 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 
 		// Status
 		$statuslabels = array(
-			'name' => __( 'Status', 'contempo' ),
-			'singular_name' => __( 'Status', 'contempo' ),
-			'search_items' =>  __( 'Search Statuses', 'contempo' ),
-			'popular_items' => __( 'Popular Statuses', 'contempo' ),
-			'all_items' => __( 'All Statuses', 'contempo' ),
+			'name' => __( 'Estados venta', 'contempo' ),
+			'singular_name' => __( 'Estado venta', 'contempo' ),
+			'search_items' =>  __( 'Buscar estados de venta', 'contempo' ),
+			'popular_items' => __( 'Estados de venta más usados', 'contempo' ),
+			'all_items' => __( 'Todos los estados de venta', 'contempo' ),
 			'parent_item' => null,
 			'parent_item_colon' => null,
-			'edit_item' => __( 'Edit Statuses', 'contempo' ),
-			'update_item' => __( 'Update Statuses', 'contempo' ),
-			'add_new_item' => __( 'Add New Status', 'contempo' ),
-			'new_item_name' => __( 'New Status Name', 'contempo' ),
-			'separate_items_with_commas' => __( 'Separate Statuses with commas', 'contempo' ),
-			'add_or_remove_items' => __( 'Add or remove Status', 'contempo' ),
-			'choose_from_most_used' => __( 'Choose from the most used Statuses', 'contempo' )
+			'edit_item' => __( 'Editar estado de venta', 'contempo' ),
+			'update_item' => __( 'Modificar estado de venta', 'contempo' ),
+			'add_new_item' => __( 'Añadir nuevo estado de venta', 'contempo' ),
+			'new_item_name' => __( 'Nuevo nombre estado de venta', 'contempo' ),
+			'separate_items_with_commas' => __( 'Separar estado de venta por comas', 'contempo' ),
+			'add_or_remove_items' => __( 'Añadir o remover estado de venta', 'contempo' ),
+			'choose_from_most_used' => __( 'Escoger estado de venta más usados', 'contempo' )
 		);
 		register_taxonomy( 'ct_status', 'listings', array(
 			'hierarchical' => false,
@@ -311,20 +311,20 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 
 		// City
 		$citylabels = array(
-			'name' => __( 'City', 'contempo' ),
-			'singular_name' => __( 'City', 'contempo' ),
-			'search_items' =>  __( 'Search Cities', 'contempo' ),
-			'popular_items' => __( 'Popular Cities', 'contempo' ),
-			'all_items' => __( 'All Cities', 'contempo' ),
+			'name' => __( 'Ciudades', 'contempo' ),
+			'singular_name' => __( 'Ciudad', 'contempo' ),
+			'search_items' =>  __( 'Buscar ciudades', 'contempo' ),
+			'popular_items' => __( 'Ciudades mñas usadas', 'contempo' ),
+			'all_items' => __( 'Todas las ciudades', 'contempo' ),
 			'parent_item' => null,
 			'parent_item_colon' => null,
-			'edit_item' => __( 'Edit Cities', 'contempo' ),
-			'update_item' => __( 'Update City', 'contempo' ),
-			'add_new_item' => __( 'Add New City', 'contempo' ),
-			'new_item_name' => __( 'New City Name', 'contempo' ),
-			'separate_items_with_commas' => __( 'Separate Cities with commas', 'contempo' ),
-			'add_or_remove_items' => __( 'Add or remove Cities', 'contempo' ),
-			'choose_from_most_used' => __( 'Choose from the most used Cities', 'contempo' )
+			'edit_item' => __( 'Editar ciudad', 'contempo' ),
+			'update_item' => __( 'Modificar ciudad', 'contempo' ),
+			'add_new_item' => __( 'Añadir nueva ciudad', 'contempo' ),
+			'new_item_name' => __( 'Nuevo nombre de ciudad', 'contempo' ),
+			'separate_items_with_commas' => __( 'Separar ciudades por comas', 'contempo' ),
+			'add_or_remove_items' => __( 'Añadir o remover ciudades', 'contempo' ),
+			'choose_from_most_used' => __( 'Escoger de las ciudades más usadas', 'contempo' )
 		);
 		register_taxonomy( 'city', 'listings', array(
 			'hierarchical' => false,
@@ -491,29 +491,29 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 
 		} elseif($ct_zip_or_post == 'postalcode') {
 
-			$postlabels = array(
-				'name' => __( 'Postal Code', 'contempo' ),
-				'singular_name' => __( 'Postal Code', 'contempo' ),
-				'search_items' =>  __( 'Search Postal Codes', 'contempo' ),
-				'popular_items' => __( 'Popular Postal Codes', 'contempo' ),
-				'all_items' => __( 'All Postal Codes', 'contempo' ),
-				'parent_item' => null,
-				'parent_item_colon' => null,
-				'edit_item' => __( 'Edit Postal Code', 'contempo' ),
-				'update_item' => __( 'Update Postal Code', 'contempo' ),
-				'add_new_item' => __( 'Add New Postal Code', 'contempo' ),
-				'new_item_name' => __( 'New Postal Code', 'contempo' ),
-				'separate_items_with_commas' => __( 'Separate Postal Codes with commas', 'contempo' ),
-				'add_or_remove_items' => __( 'Add or remove Postal Codes', 'contempo' ),
-				'choose_from_most_used' => __( 'Choose from the most used Postal Codes', 'contempo' )
-			);
-			register_taxonomy( 'zipcode', 'listings', array(
-				'hierarchical' => false,
-				'labels' => $postlabels,
-				'show_ui' => true,
-				'query_var' => true,
-				'rewrite' => array( 'slug' => 'postalcode' ),
-			));
+			// $postlabels = array(
+			// 	'name' => __( 'Códigos postales', 'contempo' ),
+			// 	'singular_name' => __( 'Código postal', 'contempo' ),
+			// 	'search_items' =>  __( 'Buscar códigos postales', 'contempo' ),
+			// 	'popular_items' => __( 'Códigos postales más usados', 'contempo' ),
+			// 	'all_items' => __( 'Todos los códigos postales', 'contempo' ),
+			// 	'parent_item' => null,
+			// 	'parent_item_colon' => null,
+			// 	'edit_item' => __( 'Editar códigos postales', 'contempo' ),
+			// 	'update_item' => __( 'Modificar códigos postales', 'contempo' ),
+			// 	'add_new_item' => __( 'Añadir nuevo código postal', 'contempo' ),
+			// 	'new_item_name' => __( 'Nuevo código postal', 'contempo' ),
+			// 	'separate_items_with_commas' => __( 'Separar códigos postales por comas', 'contempo' ),
+			// 	'add_or_remove_items' => __( 'Añadir o remover códigos postales', 'contempo' ),
+			// 	'choose_from_most_used' => __( 'Escoger códigos postales de los más usados', 'contempo' )
+			// );
+			// register_taxonomy( 'zipcode', 'listings', array(
+			// 	'hierarchical' => false,
+			// 	'labels' => $postlabels,
+			// 	'show_ui' => true,
+			// 	'query_var' => true,
+			// 	'rewrite' => array( 'slug' => 'postalcode' ),
+			// ));
 
 		} else {
 
@@ -553,29 +553,29 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 		}
 
 		// Country
-		$countrylabels = array(
-			'name' => __( 'Country', 'contempo' ),
-			'singular_name' => __( 'Country', 'contempo' ),
-			'search_items' =>  __( 'Search Countries', 'contempo' ),
-			'popular_items' => __( 'Popular Countries', 'contempo' ),
-			'all_items' => __( 'All Countries', 'contempo' ),
-			'parent_item' => null,
-			'parent_item_colon' => null,
-			'edit_item' => __( 'Edit Countries', 'contempo' ),
-			'update_item' => __( 'Update Countries', 'contempo' ),
-			'add_new_item' => __( 'Add New Countries', 'contempo' ),
-			'new_item_name' => __( 'New Country Name', 'contempo' ),
-			'separate_items_with_commas' => __( 'Separate Countries with commas', 'contempo' ),
-			'add_or_remove_items' => __( 'Add or remove Countries', 'contempo' ),
-			'choose_from_most_used' => __( 'Choose from the most used Countries', 'contempo' )
-		);
-		register_taxonomy( 'country', 'listings', array(
-			'hierarchical' => false,
-			'labels' => $countrylabels,
-			'show_ui' => true,
-			'query_var' => true,
-			'rewrite' => array( 'slug' => 'country' ),
-		));
+		// $countrylabels = array(
+		// 	'name' => __( 'Países', 'contempo' ),
+		// 	'singular_name' => __( 'País', 'contempo' ),
+		// 	'search_items' =>  __( 'Buscar países', 'contempo' ),
+		// 	'popular_items' => __( 'Países más usados', 'contempo' ),
+		// 	'all_items' => __( 'Todos los países', 'contempo' ),
+		// 	'parent_item' => null,
+		// 	'parent_item_colon' => null,
+		// 	'edit_item' => __( 'Editar países', 'contempo' ),
+		// 	'update_item' => __( 'Modificar países', 'contempo' ),
+		// 	'add_new_item' => __( 'Añadir país', 'contempo' ),
+		// 	'new_item_name' => __( 'Nuevo nombre del país', 'contempo' ),
+		// 	'separate_items_with_commas' => __( 'Separar países por comas', 'contempo' ),
+		// 	'add_or_remove_items' => __( 'Añadir o remover países', 'contempo' ),
+		// 	'choose_from_most_used' => __( 'Escoger países de los más usados', 'contempo' )
+		// );
+		// register_taxonomy( 'country', 'listings', array(
+		// 	'hierarchical' => false,
+		// 	'labels' => $countrylabels,
+		// 	'show_ui' => true,
+		// 	'query_var' => true,
+		// 	'rewrite' => array( 'slug' => 'country' ),
+		// ));
 
 		if ( ! function_exists( 'country' ) ) {
 			function country() {
@@ -589,29 +589,29 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 		}
 
 		// Country
-		$countylabels = array(
-			'name' => __( 'County', 'contempo' ),
-			'singular_name' => __( 'County', 'contempo' ),
-			'search_items' =>  __( 'Search Counties', 'contempo' ),
-			'popular_items' => __( 'Popular Counties', 'contempo' ),
-			'all_items' => __( 'All Counties', 'contempo' ),
-			'parent_item' => null,
-			'parent_item_colon' => null,
-			'edit_item' => __( 'Edit Counties', 'contempo' ),
-			'update_item' => __( 'Update Counties', 'contempo' ),
-			'add_new_item' => __( 'Add New Counties', 'contempo' ),
-			'new_item_name' => __( 'New County Name', 'contempo' ),
-			'separate_items_with_commas' => __( 'Separate Counties with commas', 'contempo' ),
-			'add_or_remove_items' => __( 'Add or remove Counties', 'contempo' ),
-			'choose_from_most_used' => __( 'Choose from the most used Counties', 'contempo' )
-		);
-		register_taxonomy( 'county', 'listings', array(
-			'hierarchical' => false,
-			'labels' => $countylabels,
-			'show_ui' => true,
-			'query_var' => true,
-			'rewrite' => array( 'slug' => 'county' ),
-		));
+		// $countylabels = array(
+		// 	'name' => __( 'Condados', 'contempo' ),
+		// 	'singular_name' => __( 'Condado', 'contempo' ),
+		// 	'search_items' =>  __( 'Buscar condados', 'contempo' ),
+		// 	'popular_items' => __( 'Condados más usados', 'contempo' ),
+		// 	'all_items' => __( 'Todos los condados', 'contempo' ),
+		// 	'parent_item' => null,
+		// 	'parent_item_colon' => null,
+		// 	'edit_item' => __( 'Editar condado', 'contempo' ),
+		// 	'update_item' => __( 'Modificar condado', 'contempo' ),
+		// 	'add_new_item' => __( 'Añadir nuevo condado', 'contempo' ),
+		// 	'new_item_name' => __( 'Nuevo nombre de condado', 'contempo' ),
+		// 	'separate_items_with_commas' => __( 'Separar condado por comas', 'contempo' ),
+		// 	'add_or_remove_items' => __( 'Añadir o remover condados', 'contempo' ),
+		// 	'choose_from_most_used' => __( 'Escoger condado de los más usados', 'contempo' )
+		// );
+		// register_taxonomy( 'county', 'listings', array(
+		// 	'hierarchical' => false,
+		// 	'labels' => $countylabels,
+		// 	'show_ui' => true,
+		// 	'query_var' => true,
+		// 	'rewrite' => array( 'slug' => 'county' ),
+		// ));
 
 		if ( ! function_exists( 'county' ) ) {
 			function county() {
@@ -630,20 +630,20 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 		if($ct_community_neighborhood_or_district == 'neighborhood') {
 
 			$neighborhoodlabels = array(
-				'name' => __( 'Neighborhood', 'contempo' ),
-				'singular_name' => __( 'Neighborhood', 'contempo' ),
-				'search_items' =>  __( 'Search Neighborhoods', 'contempo' ),
-				'popular_items' => __( 'Popular Neighborhoods', 'contempo' ),
-				'all_items' => __( 'All Neighborhoods', 'contempo' ),
+				'name' => __( 'Condominios', 'contempo' ),
+				'singular_name' => __( 'Condominio', 'contempo' ),
+				'search_items' =>  __( 'Buscar condominios', 'contempo' ),
+				'popular_items' => __( 'Condominios populares', 'contempo' ),
+				'all_items' => __( 'Todos los condominios', 'contempo' ),
 				'parent_item' => null,
 				'parent_item_colon' => null,
-				'edit_item' => __( 'Edit Neighborhood', 'contempo' ),
-				'update_item' => __( 'Update Neighborhood', 'contempo' ),
-				'add_new_item' => __( 'Add New Neighborhood', 'contempo' ),
-				'new_item_name' => __( 'New Neighborhood', 'contempo' ),
-				'separate_items_with_commas' => __( 'Separate Neighborhoods with commas', 'contempo' ),
-				'add_or_remove_items' => __( 'Add or remove Neighborhoods', 'contempo' ),
-				'choose_from_most_used' => __( 'Choose from the most used Neighborhoods', 'contempo' )
+				'edit_item' => __( 'Editar condominio', 'contempo' ),
+				'update_item' => __( 'Modificar condominio', 'contempo' ),
+				'add_new_item' => __( 'Añadir nuevo condominio', 'contempo' ),
+				'new_item_name' => __( 'Nuevo nombre de condominio', 'contempo' ),
+				'separate_items_with_commas' => __( 'Separar condominios por comas', 'contempo' ),
+				'add_or_remove_items' => __( 'Añadir o remover condominios', 'contempo' ),
+				'choose_from_most_used' => __( 'Escoger condominio de los más usados', 'contempo' )
 			);
 			register_taxonomy( 'community', 'listings', array(
 				'hierarchical' => false,
