@@ -112,11 +112,14 @@
     span.customSelect { color: #000 !important; }
     span.customSelect { /* background sobreescribe flecha del selector (imágen de fondo) */
         position: relative;
-        padding-top: 8px;
+        padding-top: 7px;
         width: auto;
         background: #fff;
         overflow: hidden !important; /* NO REMOVER. Soluciona problema de scroll al lado derecho del site */
     }
+
+    form#advanced_search input[type="text"]::placeholder { transition: color 0.3s ease; overflow: visible; line-height: 14px; } /* 2 últimas reglas previenen problema de corte texto placeholder en safari */
+    form#advanced_search input[type="text"]:focus::placeholder { color: #666 !important; }
 
     #more-search-options span.customSelect { overflow: initial !important; } /* NO REMOVER. Previene descuadre de inputs en filtros avanzados de búsqueda */
     select.hasCustomSelect { position: relative; z-index: 2; }
@@ -130,7 +133,7 @@
     }
 
     form#advanced_search i.fa-search { display: none; }
-    form#advanced_search.header-search #ct_keyword { padding-left: 10px; }
+    form#advanced_search.header-search #ct_keyword { padding-left: 16px; padding-right: 16px; }
     form#advanced_search.header-search #submit { font-weight: 500 !important; }
 
     /* Responsive */
@@ -263,11 +266,9 @@
         font-size: 16px;
     }
 
-    section#main-content #listings-results .listing:hover {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
-        transition: all 0.3s ease;
-        -webkit-transition: all 0.3s ease;
-    }
+    section#main-content #listings-results .listing,
+    section#main-content #listings-results .listing:hover { transition: all 0.3s ease; -webkit-transition: all 0.3s ease; }
+    section#main-content #listings-results .listing:hover { box-shadow: 0 10px 20px rgba(0, 0, 0, .15); }
 
     section#main-content #listings-results .listing figure { overflow: hidden !important; }
     /* animación hover en caja de propiedad */
@@ -357,7 +358,8 @@
 
     section#main-content #listing-contact input:focus,
     section#main-content #listing-contact textarea:focus { background: #fff; }
-
+    
+    section#main-content #listing-contact input::placeholder { overflow: visible; line-height: 14px; } /* previene corte texto placeholder en safari */
     section#main-content #listing-contact input::placeholder,
     section#main-content #listing-contact textarea::placeholder {
         color: #000 !important;
@@ -371,7 +373,7 @@
     section#main-content #listing-contact div.col.span_12:first-child { display: none !important; } /* *Oculta asunto del formulario de contacto de detalle de propiedad. Podría provocar problema al tratar de enviarse! */
 
     section#main-content #listing-contact input:focus::placeholder,
-    section#main-content #listing-contact textarea:focus::placeholder { color: #555 !important; }
+    section#main-content #listing-contact textarea:focus::placeholder { color: #666 !important; }
     section#main-content #listing-contact .main-agent ul li { border-bottom: none; }
     section#main-content #listing-contact .main-agent ul li i.fa { color: #baa360; }
     section#main-content #listing-contact .main-agent ul li a {
@@ -392,14 +394,13 @@
     
     #sidebar #sidebar-contact-buttons { margin: 12px; }
     #sidebar #sidebar-contact-buttons input:first-child { margin-bottom: 20px; }
+    #sidebar #sidebar-contact-buttons input { /*background: #000 !important;*/ } /* o sólo comentar */
 
     #sidebar .grid-listing-info header h5 a { font-size: 17px; }
     #sidebar .listing { margin-bottom: 30px !important; }
-    #sidebar .listing:hover {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
-        transition: all 0.3s ease;
-        -webkit-transition: all 0.3s ease;
-    }
+    #sidebar .listing,
+    #sidebar .listing:hover { transition: all 0.3s ease; -webkit-transition: all 0.3s ease; }
+    #sidebar .listing:hover { box-shadow: 0 10px 20px rgba(0, 0, 0, .15); }
 
     #sidebar .listing .snipe.status { padding: 12px 9px; }
     #sidebar .listing .status span { font-size: 10px; padding: 3px 5px; }
@@ -450,8 +451,9 @@
     aside#ct_contactinfo-1 ul.contact-info li { font-family: Brandon Grotesque; font-size: 16px; }
     
     #contactform input,
-    #contactform textarea { /* estilos campos de texto form al escribir */ }
-
+    #contactform textarea { transition: all 0.3s ease; }
+    
+    #contactform input::placeholder { overflow: visible; line-height: 14px; } /* previene corte texto placeholder en safari */
     #contactform input::placeholder,
     #contactform textarea::placeholder {
         color: #000 !important;
@@ -462,7 +464,7 @@
     }
 
     #contactform input:focus::placeholder,
-    #contactform textarea:focus::placeholder { color: #555 !important; }
+    #contactform textarea:focus::placeholder { color: #999 !important; }
     #contactform #submit { font-family: Brandon Grotesque; font-size: 14px; font-weight: 500 !important; }
 
 /* CONTENT ----------------------- */
