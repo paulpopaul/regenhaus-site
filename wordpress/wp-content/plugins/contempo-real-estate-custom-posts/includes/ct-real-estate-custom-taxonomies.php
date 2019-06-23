@@ -822,19 +822,19 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 		// Additional Features
 		$addfeatlabels = array(
 			'name' => __( 'Additional Features', 'contempo' ),
-			'singular_name' => __( 'Additional Feature', 'contempo' ),
-			'search_items' =>  __( 'Search Additional Features', 'contempo' ),
-			'popular_items' => __( 'Popular Additional Features', 'contempo' ),
-			'all_items' => __( 'All Additional Features', 'contempo' ),
+			'singular_name' => __( 'Característica adicional', 'contempo' ),
+			'search_items' =>  __( 'Buscar característica adicional', 'contempo' ),
+			'popular_items' => __( 'Características adicionales más usadas', 'contempo' ),
+			'all_items' => __( 'Todas las características adicionales', 'contempo' ),
 			'parent_item' => null,
 			'parent_item_colon' => null,
-			'edit_item' => __( 'Edit Additional Features', 'contempo' ),
-			'update_item' => __( 'Update Additional Feature', 'contempo' ),
-			'add_new_item' => __( 'Add New Additional Feature', 'contempo' ),
-			'new_item_name' => __( 'New Additional Feature', 'contempo' ),
-			'separate_items_with_commas' => __( 'Separate Additional Features with commas', 'contempo' ),
-			'add_or_remove_items' => __( 'Add or remove Additional Features', 'contempo' ),
-			'choose_from_most_used' => __( 'Choose from the most used Additional Features', 'contempo' )
+			'edit_item' => __( 'Editar característica adicional', 'contempo' ),
+			'update_item' => __( 'Modificar característica adicional', 'contempo' ),
+			'add_new_item' => __( 'Añadir nueva característica adicional', 'contempo' ),
+			'new_item_name' => __( 'Nueva característica adicional', 'contempo' ),
+			'separate_items_with_commas' => __( 'Separar características adicionales con comas', 'contempo' ),
+			'add_or_remove_items' => __( 'Añadir o remover características adicionales', 'contempo' ),
+			'choose_from_most_used' => __( 'Selecccionar características adicionales más usadas', 'contempo' )
 		);
 		register_taxonomy( 'additional_features', 'listings', array(
 			'hierarchical' => false,
@@ -858,7 +858,7 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 				global $post;
 				$terms = get_the_terms($post->ID, 'additional_features');
 				if ($terms) {
-					echo '<h4 class="border-bottom marB20">' . __('Property Features', 'contempo') . '</h4>';
+					echo '<h4 class="border-bottom marB20">' . __('Additional Features', 'contempo') . '</h4>';
 					echo '<ul class="propfeatures col span_6">';
 					$count = 0;
 					foreach ($terms as $taxindex => $taxitem) {

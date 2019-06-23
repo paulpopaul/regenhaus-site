@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-06 21:13+0000\n"
 "POT-Revision-Date: Wed Jul 27 2016 08:19:42 GMT-0700 (PDT)\n"
-"PO-Revision-Date: 2018-06-07 01:11+0000\n"
+"PO-Revision-Date: 2019-06-23 09:19-0400\n"
 "Last-Translator: pericon <cpericon@gmail.com>\n"
 "Language-Team: Español\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
@@ -18,7 +18,8 @@ msgstr ""
 "esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Loco https://localise.biz/\n"
+"X-Generator: Poedit 2.2.3\n"
+"Language: es_ES\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: includes\n"
 "X-Poedit-SearchPath-2: layouts\n"
@@ -64,7 +65,6 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-5: fonts\n"
 "X-Poedit-SearchPathExcluded-6: images\n"
 "X-Poedit-SearchPathExcluded-7: admin/images\n"
-"Language: es_ES"
 
 #: archive.php:77
 msgid "No posts were found which match your search criteria"
@@ -246,12 +246,9 @@ msgstr "Preguntas Generales"
 #: single-brokerage.php:82 single-brokerage.php:274 archive-brokerage.php:112
 #: template-favorite-listings.php:116 author.php:75 template-brokerages.php:127
 #: template-agents.php:135 template-edit-profile.php:129
-#: includes/agent-contact-modal.php:25 includes/agent-contact-modal.php:25
 #: includes/agent-contact-modal.php:25
 #: includes/single-listing-multi-floorplan.php:27
 #: includes/single-listing-home.php:276 includes/single-listing-contact.php:216
-#: includes/widgets/ct-widget-listingscontact.php:34
-#: includes/widgets/ct-widget-listingscontact.php:34
 #: includes/widgets/ct-widget-listingscontact.php:34
 msgid "Name"
 msgstr "Nombre"
@@ -261,7 +258,6 @@ msgstr "Nombre"
 #: template-favorite-listings.php:118 author.php:77 author.php:144
 #: template-brokerages.php:129 template-brokerages.php:189
 #: template-agents.php:137 template-agents.php:205
-#: includes/agent-contact-modal.php:27 includes/agent-contact-modal.php:27
 #: includes/agent-contact-modal.php:27 includes/single-listing-home.php:255
 #: includes/single-listing-home.php:278 includes/single-listing-home.php:339
 #: includes/single-listing-contact.php:88
@@ -270,29 +266,23 @@ msgstr "Nombre"
 #: includes/single-listing-contact.php:283
 #: includes/widgets/ct-widget-agentinfo.php:79
 #: includes/widgets/ct-widget-listingscontact.php:36
-#: includes/widgets/ct-widget-listingscontact.php:36
-#: includes/widgets/ct-widget-listingscontact.php:36
 msgid "Email"
 msgstr "Email"
 
 #: single-brokerage.php:86 single-brokerage.php:278 archive-brokerage.php:116
 #: template-favorite-listings.php:120 author.php:79 template-contact.php:72
 #: template-brokerages.php:131 template-agents.php:139
-#: includes/agent-contact-modal.php:29 includes/agent-contact-modal.php:29
 #: includes/agent-contact-modal.php:29 includes/single-listing-home.php:280
 #: includes/single-listing-contact.php:220
-#: includes/widgets/ct-widget-listingscontact.php:38
-#: includes/widgets/ct-widget-listingscontact.php:38
 #: includes/widgets/ct-widget-listingscontact.php:38
 msgid "Phone"
 msgstr "Teléfono"
 
 #: single-brokerage.php:94 single-brokerage.php:286 archive-brokerage.php:124
 #: template-favorite-listings.php:127 author.php:87 template-contact.php:83
-#: template-contact.php:83 template-submit-listing.php:691
-#: template-brokerages.php:137 template-agents.php:147
-#: includes/agent-contact-modal.php:38 includes/single-listing-home.php:288
-#: includes/single-listing-contact.php:228
+#: template-submit-listing.php:691 template-brokerages.php:137
+#: template-agents.php:147 includes/agent-contact-modal.php:38
+#: includes/single-listing-home.php:288 includes/single-listing-contact.php:228
 #: includes/widgets/ct-widget-listingscontact.php:47
 msgid "Submit"
 msgstr "Enviar"
@@ -568,7 +558,7 @@ msgstr "Ciudad"
 #: template-edit-listing.php:716 includes/advanced-search.php:60
 #: includes/widgets/ct-widget-listingssearch.php:69
 msgid "Area"
-msgstr "Zona"
+msgstr "Metros cuadrados construídos"
 
 #: template-advanced-search.php:79 template-submit-listing.php:616
 #: template-edit-listing.php:718 includes/advanced-search.php:62
@@ -606,7 +596,7 @@ msgstr "País"
 #: includes/header-advanced-search.php:333
 #: includes/widgets/ct-widget-listingssearch.php:127
 msgid "Beds"
-msgstr "Camas"
+msgstr "Dormitorios"
 
 #: template-advanced-search.php:110 template-submit-listing.php:472
 #: template-edit-listing.php:598 includes/sub-listings.php:103
@@ -669,7 +659,7 @@ msgstr "Precio desde"
 #: includes/widgets/ct-widget-listingssearch.php:191
 #: includes/widgets/ct-widget-listingssearch.php:192
 msgid "Price To"
-msgstr "Precio a"
+msgstr "Precio hasta"
 
 #: template-advanced-search.php:145 template-advanced-search.php:146
 #: includes/advanced-search.php:192 includes/header-advanced-search.php:152
@@ -897,7 +887,7 @@ msgstr "* Los tipos de archivos admitidos son PDF, Word, Excel y PowerPoint."
 #: includes/sub-listings.php:197
 #: includes/widgets/ct-widget-agentsotherlistings.php:235
 msgid "Lot Size"
-msgstr "Tamaño del lote"
+msgstr "Metros cuadrados terreno"
 
 #: template-submit-listing.php:492 template-edit-listing.php:618
 msgid "Video URL"
@@ -1487,7 +1477,7 @@ msgstr "Buscando..."
 #: includes/sub-listings.php:89
 #: includes/widgets/ct-widget-agentsotherlistings.php:127
 msgid "Bed"
-msgstr "Cama"
+msgstr "Dormitorios"
 
 #: includes/sub-listings.php:123
 #: includes/widgets/ct-widget-agentsotherlistings.php:161
@@ -1550,7 +1540,7 @@ msgstr "Archivos adjuntos"
 #: includes/single-listing-sub-navigation.php:117
 #: includes/single-listing-video.php:16
 msgid "Video"
-msgstr "Vídeo"
+msgstr "Video"
 
 #: includes/single-listing-sub-navigation.php:127
 msgid "Tour"
@@ -2195,19 +2185,19 @@ msgstr "Soporte para %s?"
 #: admin/getting-started/getting-started.php:402
 #, php-format
 msgid ""
-"If you've read through the <a href=\"%1$s\" target=\"_blank\">"
-"documentation</a> and still have questions or are experiencing issues, I'm "
-"happy to help! Simply <a href=\"%2$s\"  target=\"_blank\" title=\"Open a "
-"live chat\">open a live chat</a> or <a href=\"%3$s\" target=\"_blank\">leave "
-"a comment</a> on the item page and I'll personally get back to you, thanks "
-"in advance for your patience."
+"If you've read through the <a href=\"%1$s\" target=\"_blank\">documentation</"
+"a> and still have questions or are experiencing issues, I'm happy to help! "
+"Simply <a href=\"%2$s\"  target=\"_blank\" title=\"Open a live chat\">open a "
+"live chat</a> or <a href=\"%3$s\" target=\"_blank\">leave a comment</a> on "
+"the item page and I'll personally get back to you, thanks in advance for "
+"your patience."
 msgstr ""
 "Si ha leído la <a href=\"%1$s\" target=\"_blank\">documentación</a> y "
-"todavía tiene preguntas o problemas, ¡me complace ayudarle! Simply <a "
-"href=\"%2$s\"  target=\"_blank\" title=\"Open a live chat\">Simplemente abra "
-"un chat en vivo </a> o <a href=\"%3$s\" target=\"_blank\">deje un "
-"comentario</a> oen la página del artículo y personalmente me pondré en "
-"contacto con usted, gracias de antemano por su paciencia."
+"todavía tiene preguntas o problemas, ¡me complace ayudarle! Simply <a href="
+"\"%2$s\"  target=\"_blank\" title=\"Open a live chat\">Simplemente abra un "
+"chat en vivo </a> o <a href=\"%3$s\" target=\"_blank\">deje un comentario</"
+"a> oen la página del artículo y personalmente me pondré en contacto con "
+"usted, gracias de antemano por su paciencia."
 
 #: admin/getting-started/getting-started.php:405
 #, php-format
@@ -2246,8 +2236,8 @@ msgid ""
 msgstr ""
 "Tenga en cuenta que las solicitudes de soporte no se responderán por correo "
 "electrónico, solo a través de mi <a href=\"%1$s\" target=\"_blank\">chat en "
-"vivo</a> o dentro de los comentarios del <a href=\"%2$s\" target=\"_blank\">"
-"artículo.\n"
+"vivo</a> o dentro de los comentarios del <a href=\"%2$s\" target=\"_blank"
+"\">artículo.\n"
 "Recomendaciones de alojamiento</a>."
 
 #: admin/getting-started/getting-started.php:478

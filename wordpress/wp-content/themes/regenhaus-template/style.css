@@ -276,7 +276,7 @@
         section#main-content #listings-results .listing:hover a.listing-featured-image img { transform: scale(1.1); }
     /* animación hover en caja de propiedad */
     section#main-content .listing { margin-bottom: 3%; }
-    section#main-content .listing ul.listing-actions,
+    section#main-content .listing ul.listing-actions, /* oculta acciones, comparar */
     section#main-content .listing span.prop-type-icon { display: none; }
     section#main-content .listing .status span { background: #000; }
     section#main-content #listings-results .back-to {
@@ -348,7 +348,7 @@
         color: #000;
     }
 
-    section#main-content .creation-date { display: none; } /* día de creación al fondo de detalle de propiedad */
+    section#main-content .creation-date {  } /* día de creación al fondo de detalle de propiedad */
     section#main-content #listing-contact { background-color: #EFEFEF !important; }
     section#main-content #listing-contact h4.border-bottom { border-bottom: none; margin-bottom: 15px !important; }
     section#main-content #listing-contact #submit { font-size: 12px; font-family: Lato; margin-top: 8px; }
@@ -387,6 +387,8 @@
     }
 
     section#main-content #listing-contact-bottom-space img { width: 113px; height: 76px; padding: 8px; margin: 0 auto; }
+    section#main-content #listing-features ul li { font-family: Lato; font-size: 12px; color: #000; }
+    section#main-content #listing-features ul li i.fa { color: #baa360; }
     
     #sidebar #sidebar-contact-buttons { margin: 12px; }
     #sidebar #sidebar-contact-buttons input:first-child { margin-bottom: 20px; }

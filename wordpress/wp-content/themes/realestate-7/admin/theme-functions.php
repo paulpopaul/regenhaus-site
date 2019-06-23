@@ -3764,7 +3764,7 @@ if(!function_exists('ct_propinfo')) {
 		    			ct_sqftsqm();
 		    		echo '</span>';
 		    		echo '<span class="right">';
-		                 echo get_post_meta($post->ID, "_ct_sqft", true);
+		                 echo get_post_meta($post->ID, "_ct_sqft", true) . ' m²';
 		            echo '</span>';
 		        echo '</li>';
 		    } else {
@@ -3811,11 +3811,32 @@ if(!function_exists('ct_propinfo')) {
 		    		}
 	    		echo '</span>';
 	    		echo '<span class="right">';
-	                 echo get_post_meta($post->ID, "_ct_lotsize", true) . ' ';
-	                 ct_acres();
+	                 echo get_post_meta($post->ID, "_ct_lotsize", true) . ' m²';
+	                 //ct_acres();
 	            echo '</span>';
 	            
 	        if((get_post_meta($post->ID, "_ct_lotsize", true))) {
+	            echo '</li>';
+	        }
+	    }
+
+	    # PARKING ADDED
+	    if(get_post_meta($post->ID, "_ct_parking", true)) {
+	        if(get_post_meta($post->ID, "_ct_parking", true)) {
+	            echo '<li class="row parking">';
+	        }
+	            echo '<span class="muted left">';
+	    			if($ct_use_propinfo_icons != 'icons') {
+		    			_e('Estacionamiento', 'contempo');
+		    		} else {
+		    			echo '<i class="fa fa-arrows-alt"></i>';
+		    		}
+	    		echo '</span>';
+	    		echo '<span class="right">';
+	                 echo get_post_meta($post->ID, "_ct_parking", true) . ' ';
+	            echo '</span>';
+	            
+	        if((get_post_meta($post->ID, "_ct_parking", true))) {
 	            echo '</li>';
 	        }
 	    }

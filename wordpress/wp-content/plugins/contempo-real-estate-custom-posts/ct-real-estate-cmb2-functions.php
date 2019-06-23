@@ -137,16 +137,16 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 			'priority' => 'high',
 			'tabs'      => array(
 				'information' => array(
-					'label' => __( 'Information', 'contempo' ),
+					'label' => __( 'Información', 'contempo' ),
 					'icon'  => 'dashicons-admin-home', // Dashicon
 					//'show_on_cb' => 'yourprefix_show_if_front_page',
 				),
 				'sliderimages'  => array(
-					'label' => __( 'Slider Images', 'contempo' ),
+					'label' => __( 'Set de imágenes', 'contempo' ),
 					'icon'  => 'dashicons-format-gallery', // Dashicon
 				),
 				'filesdocuments'  => array(
-					'label' => __( 'Files & Documents', 'contempo' ),
+					'label' => __( 'Documentos adjuntos', 'contempo' ),
 					'icon'  => 'dashicons-media-text', // Dashicon
 				),
 				'video'  => array(
@@ -154,7 +154,7 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 					'icon'  => 'dashicons-format-video', // Dashicon
 				),
 				'virtualtour'  => array(
-					'label' => __( 'Virtual Tour', 'contempo' ),
+					'label' => __( 'Tour Virtual', 'contempo' ),
 					'icon'  => 'dashicons-format-video', // Dashicon
 				),
 				'brokerage'  => array(
@@ -162,11 +162,11 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 					'icon'  => 'dashicons-groups', // Dashicon
 				),
 				'energyefficency'  => array(
-					'label' => __( 'Energy Efficiency', 'contempo' ),
+					'label' => __( 'Eficiencia de Energía', 'contempo' ),
 					'icon'  => 'dashicons-lightbulb', // Dashicon
 				),
 				'homepageorder'  => array(
-					'label' => __( 'Home Featured Order', 'contempo' ),
+					'label' => __( 'Orden de propiedad destacada', 'contempo' ),
 					'icon'  => 'dashicons-admin-post', // Dashicon
 				),
 				/*'paidsubinfo'  => array(
@@ -182,8 +182,8 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 		/*-----------------------------------------------------------------------------------*/
 
 		$ct_post_cmb->add_field( array(
-		    'name' => __('Listing Alternate Title', 'contempo'),
-			'desc' => __('Enter the listing alternate title here replaces street address, e.g. Downtown Penthouse.', 'contempo'),
+		    'name' => __('Título alternativo para la propiedad', 'contempo'),
+			'desc' => __('Ingrese un título alternativo que reemplace al principal de la propiedad, ej. "La casa blanca"', 'contempo'),
 			'id' => $prefix . 'listing_alt_title',
 			'tab'  => 'information',
 	        'render_row_cb' => array('CMB2_Tabs', 'tabs_render_row_cb'),
@@ -191,8 +191,8 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 		) );
 
 		$ct_post_cmb->add_field( array(
-		    'name' => __('Price Prefix Text', 'contempo'),
-			'desc' => __('Enter the price prefix text here, e.g. (From, Call for price, Price on ask).', 'contempo'),
+		    'name' => __('Prefijo precio', 'contempo'),
+			'desc' => __('Ingresar prefijo de precio en caso de ser necesario, ej. (Desde, Aprox, -20% dcto, etc).', 'contempo'),
 			'id' => $prefix . 'price_prefix',
 			'tab'  => 'information',
 	        'render_row_cb' => array('CMB2_Tabs', 'tabs_render_row_cb'),
@@ -201,7 +201,7 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 
 		$ct_post_cmb->add_field( array(
 		    'name' => __('Price', 'contempo'),
-			'desc' => __('Enter the price here, without commas or seperators. If empty no price will be shown.', 'contempo'),
+			'desc' => __('Ingrese precio de la propiedad', 'contempo'),
 			'id' => $prefix . 'price',
 			'tab'  => 'information',
 	        'render_row_cb' => array('CMB2_Tabs', 'tabs_render_row_cb'),
@@ -209,8 +209,8 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 		) );
 
 		$ct_post_cmb->add_field( array(
-		    'name' => __('Price Postfix Text', 'contempo'),
-			'desc' => __('Enter the price postfix text here, e.g. (/month, /week, /per night).', 'contempo'),
+		    'name' => __('Postfijo precio', 'contempo'),
+			'desc' => __('Ingresar postfijo de precio en caso de ser necesario, ej. (/por mes, /anual, /por noche, pch, USD, etc)', 'contempo'),
 			'id' => $prefix . 'price_postfix',
 			'tab'  => 'information',
 	        'render_row_cb' => array('CMB2_Tabs', 'tabs_render_row_cb'),
@@ -218,8 +218,8 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 		) );
 
 		$ct_post_cmb->add_field( array(
-		    'name' => __('Sq Ft', 'contempo'),
-			'desc' => __('Enter the sq ft or sq meters here.', 'contempo'),
+		    'name' => __('Area', 'contempo'),
+			'desc' => __('Ingrese cantidad de metros cuadrados construídos', 'contempo'),
 			'id' => $prefix . 'sqft',
 			'tab'  => 'information',
 	        'render_row_cb' => array('CMB2_Tabs', 'tabs_render_row_cb'),
@@ -228,7 +228,7 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 
 		$ct_post_cmb->add_field( array(
 		    'name' => __('Lot Size', 'contempo'),
-			'desc' => __('Enter the lot size here.', 'contempo'),
+			'desc' => __('Ingrese cantidad de metros cuadrados del terreno', 'contempo'),
 			'id' => $prefix . 'lotsize',
 			'tab'  => 'information',
 	        'render_row_cb' => array('CMB2_Tabs', 'tabs_render_row_cb'),
@@ -245,8 +245,8 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 		) );
 
 		$ct_post_cmb->add_field( array(
-		    'name' => __('Parking', 'contempo'),
-			'desc' => __('Enter parking here, e.g. (Carport, 2 Car Garage, Gated Parking Garage)', 'contempo'),
+		    'name' => __('Estacionamiento', 'contempo'),
+			'desc' => __('Ingresar descripción del estacionamiento, ej. (Sí, 2 vehículos, Garage cerrado, etc)', 'contempo'),
 			'id' => $prefix . 'parking',
 			'tab'  => 'information',
 	        'render_row_cb' => array('CMB2_Tabs', 'tabs_render_row_cb'),
@@ -255,7 +255,7 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 
 		$ct_post_cmb->add_field( array(
 		    'name' => __('Property ID', 'contempo'),
-			'desc' => __('Enter the property ID here, e.g. 5648973', 'contempo'),
+			'desc' => __('Identificador único de la propiedad, ej. 5648973', 'contempo'),
 			'id' => $prefix . 'mls',
 			'tab'  => 'information',
 	        'render_row_cb' => array('CMB2_Tabs', 'tabs_render_row_cb'),
@@ -263,8 +263,8 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 		) );
 
 		$ct_post_cmb->add_field( array(
-		    'name' => __('Latitude &amp; Longitude', 'contempo'),
-			'desc' => __('<strong>OPTIONAL:</strong> Only use the latitude and longitude if the regular full address can\'t be found. (ex: 37.4419, -122.1419)', 'contempo'),
+		    'name' => __('Latitud y Longitud', 'contempo'),
+			'desc' => __('<strong>OPCIONAL:</strong> Usar latitud y longitud sólo si la dirección en forma de texto no puede ser encontrada. (ej: 37.4419, -122.1419)', 'contempo'),
 			'id' => $prefix . 'latlng',
 			'tab'  => 'information',
 	        'render_row_cb' => array('CMB2_Tabs', 'tabs_render_row_cb'),
@@ -272,8 +272,8 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 		) );
 
 		$ct_post_cmb->add_field( array(
-		    'name' => __('Owner/Agent Notes', 'contempo'),
-			'desc' => __('Owner/Agent Notes (*not visible on front end).', 'contempo'),
+		    'name' => __('Notas', 'contempo'),
+			'desc' => __('Notas personales del agente (* no serán visibles en la página).', 'contempo'),
 			'id' => $prefix . 'ownernotes',
 			'tab'  => 'information',
 	        'render_row_cb' => array('CMB2_Tabs', 'tabs_render_row_cb'),

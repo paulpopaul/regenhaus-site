@@ -145,7 +145,7 @@ $ct_home_adv_search_fields = isset( $ct_options['ct_home_adv_search_fields']['en
 			        <?php
 					break;
 
-			        // Sq Ft From            
+			        // Sq Ft From (Metros cuadrados construídos)     
 			        case 'header_sqft_from' : ?>
 			            <div class="col span_3">
 			                <label for="ct_sqft_from"><?php ct_sqftsqm(); ?> <?php _e('From', 'contempo'); ?></label>
@@ -154,7 +154,7 @@ $ct_home_adv_search_fields = isset( $ct_options['ct_home_adv_search_fields']['en
 			        <?php
 			        break;
 			        
-			        // Sq Ft To            
+			        // Sq Ft To (Metros cuadrados construídos)
 			        case 'header_sqft_to' : ?>
 			            <div class="col span_2">
 			                <label for="ct_sqft_to"><?php ct_sqftsqm(); ?> <?php _e('To', 'contempo'); ?></label>
@@ -163,7 +163,7 @@ $ct_home_adv_search_fields = isset( $ct_options['ct_home_adv_search_fields']['en
 			        <?php
 			        break;
 
-			        // Lot Size From            
+			        // Lot Size From (Metros cuadrados construídos) 
 			        case 'header_lotsize_from' : ?>
 			            <div class="col span_2">
 			                <label for="ct_lotsize_from"><?php _e('Lot Size From', 'contempo'); ?> <?php ct_sqftsqm(); ?></label>
@@ -172,7 +172,7 @@ $ct_home_adv_search_fields = isset( $ct_options['ct_home_adv_search_fields']['en
 			        <?php
 			        break;
 			        
-			        // Lot Size To            
+			        // Lot Size To (Metros cuadrados construídos) 
 			        case 'header_lotsize_to' : ?>
 			            <div class="col span_2">
 			                <label for="ct_lotsize_to"><?php _e('Lot Size To', 'contempo'); ?> <?php ct_sqftsqm(); ?></label>
@@ -403,38 +403,38 @@ $ct_home_adv_search_fields = isset( $ct_options['ct_home_adv_search_fields']['en
 			        <?php
 					break;
 
-			        // Sq Ft From            
+			        // Sq Ft From (Metros cuadrados construídos)
 			        case 'sqft_from' : ?>
 			            <div class="col span_3">
 			                <label for="ct_sqft_from"><?php ct_sqftsqm(); ?> <?php _e('From', 'contempo'); ?></label>
-			                <input type="text" id="ct_sqft_from" class="number" name="ct_sqft_from" size="8" placeholder="<?php _e('Size From', 'contempo'); ?> -<?php ct_sqftsqm(); ?>" />
+			                <input type="text" id="ct_sqft_from" class="number" name="ct_sqft_from" size="8" placeholder="<?php _e('m² construídos desde', 'contempo'); ?>" />
 			            </div>
 			        <?php
 			        break;
 			        
-			        // Sq Ft To            
+			        // Sq Ft To (Metros cuadrados construídos)  
 			        case 'sqft_to' : ?>
 			            <div class="col span_3">
 			                <label for="ct_sqft_to"><?php ct_sqftsqm(); ?> <?php _e('To', 'contempo'); ?></label>
-			                <input type="text" id="ct_sqft_to" class="number" name="ct_sqft_to" size="8" placeholder="<?php _e('Size To', 'contempo'); ?> -<?php ct_sqftsqm(); ?>" />
+			                <input type="text" id="ct_sqft_to" class="number" name="ct_sqft_to" size="8" placeholder="<?php _e('m² construídos hasta', 'contempo'); ?>" />
 			            </div>
 			        <?php
 			        break;
 
-			        // Lot Size From            
+			        // Lot Size From (Metros cuadrados construídos)
 			        case 'lotsize_from' : ?>
 			            <div class="col span_3">
 			                <label for="ct_lotsize_from"><?php _e('Lot Size From', 'contempo'); ?> <?php ct_sqftsqm(); ?></label>
-			                <input type="text" id="ct_lotsize_from" class="number" name="ct_lotsize_from" size="8" placeholder="<?php _e('Lot Size From', 'contempo'); ?> -<?php ct_sqftsqm(); ?>" />
+			                <input type="text" id="ct_lotsize_from" class="number" name="ct_lotsize_from" size="8" placeholder="<?php _e('m² terreno desde', 'contempo'); ?>" />
 			            </div>
 			        <?php
 			        break;
 			        
-			        // Lot Size To            
+			        // Lot Size To (Metros cuadrados construídos)
 			        case 'lotsize_to' : ?>
 			            <div class="col span_3">
 			                <label for="ct_lotsize_to"><?php _e('Lot Size To', 'contempo'); ?> <?php ct_sqftsqm(); ?></label>
-			                <input type="text" id="ct_lotsize_to" class="number" name="ct_lotsize_to" size="8" placeholder="<?php _e('Lot Size To', 'contempo'); ?> -<?php ct_sqftsqm(); ?>" />
+			                <input type="text" id="ct_lotsize_to" class="number" name="ct_lotsize_to" size="8" placeholder="<?php _e('m² terreno hasta', 'contempo'); ?>" />
 			            </div>
 			        <?php
 			        break;
