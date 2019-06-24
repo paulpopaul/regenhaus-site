@@ -58,7 +58,13 @@ class ct_Social extends WP_Widget {
                 <li class="dribbble"><a href="<?php echo esc_url($dribbble); ?>" target="<?php echo esc_html($links); ?>"><i class="fa fa-dribbble"></i></a></li>
             <?php } ?>
             <?php if($facebook) { ?>
-                <li class="facebook"><a href="<?php echo esc_url($facebook); ?>" target="<?php echo esc_html($links); ?>"><i class="fa fa-facebook"></i></a></li>
+                <li class=""><a href="<?php echo esc_url($facebook); ?>" target="<?php echo esc_html($links); ?>"><i class="fab fa-facebook-f"></i></a><a href="<?php echo esc_url($facebook); ?>" target="<?php echo esc_html($links); ?>">Facebook</a></li>
+            <?php } ?>
+            <?php if($instagram) { ?>
+                <li class=""><a href="<?php echo esc_url($instagram); ?>" target="<?php echo esc_html($links); ?>"><i class="fab fa-instagram"></i></a><a href="<?php echo esc_url($instagram); ?>" target="<?php echo esc_html($links); ?>">Instagram</a></li>
+            <?php } ?>
+            <?php if($twitter) { ?>
+                <li class=""><a href="<?php echo esc_url($twitter); ?>" target="<?php echo esc_html($links); ?>"><i class="fab fa-twitter"></i></a><a href="<?php echo esc_url($twitter); ?>" target="<?php echo esc_html($links); ?>">Twitter</a></li>
             <?php } ?>
             <?php if($flickr) { ?>
                 <li class="flickr"><a href="<?php echo esc_url($flickr); ?>" target="<?php echo esc_html($links); ?>"><i class="fa fa-flickr"></i></a></li>
@@ -72,11 +78,9 @@ class ct_Social extends WP_Widget {
             <?php if($googleplus) { ?>
                 <li class="gplus"><a href="<?php echo esc_url($googleplus); ?>" target="<?php echo esc_html($links); ?>"><i class="fa fa-google-plus"></i></a></li>
             <?php } ?>
-            <?php if($instagram) { ?>
-                <li class="instagram"><a href="<?php echo esc_url($instagram); ?>" target="<?php echo esc_html($links); ?>"><i class="fa fa-instagram"></i></a></li>
-            <?php } ?>
+
             <?php if($linkedin) { ?>
-                <li class="linkedin"><a href="<?php echo esc_url($linkedin); ?>" target="<?php echo esc_html($links); ?>"><i class="fa fa-linkedin"></i></a></li>
+                <li class=""><a href="<?php echo esc_url($linkedin); ?>" target="<?php echo esc_html($links); ?>"><i class="fab fa-linkedin-in"></i></a><a href="<?php echo esc_url($linkedin); ?>" target="<?php echo esc_html($links); ?>">Linkedin</a></li>
             <?php } ?>
             <?php if($medium) { ?>
                 <li class="medium"><a href="<?php echo esc_url($medium); ?>" target="<?php echo esc_html($links); ?>"><i class="fa fa-medium"></i></a></li>
@@ -87,9 +91,7 @@ class ct_Social extends WP_Widget {
             <?php if($skype) { ?>
                 <li class="skype"><a href="<?php echo esc_url($skype); ?>" target="<?php echo esc_html($links); ?>"><i class="fa fa-skype"></i></a></li>
             <?php } ?>
-            <?php if($twitter) { ?>
-                <li class="twitter"><a href="<?php echo esc_url($twitter); ?>" target="<?php echo esc_html($links); ?>"><i class="fa fa-twitter"></i></a></li>
-            <?php } ?>
+
             <?php if($youtube) { ?>
                 <li class="youtube"><a href="<?php echo esc_url($youtube); ?>" target="<?php echo esc_html($links); ?>"><i class="fa fa-youtube"></i></a></li>
             <?php } ?>

@@ -473,7 +473,7 @@
 
 /* FOOTER ----------------------- */
 
-    #pre-footer { background: #baa360; height: 112px; padding: 40px 0 40px 0; }
+    #pre-footer { background: #baa360; height: 112px; padding: 40px 0 85px 0; }
     #pre-footer .pre-footer-logo,
     #pre-footer .pre-footer-middletext,
     #pre-footer .pre-footer-button { float: left; text-align: right; }
@@ -498,6 +498,14 @@
 
     /*#pre-footer .pre-footer-button button:hover { background: #fff; color: #baa360; }*/
 
+
+    #footer-logo { width: 260px;}
+
+    #footer-widgets #ct_social-2 li {display: block; text-align: initial; font-size: 14px}
+    #footer-widgets #ct_social-2 li a {padding: 0 0 0 0;}
+    #footer-widgets #ct_social-2 li a + a {color: #848484 !important; font-size:16px; font-family: "Brandon Grotesque"}
+    #footer-widgets #ct_social-2 li a:hover {color: #baa360 !important;}
+
     #footer-widgets { color: #848484; }
     #footer-widgets aside { margin-bottom: 0; }
     #footer-widgets .container { padding-top: 90px; padding-bottom: 90px; }
@@ -520,8 +528,7 @@
 
     #footer-widgets ul#menu-footer { padding-left: 0; }
     #footer-widgets ul#menu-footer li { border-bottom: none; padding-left: 0; }
-    #footer-widgets ul#menu-footer li a { text-transform: uppercase; }
-    #footer-widgets ul#menu-footer li a::before { content: "> "; }
+    #footer-widgets ul#menu-footer li a { text-transform: capitalize; }
     /* info */
     #footer-widgets ul.contact-info li i.fa { display: none; } /* oculta iconos de contacto datos en footer */
     /* social */
@@ -530,6 +537,11 @@
     #footer-widgets ul.contact-social a:hover { background: none; color: #848484 !important; }
     #footer-widgets ul.contact-social li:first-child a { padding-left: 0; }
     #footer-widgets #ct_contactinfo-2 .company-phone .fab { display: none; }
+    #footer-widgets aside.span_3{width: 22%; padding-left: 86px;}
+    #footer-widgets aside:first-child.span_3{width: 28%; padding-left:0;}
+    #footer-widgets aside:nth-child(3).span_3{padding-left:100px;}
+
+
 
     footer.footer { border-top: 1px solid #333; }
     footer.footer .container { padding-top: 20px; padding-bottom: 20px; }
