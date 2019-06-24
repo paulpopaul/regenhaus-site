@@ -235,14 +235,14 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 			'type' => 'text_medium'
 		) );
 
-		$ct_post_cmb->add_field( array(
-		    'name' => __('Pets', 'contempo'),
-			'desc' => __('Enter pets here, e.g. (Cats, small dogs)', 'contempo'),
-			'id' => $prefix . 'pets',
-			'tab'  => 'information',
-	        'render_row_cb' => array('CMB2_Tabs', 'tabs_render_row_cb'),
-			'type' => 'text_medium'
-		) );
+		// $ct_post_cmb->add_field( array(
+		//     'name' => __('Pets', 'contempo'),
+		// 	'desc' => __('Enter pets here, e.g. (Cats, small dogs)', 'contempo'),
+		// 	'id' => $prefix . 'pets',
+		// 	'tab'  => 'information',
+	 //        'render_row_cb' => array('CMB2_Tabs', 'tabs_render_row_cb'),
+		// 	'type' => 'text_medium'
+		// ) );
 
 		$ct_post_cmb->add_field( array(
 		    'name' => __('Estacionamiento', 'contempo'),
