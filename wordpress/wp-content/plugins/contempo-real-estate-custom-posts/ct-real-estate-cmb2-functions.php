@@ -153,18 +153,18 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 					'label' => __( 'Video', 'contempo' ),
 					'icon'  => 'dashicons-format-video', // Dashicon
 				),
-				'virtualtour'  => array(
-					'label' => __( 'Tour Virtual', 'contempo' ),
-					'icon'  => 'dashicons-format-video', // Dashicon
-				),
-				'brokerage'  => array(
-					'label' => __( 'Brokerage', 'contempo' ),
-					'icon'  => 'dashicons-groups', // Dashicon
-				),
-				'energyefficency'  => array(
-					'label' => __( 'Eficiencia de Energía', 'contempo' ),
-					'icon'  => 'dashicons-lightbulb', // Dashicon
-				),
+//				'virtualtour'  => array(
+//					'label' => __( 'Tour Virtual', 'contempo' ),
+//					'icon'  => 'dashicons-format-video', // Dashicon
+//				),
+//				'brokerage'  => array(
+//					'label' => __( 'Brokerage', 'contempo' ),
+//					'icon'  => 'dashicons-groups', // Dashicon
+//				),
+//				'energyefficency'  => array(
+//					'label' => __( 'Eficiencia de Energía', 'contempo' ),
+//					'icon'  => 'dashicons-lightbulb', // Dashicon
+//				),
 				'homepageorder'  => array(
 					'label' => __( 'Orden de propiedad destacada', 'contempo' ),
 					'icon'  => 'dashicons-admin-post', // Dashicon
@@ -262,14 +262,14 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 			'type' => 'text_medium'
 		) );
 
-		$ct_post_cmb->add_field( array(
-		    'name' => __('Latitud y Longitud', 'contempo'),
-			'desc' => __('<strong>OPCIONAL:</strong> Usar latitud y longitud sólo si la dirección en forma de texto no puede ser encontrada. (ej: 37.4419, -122.1419)', 'contempo'),
-			'id' => $prefix . 'latlng',
-			'tab'  => 'information',
-	        'render_row_cb' => array('CMB2_Tabs', 'tabs_render_row_cb'),
-			'type' => 'text_medium'
-		) );
+//		$ct_post_cmb->add_field( array(
+//		    'name' => __('Latitud y Longitud', 'contempo'),
+//			'desc' => __('<strong>OPCIONAL:</strong> Usar latitud y longitud sólo si la dirección en forma de texto no puede ser encontrada. (ej: 37.4419, -122.1419)', 'contempo'),
+//			'id' => $prefix . 'latlng',
+//			'tab'  => 'information',
+//	        'render_row_cb' => array('CMB2_Tabs', 'tabs_render_row_cb'),
+//			'type' => 'text_medium'
+//		) );
 
 		$ct_post_cmb->add_field( array(
 		    'name' => __('Notas', 'contempo'),
@@ -509,170 +509,170 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 	/* Open House */
 	/*-----------------------------------------------------------------------------------*/
 
-	add_action( 'cmb2_admin_init', 'ct_register_open_house_group_field_metabox' );
+//	add_action( 'cmb2_admin_init', 'ct_register_open_house_group_field_metabox' );
+//
+//	function ct_register_open_house_group_field_metabox() {
+//
+//		// Start with an underscore to hide fields from custom fields list
+//		$prefix = '_ct_';
+//
+//		/**
+//		 * Repeatable Field Groups
+//		 */
+//		$cmb_group = new_cmb2_box( array(
+//			'id'           => $prefix . 'open_house',
+//			'title'        => __( 'Open House', 'contempo' ),
+//			'object_types' => array( 'listings', ),
+//		) );
+//
+//		// $group_field_id is the field id string, so in this case: $prefix . 'demo'
+//		$group_field_id = $cmb_group->add_field( array(
+//			'id'          => $prefix . 'open_house',
+//			'type'        => 'group',
+//			'description' => __( 'Use this area to add open house dates & times. <strong>NOTE:</strong> Make sure you also go into Real Estate 7 Options > Listings > Single Listing > Content Layout > Open House > Enabled <a href="https://cl.ly/0J2v0B0f2b3F">screenshot</a>, otherwise the floor plans will not be shown.', 'contempo' ),
+//			'options'     => array(
+//				'group_title'   => __( 'Open House {#}', 'contempo' ), // {#} gets replaced by row number
+//				'add_button'    => __( 'Add Another Open House', 'contempo' ),
+//				'remove_button' => __( 'Remove Open House', 'contempo' ),
+//				'sortable'      => true, // beta
+//				'closed'     => true, // true to have the groups closed by default
+//			),
+//		) );
+//
+//		/**
+//		 * Group fields works the same, except ids only need
+//		 * to be unique to the group. Prefix is not needed.
+//		 *
+//		 * The parent field's id needs to be passed as the first argument.
+//		 */
+//		$cmb_group->add_group_field( $group_field_id, array(
+//			'name'       => __( 'Date', 'contempo' ),
+//			'id'         => $prefix . 'open_house_date',
+//			'type'       => 'text_date_timestamp',
+//			//'date_format' => 'n/t/Y',
+//			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+//		) );
+//
+//		$cmb_group->add_group_field( $group_field_id, array(
+//			'name'       => __( 'Start Time', 'contempo' ),
+//			'id'         => $prefix . 'open_house_start_time',
+//			'type'       => 'text_time',
+//			'time_format' => 'g:i a',
+//			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+//		) );
+//		$cmb_group->add_group_field( $group_field_id, array(
+//			'name'       => __( 'End Time', 'contempo' ),
+//			'id'         => $prefix . 'open_house_end_time',
+//			'type'       => 'text_time',
+//			'time_format' => 'g:i a',
+//			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+//		) );
+//
+//		$cmb_group->add_group_field( $group_field_id, array(
+//			'name'       => __( 'RSVP', 'contempo' ),
+//			'desc'             => __('If selected Yes this will add a scrollto link to the contact form.', 'contempo'),
+//			'id'         => $prefix . 'open_house_rsvp',
+//			'type'       => 'select',
+//			'default'          => 'no',
+//		    'options'          => array(
+//		        'no' => __('No', 'contempo'),
+//		        'yes'   => __('Yes', 'contempo'),
+//		    ),
+//			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+//		) );
+//
+//	}
 
-	function ct_register_open_house_group_field_metabox() {
-
-		// Start with an underscore to hide fields from custom fields list
-		$prefix = '_ct_';
-
-		/**
-		 * Repeatable Field Groups
-		 */
-		$cmb_group = new_cmb2_box( array(
-			'id'           => $prefix . 'open_house',
-			'title'        => __( 'Open House', 'contempo' ),
-			'object_types' => array( 'listings', ),
-		) );
-
-		// $group_field_id is the field id string, so in this case: $prefix . 'demo'
-		$group_field_id = $cmb_group->add_field( array(
-			'id'          => $prefix . 'open_house',
-			'type'        => 'group',
-			'description' => __( 'Use this area to add open house dates & times. <strong>NOTE:</strong> Make sure you also go into Real Estate 7 Options > Listings > Single Listing > Content Layout > Open House > Enabled <a href="https://cl.ly/0J2v0B0f2b3F">screenshot</a>, otherwise the floor plans will not be shown.', 'contempo' ),
-			'options'     => array(
-				'group_title'   => __( 'Open House {#}', 'contempo' ), // {#} gets replaced by row number
-				'add_button'    => __( 'Add Another Open House', 'contempo' ),
-				'remove_button' => __( 'Remove Open House', 'contempo' ),
-				'sortable'      => true, // beta
-				'closed'     => true, // true to have the groups closed by default
-			),
-		) );
-
-		/**
-		 * Group fields works the same, except ids only need
-		 * to be unique to the group. Prefix is not needed.
-		 *
-		 * The parent field's id needs to be passed as the first argument.
-		 */
-		$cmb_group->add_group_field( $group_field_id, array(
-			'name'       => __( 'Date', 'contempo' ),
-			'id'         => $prefix . 'open_house_date',
-			'type'       => 'text_date_timestamp',
-			//'date_format' => 'n/t/Y',
-			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
-		) );
-
-		$cmb_group->add_group_field( $group_field_id, array(
-			'name'       => __( 'Start Time', 'contempo' ),
-			'id'         => $prefix . 'open_house_start_time',
-			'type'       => 'text_time',
-			'time_format' => 'g:i a',
-			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
-		) );
-		$cmb_group->add_group_field( $group_field_id, array(
-			'name'       => __( 'End Time', 'contempo' ),
-			'id'         => $prefix . 'open_house_end_time',
-			'type'       => 'text_time',
-			'time_format' => 'g:i a',
-			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
-		) );
-
-		$cmb_group->add_group_field( $group_field_id, array(
-			'name'       => __( 'RSVP', 'contempo' ),
-			'desc'             => __('If selected Yes this will add a scrollto link to the contact form.', 'contempo'),
-			'id'         => $prefix . 'open_house_rsvp',
-			'type'       => 'select',
-			'default'          => 'no',
-		    'options'          => array(
-		        'no' => __('No', 'contempo'),
-		        'yes'   => __('Yes', 'contempo'),
-		    ),
-			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
-		) );
-
-	}
-
-	/*-----------------------------------------------------------------------------------*/
-	/* Multi-floor Plans Metabox for Listings */
-	/*-----------------------------------------------------------------------------------*/
-
-	add_action( 'cmb2_admin_init', 'ct_register_repeatable_group_field_metabox' );
-
-	function ct_register_repeatable_group_field_metabox() {
-
-		// Start with an underscore to hide fields from custom fields list
-		$prefix = '_ct_';
-
-		/**
-		 * Repeatable Field Groups
-		 */
-		$cmb_group = new_cmb2_box( array(
-			'id'           => $prefix . 'multi_floorplan',
-			'title'        => __( 'Multi-floor Plans', 'cmb2' ),
-			'object_types' => array( 'listings', ),
-		) );
-
-		// $group_field_id is the field id string, so in this case: $prefix . 'demo'
-		$group_field_id = $cmb_group->add_field( array(
-			'id'          => $prefix . 'multiplan',
-			'type'        => 'group',
-			'description' => __( 'Use this area to add multiple floor plans to your listing along with pricing and descriptions. <strong>NOTE:</strong> Make sure you also go into Real Estate 7 Options > Listings > Enable Multi-Floorplan & Pricing Fields? > Select Yes <a href="http://cl.ly/3F3y1t1V2Z0u">screenshot</a>, otherwise the floor plans will not be shown.', 'contempo' ),
-			'options'     => array(
-				'group_title'   => __( 'Floor Plan {#}', 'contempo' ), // {#} gets replaced by row number
-				'add_button'    => __( 'Add Another Floor Plan', 'contempo' ),
-				'remove_button' => __( 'Remove Floor Plan', 'contempo' ),
-				'sortable'      => true, // beta
-				'closed'     => true, // true to have the groups closed by default
-			),
-		) );
-
-		/**
-		 * Group fields works the same, except ids only need
-		 * to be unique to the group. Prefix is not needed.
-		 *
-		 * The parent field's id needs to be passed as the first argument.
-		 */
-		$cmb_group->add_group_field( $group_field_id, array(
-			'name'       => __( 'Title', 'contempo' ),
-			'id'         => $prefix . 'plan_title',
-			'type'       => 'text',
-			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
-		) );
-
-		$cmb_group->add_group_field( $group_field_id, array(
-			'name'       => __( 'Beds', 'contempo' ),
-			'id'         => $prefix . 'plan_beds',
-			'type'       => 'text_small',
-			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
-		) );
-
-		$cmb_group->add_group_field( $group_field_id, array(
-			'name'       => __( 'Baths', 'contempo' ),
-			'id'         => $prefix . 'plan_baths',
-			'type'       => 'text_small',
-			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
-		) );
-
-		$cmb_group->add_group_field( $group_field_id, array(
-			'name'       => __( 'Sq Ft or Sq Meters', 'contempo' ),
-			'id'         => $prefix . 'plan_size',
-			'type'       => 'text_small',
-			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
-		) );
-
-		$cmb_group->add_group_field( $group_field_id, array(
-			'name'       => __( 'Price', 'contempo' ),
-			'id'         => $prefix . 'plan_price',
-			'type'       => 'text_money',
-			'description' => 'Can be a single price or a range, e.g. 1875-2395',
-			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
-		) );
-
-		$cmb_group->add_group_field( $group_field_id, array(
-			'name'        => __( 'Availability', 'contempo' ),
-			'description' => __( 'Add the availability here, e.g. (Available, Call for Availability)', 'contempo' ),
-			'id'          => $prefix . 'plan_availability',
-			'type'        => 'text',
-		) );
-
-		$cmb_group->add_group_field( $group_field_id, array(
-			'name' => __( 'Floor Plan Image', 'contempo' ),
-			'id'   => $prefix . 'plan_image',
-			'type' => 'file',
-		) );
-
-	}
+//	/*-----------------------------------------------------------------------------------*/
+//	/* Multi-floor Plans Metabox for Listings */
+//	/*-----------------------------------------------------------------------------------*/
+//
+//	add_action( 'cmb2_admin_init', 'ct_register_repeatable_group_field_metabox' );
+//
+//	function ct_register_repeatable_group_field_metabox() {
+//
+//		// Start with an underscore to hide fields from custom fields list
+//		$prefix = '_ct_';
+//
+//		/**
+//		 * Repeatable Field Groups
+//		 */
+//		$cmb_group = new_cmb2_box( array(
+//			'id'           => $prefix . 'multi_floorplan',
+//			'title'        => __( 'Multi-floor Plans', 'cmb2' ),
+//			'object_types' => array( 'listings', ),
+//		) );
+//
+//		// $group_field_id is the field id string, so in this case: $prefix . 'demo'
+//		$group_field_id = $cmb_group->add_field( array(
+//			'id'          => $prefix . 'multiplan',
+//			'type'        => 'group',
+//			'description' => __( 'Use this area to add multiple floor plans to your listing along with pricing and descriptions. <strong>NOTE:</strong> Make sure you also go into Real Estate 7 Options > Listings > Enable Multi-Floorplan & Pricing Fields? > Select Yes <a href="http://cl.ly/3F3y1t1V2Z0u">screenshot</a>, otherwise the floor plans will not be shown.', 'contempo' ),
+//			'options'     => array(
+//				'group_title'   => __( 'Floor Plan {#}', 'contempo' ), // {#} gets replaced by row number
+//				'add_button'    => __( 'Add Another Floor Plan', 'contempo' ),
+//				'remove_button' => __( 'Remove Floor Plan', 'contempo' ),
+//				'sortable'      => true, // beta
+//				'closed'     => true, // true to have the groups closed by default
+//			),
+//		) );
+//
+//		/**
+//		 * Group fields works the same, except ids only need
+//		 * to be unique to the group. Prefix is not needed.
+//		 *
+//		 * The parent field's id needs to be passed as the first argument.
+//		 */
+//		$cmb_group->add_group_field( $group_field_id, array(
+//			'name'       => __( 'Title', 'contempo' ),
+//			'id'         => $prefix . 'plan_title',
+//			'type'       => 'text',
+//			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+//		) );
+//
+//		$cmb_group->add_group_field( $group_field_id, array(
+//			'name'       => __( 'Beds', 'contempo' ),
+//			'id'         => $prefix . 'plan_beds',
+//			'type'       => 'text_small',
+//			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+//		) );
+//
+//		$cmb_group->add_group_field( $group_field_id, array(
+//			'name'       => __( 'Baths', 'contempo' ),
+//			'id'         => $prefix . 'plan_baths',
+//			'type'       => 'text_small',
+//			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+//		) );
+//
+//		$cmb_group->add_group_field( $group_field_id, array(
+//			'name'       => __( 'Sq Ft or Sq Meters', 'contempo' ),
+//			'id'         => $prefix . 'plan_size',
+//			'type'       => 'text_small',
+//			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+//		) );
+//
+//		$cmb_group->add_group_field( $group_field_id, array(
+//			'name'       => __( 'Price', 'contempo' ),
+//			'id'         => $prefix . 'plan_price',
+//			'type'       => 'text_money',
+//			'description' => 'Can be a single price or a range, e.g. 1875-2395',
+//			// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+//		) );
+//
+//		$cmb_group->add_group_field( $group_field_id, array(
+//			'name'        => __( 'Availability', 'contempo' ),
+//			'description' => __( 'Add the availability here, e.g. (Available, Call for Availability)', 'contempo' ),
+//			'id'          => $prefix . 'plan_availability',
+//			'type'        => 'text',
+//		) );
+//
+//		$cmb_group->add_group_field( $group_field_id, array(
+//			'name' => __( 'Floor Plan Image', 'contempo' ),
+//			'id'   => $prefix . 'plan_image',
+//			'type' => 'file',
+//		) );
+//
+//	}
 
 	/*-----------------------------------------------------------------------------------*/
 	/* Brokerage Tabs */
@@ -861,32 +861,32 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 	/* Expire Metabox for Listings */
 	/*-----------------------------------------------------------------------------------*/
 
-	add_action( 'cmb2_admin_init', 'ct_register_listing_expire_metabox' );
-
-	function ct_register_listing_expire_metabox() {
-
-		$prefix = '_ct_';
-
-		/**
-		 * Listing Expire Meta Box
-		 */
-		$ct_post_cmb = new_cmb2_box( array(
-			'id'            => $prefix . 'expire_listing',
-			'title'         => __( 'Listing Expire Time', 'contempo' ),
-			'object_types'  => array( 'listings', ), // Post type
-			// 'show_on_cb' => 'ct_show_if_front_page', // function should return a bool value
-			'context'    => 'normal',
-			'priority'   => 'low',
-			'show_names' => false, // Show field names on the left
-			// 'cmb_styles' => false, // false to disable the CMB stylesheet
-			'closed'     => true, // true to keep the metabox closed by default
-		) );
-
-		$ct_post_cmb->add_field( array(
-		    'name'       => __( 'Days', 'contempo' ),
-		    'desc'       => __( 'The amount of days the listing will be shown.', 'contempo' ),
-		    'id'         => $prefix . 'listing_expire',
-		    'type'       => 'text',
-		) );
-
-	}
+//	add_action( 'cmb2_admin_init', 'ct_register_listing_expire_metabox' );
+//
+//	function ct_register_listing_expire_metabox() {
+//
+//		$prefix = '_ct_';
+//
+//		/**
+//		 * Listing Expire Meta Box
+//		 */
+//		$ct_post_cmb = new_cmb2_box( array(
+//			'id'            => $prefix . 'expire_listing',
+//			'title'         => __( 'Listing Expire Time', 'contempo' ),
+//			'object_types'  => array( 'listings', ), // Post type
+//			// 'show_on_cb' => 'ct_show_if_front_page', // function should return a bool value
+//			'context'    => 'normal',
+//			'priority'   => 'low',
+//			'show_names' => false, // Show field names on the left
+//			// 'cmb_styles' => false, // false to disable the CMB stylesheet
+//			'closed'     => true, // true to keep the metabox closed by default
+//		) );
+//
+//		$ct_post_cmb->add_field( array(
+//		    'name'       => __( 'Days', 'contempo' ),
+//		    'desc'       => __( 'The amount of days the listing will be shown.', 'contempo' ),
+//		    'id'         => $prefix . 'listing_expire',
+//		    'type'       => 'text',
+//		) );
+//
+//	}

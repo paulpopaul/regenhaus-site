@@ -295,6 +295,7 @@
     /* Detalle Propiedad ----------------------- */
 
     section#main-content #lead-carousel { background-color: #fff; margin-bottom: 50px; }
+    section#main-content #lead-carousel .listing-actions { display: none; }
     section#main-content #lead-carousel .owl-item { overflow: hidden !important; }
     /* animación hover en imágen en detalle de propiedad */
         section#main-content #lead-carousel .owl-item img.attachment-listings-slider-image { transition: transform 0.8s ease; }
