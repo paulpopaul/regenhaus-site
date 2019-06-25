@@ -521,7 +521,7 @@
         text-transform: capitalize;
     }
 
-    #footer-widgets a { font-family: 'DIN Pro'; font-weight: 500; }
+    #footer-widgets a { font-family: 'Brandon Grotesque'; font-size: 16px; font-weight: 500; }
     #footer-widgets a,
     #footer-widgets a:visited { color: #848484; }
     #footer-widgets a:hover { color: #baa360; }
