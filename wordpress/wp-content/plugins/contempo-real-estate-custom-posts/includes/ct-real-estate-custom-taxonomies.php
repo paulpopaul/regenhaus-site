@@ -491,29 +491,29 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 
 		} elseif($ct_zip_or_post == 'postalcode') {
 
-			// $postlabels = array(
-			// 	'name' => __( 'Códigos postales', 'contempo' ),
-			// 	'singular_name' => __( 'Código postal', 'contempo' ),
-			// 	'search_items' =>  __( 'Buscar códigos postales', 'contempo' ),
-			// 	'popular_items' => __( 'Códigos postales más usados', 'contempo' ),
-			// 	'all_items' => __( 'Todos los códigos postales', 'contempo' ),
-			// 	'parent_item' => null,
-			// 	'parent_item_colon' => null,
-			// 	'edit_item' => __( 'Editar códigos postales', 'contempo' ),
-			// 	'update_item' => __( 'Modificar códigos postales', 'contempo' ),
-			// 	'add_new_item' => __( 'Añadir nuevo código postal', 'contempo' ),
-			// 	'new_item_name' => __( 'Nuevo código postal', 'contempo' ),
-			// 	'separate_items_with_commas' => __( 'Separar códigos postales por comas', 'contempo' ),
-			// 	'add_or_remove_items' => __( 'Añadir o remover códigos postales', 'contempo' ),
-			// 	'choose_from_most_used' => __( 'Escoger códigos postales de los más usados', 'contempo' )
-			// );
-			// register_taxonomy( 'zipcode', 'listings', array(
-			// 	'hierarchical' => false,
-			// 	'labels' => $postlabels,
-			// 	'show_ui' => true,
-			// 	'query_var' => true,
-			// 	'rewrite' => array( 'slug' => 'postalcode' ),
-			// ));
+			$postlabels = array(
+				'name' => __( 'Códigos postales', 'contempo' ),
+				'singular_name' => __( 'Código postal', 'contempo' ),
+				'search_items' =>  __( 'Buscar códigos postales', 'contempo' ),
+				'popular_items' => __( 'Códigos postales más usados', 'contempo' ),
+				'all_items' => __( 'Todos los códigos postales', 'contempo' ),
+				'parent_item' => null,
+				'parent_item_colon' => null,
+				'edit_item' => __( 'Editar códigos postales', 'contempo' ),
+				'update_item' => __( 'Modificar códigos postales', 'contempo' ),
+				'add_new_item' => __( 'Añadir nuevo código postal', 'contempo' ),
+				'new_item_name' => __( 'Nuevo código postal', 'contempo' ),
+				'separate_items_with_commas' => __( 'Separar códigos postales por comas', 'contempo' ),
+				'add_or_remove_items' => __( 'Añadir o remover códigos postales', 'contempo' ),
+				'choose_from_most_used' => __( 'Escoger códigos postales de los más usados', 'contempo' )
+			);
+			register_taxonomy( 'zipcode', 'listings', array(
+				'hierarchical' => false,
+				'labels' => $postlabels,
+				'show_ui' => true,
+				'query_var' => true,
+				'rewrite' => array( 'slug' => 'postalcode' ),
+			));
 
 		} else {
 
@@ -553,29 +553,29 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 		}
 
 		// Country
-		// $countrylabels = array(
-		// 	'name' => __( 'Países', 'contempo' ),
-		// 	'singular_name' => __( 'País', 'contempo' ),
-		// 	'search_items' =>  __( 'Buscar países', 'contempo' ),
-		// 	'popular_items' => __( 'Países más usados', 'contempo' ),
-		// 	'all_items' => __( 'Todos los países', 'contempo' ),
-		// 	'parent_item' => null,
-		// 	'parent_item_colon' => null,
-		// 	'edit_item' => __( 'Editar países', 'contempo' ),
-		// 	'update_item' => __( 'Modificar países', 'contempo' ),
-		// 	'add_new_item' => __( 'Añadir país', 'contempo' ),
-		// 	'new_item_name' => __( 'Nuevo nombre del país', 'contempo' ),
-		// 	'separate_items_with_commas' => __( 'Separar países por comas', 'contempo' ),
-		// 	'add_or_remove_items' => __( 'Añadir o remover países', 'contempo' ),
-		// 	'choose_from_most_used' => __( 'Escoger países de los más usados', 'contempo' )
-		// );
-		// register_taxonomy( 'country', 'listings', array(
-		// 	'hierarchical' => false,
-		// 	'labels' => $countrylabels,
-		// 	'show_ui' => true,
-		// 	'query_var' => true,
-		// 	'rewrite' => array( 'slug' => 'country' ),
-		// ));
+		$countrylabels = array(
+			'name' => __( 'Países', 'contempo' ),
+			'singular_name' => __( 'País', 'contempo' ),
+			'search_items' =>  __( 'Buscar países', 'contempo' ),
+			'popular_items' => __( 'Países más usados', 'contempo' ),
+			'all_items' => __( 'Todos los países', 'contempo' ),
+			'parent_item' => null,
+			'parent_item_colon' => null,
+			'edit_item' => __( 'Editar países', 'contempo' ),
+			'update_item' => __( 'Modificar países', 'contempo' ),
+			'add_new_item' => __( 'Añadir país', 'contempo' ),
+			'new_item_name' => __( 'Nuevo nombre del país', 'contempo' ),
+			'separate_items_with_commas' => __( 'Separar países por comas', 'contempo' ),
+			'add_or_remove_items' => __( 'Añadir o remover países', 'contempo' ),
+			'choose_from_most_used' => __( 'Escoger países de los más usados', 'contempo' )
+		);
+		register_taxonomy( 'country', 'listings', array(
+			'hierarchical' => false,
+			'labels' => $countrylabels,
+			'show_ui' => true,
+			'query_var' => true,
+			'rewrite' => array( 'slug' => 'country' ),
+		));
 
 		if ( ! function_exists( 'country' ) ) {
 			function country() {
@@ -589,29 +589,29 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 		}
 
 		// Country
-		// $countylabels = array(
-		// 	'name' => __( 'Condados', 'contempo' ),
-		// 	'singular_name' => __( 'Condado', 'contempo' ),
-		// 	'search_items' =>  __( 'Buscar condados', 'contempo' ),
-		// 	'popular_items' => __( 'Condados más usados', 'contempo' ),
-		// 	'all_items' => __( 'Todos los condados', 'contempo' ),
-		// 	'parent_item' => null,
-		// 	'parent_item_colon' => null,
-		// 	'edit_item' => __( 'Editar condado', 'contempo' ),
-		// 	'update_item' => __( 'Modificar condado', 'contempo' ),
-		// 	'add_new_item' => __( 'Añadir nuevo condado', 'contempo' ),
-		// 	'new_item_name' => __( 'Nuevo nombre de condado', 'contempo' ),
-		// 	'separate_items_with_commas' => __( 'Separar condado por comas', 'contempo' ),
-		// 	'add_or_remove_items' => __( 'Añadir o remover condados', 'contempo' ),
-		// 	'choose_from_most_used' => __( 'Escoger condado de los más usados', 'contempo' )
-		// );
-		// register_taxonomy( 'county', 'listings', array(
-		// 	'hierarchical' => false,
-		// 	'labels' => $countylabels,
-		// 	'show_ui' => true,
-		// 	'query_var' => true,
-		// 	'rewrite' => array( 'slug' => 'county' ),
-		// ));
+		$countylabels = array(
+			'name' => __( 'Condados', 'contempo' ),
+			'singular_name' => __( 'Condado', 'contempo' ),
+			'search_items' =>  __( 'Buscar condados', 'contempo' ),
+			'popular_items' => __( 'Condados más usados', 'contempo' ),
+			'all_items' => __( 'Todos los condados', 'contempo' ),
+			'parent_item' => null,
+			'parent_item_colon' => null,
+			'edit_item' => __( 'Editar condado', 'contempo' ),
+			'update_item' => __( 'Modificar condado', 'contempo' ),
+			'add_new_item' => __( 'Añadir nuevo condado', 'contempo' ),
+			'new_item_name' => __( 'Nuevo nombre de condado', 'contempo' ),
+			'separate_items_with_commas' => __( 'Separar condado por comas', 'contempo' ),
+			'add_or_remove_items' => __( 'Añadir o remover condados', 'contempo' ),
+			'choose_from_most_used' => __( 'Escoger condado de los más usados', 'contempo' )
+		);
+		register_taxonomy( 'county', 'listings', array(
+			'hierarchical' => false,
+			'labels' => $countylabels,
+			'show_ui' => true,
+			'query_var' => true,
+			'rewrite' => array( 'slug' => 'county' ),
+		));
 
 		if ( ! function_exists( 'county' ) ) {
 			function county() {
