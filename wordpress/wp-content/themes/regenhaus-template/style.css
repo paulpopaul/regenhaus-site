@@ -144,26 +144,69 @@
 
         @media only screen and (max-width: 1053px) {
             .ct-menu > li.btn-outline { display: block; } /* publicar botón menú contenedor */
+
         }
     /* End Responsive */
+            @media only screen and (max-width: 1100px) {
+                #topbar-wrap .container > div.contact-phone, #topbar-wrap .container > div.contact-email  {width: 34%;}
+                #topbar-wrap .container > div.contact-email {padding-left: 5px;}
+                #topbar-wrap ul.social li {margin-right: 40px;}
+            }
+
+
+        @media only screen and (max-width: 960px) {
+            #topbar-wrap .container > div.contact-phone, #topbar-wrap .container > div.contact-email  {width: 34%;}
+            #topbar-wrap .container > div.contact-email {padding-left: 5px;}
+            #topbar-wrap ul.social li {margin-right: 40px;}
+
+
+
+            header#masthead { /* contenedor menú */
+                display: inherit;
+                justify-content: center;
+                align-items: center;
+            }
+            header#masthead .logo-wrap.span_3 {height: auto;width: 220px;}
+
+
+
+        }
+
+
 
         @media only screen and (max-width: 767px) {
-            /**
-
-            REGLAS QUE SE APLICAN EN TEMA PADRE:
-
-            #topbar-wrap div.contact-phone.left {
-                display: none;
+            #topbar-wrap {
+                height: 54px;
+                font-family: Brandon Grotesque;
+                font-size: 16px;
+                font-weight: 500;
+                color: #fff;
             }
+            #topbar-wrap .container > div {margin: auto 0;}
 
-            #topbar-wrap div.top-links.right {
-                float: none;
-                width: 100%;
+            #topbar-wrap .contact-phone {padding:0 0; }
+
+            #topbar-wrap div.contact-phone.left { display: initial; width: 100%; text-align: center;}
+            #topbar-wrap .contact-phone i { padding-right: 0 !important;;}
+            #topbar-wrap .contact-phone i .fa {padding-right: 0 !important;;}
+
+            #topbar-wrap .container > div.contact-email {width: 100%;display: none; padding-right: 0 !important;;}
+            #topbar-wrap .contact-email i {padding-right: 2px !important;font-size: 22px !important; }
+            #topbar-wrap .contact-email i.fa {padding-right: 0 !important; }
+
+
+            #topbar-wrap .container > div.top-links {width: 0;display: none;}
+            header#masthead { /* contenedor menú */
+                display: inherit;
+                justify-content: center;
+                align-items: center;
             }
+            header#masthead .logo-wrap.span_3 {padding: 13px 0 13px 0;justify-content: center;}
+            header#masthead .logo-wrap.span_3 img.logo {width: 208px !important;/* height: 160px; */}
 
-            **/
+
+
         }
-    
 /* HEADER ----------------------- */
 
 
@@ -182,6 +225,8 @@
         text-transform: uppercase;
         color: #000;
     }
+
+
 
     /* Quienes somos  ----------------------- */
 
@@ -432,6 +477,45 @@
         div#tools .social .print a:hover { border-color: transparent !important; }
 
 
+        @media only screen and (max-width: 1136px) {
+            span.searching {display: inline-block;width: 17%;padding: 8px 20px;background: #29333d;border-top-left-radius: 3px;color: #fff;}
+            span.search-params {display: inline-block;width: 83%;padding: 8px 20px;background: #0b0e11;border-top-right-radius: 3px;color: #ccc;}
+
+            .pagination {width: 100%;margin: 30px 0 0 0;background: #efefef;border: 1px solid #d5d9dd;border-radius: 3px;overflow: hidden;}
+            .span_9 {width: 100%;}
+            #sidebar {margin-bottom: 30px;display: none;}
+
+
+
+
+        }
+
+
+
+        @media only screen and (max-width: 767px) {
+
+            header#title-header h5 { justify-content: center; text-align: center; float: none; top: 0; padding-top: 3px; padding-bottom: 3px;}
+            section#main-content .searching-on .searching {background: #D8D8D8 !important;display: none;}
+
+            #advanced_search.header-search .customSelect {margin-bottom: 0;}
+            .page-template-template-advanced-search #advanced_search.header-search {min-height: auto;margin: 0;padding: 11px 27px;border: none;}
+            section#main-content header#title-header .muted.right {color: #000 !important;display: none;}
+            section#main-content .searching-on .search-params {background: #EFEFEF !important;display: none;}
+            .searching-on { margin-top: 0;}
+            .pagination {width: 100%;margin: 15px 0 0 0;background: #efefef;border: 1px solid #d5d9dd;border-radius: 3px;overflow: hidden;}
+
+            #listings-results {margin-bottom: 30px;}
+
+
+            .single-listings .listing-location .snipe-wrap {position: initial;/* top: 25px; */right: 20px;/* text-align: right; */}
+            h6.snipe span {padding: 6px 10px;color: #fff;font-size: 11px;/* border-radius: 3px; */text-transform: uppercase;}
+            section#main-content .listing-location .snipe-wrap {top: 0;padding-top: 10px;padding-bottom: 10px;}
+
+            #sidebar .widget,
+            .aq-block-aq_widgets_block .widget {width: 100%;display: none;}
+
+
+        }
 
 
 /* Contacto ----------------------- */
