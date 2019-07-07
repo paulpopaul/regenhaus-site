@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-06 21:13+0000\n"
 "POT-Revision-Date: Wed Jul 27 2016 08:19:42 GMT-0700 (PDT)\n"
-"PO-Revision-Date: 2019-06-23 11:13-0400\n"
+"PO-Revision-Date: 2019-07-06 02:17-0400\n"
 "Last-Translator: pericon <cpericon@gmail.com>\n"
 "Language-Team: Español\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
@@ -558,7 +558,7 @@ msgstr "Ciudad"
 #: template-edit-listing.php:716 includes/advanced-search.php:60
 #: includes/widgets/ct-widget-listingssearch.php:69
 msgid "Area"
-msgstr "Metros cuadrados construídos"
+msgstr "m² construídos"
 
 #: template-advanced-search.php:79 template-submit-listing.php:616
 #: template-edit-listing.php:718 includes/advanced-search.php:62
@@ -887,7 +887,7 @@ msgstr "* Los tipos de archivos admitidos son PDF, Word, Excel y PowerPoint."
 #: includes/sub-listings.php:197
 #: includes/widgets/ct-widget-agentsotherlistings.php:235
 msgid "Lot Size"
-msgstr "Metros cuadrados terreno"
+msgstr "m² terreno"
 
 #: template-submit-listing.php:492 template-edit-listing.php:618
 msgid "Video URL"

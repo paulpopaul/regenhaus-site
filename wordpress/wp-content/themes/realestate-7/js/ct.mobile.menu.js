@@ -13,7 +13,7 @@ jQuery(function($){
 		$('.mobile-nav ul').removeClass('cbp-tm-menu');
 		$('.mobile-nav ul').addClass('cbp-spmenu');
 		
-		$("<a href='#' id='showLeftPush' class='show-hide'><i id='showLeftPushIcon' class='fa fa-navicon'></i>", {
+		$("<a href='#' id='showLeftPush' class='show-hide'><i id='showLeftPushIcon' class='fas fa-bars'></i>", {
 		}).appendTo("#masthead");		
 
 		var menuLeft = document.getElementById( 'cbp-spmenu' ),

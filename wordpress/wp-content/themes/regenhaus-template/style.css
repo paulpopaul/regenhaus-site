@@ -120,7 +120,8 @@
 
     form#advanced_search input[type="text"]::placeholder { transition: color 0.3s ease; overflow: visible; line-height: 14px; } /* 2 últimas reglas previenen problema de corte texto placeholder en safari */
     form#advanced_search input[type="text"]:focus::placeholder { color: #666 !important; }
-
+    
+    /*#more-search-options-toggle { display: none; }*/
     #more-search-options span.customSelect { overflow: initial !important; } /* NO REMOVER. Previene descuadre de inputs en filtros avanzados de búsqueda */
     select.hasCustomSelect { position: relative; z-index: 2; }
     span.customSelect::after {
@@ -497,15 +498,14 @@
         font-size: 14px;
     }
 
-    /*#pre-footer .pre-footer-button button:hover { background: #fff; color: #baa360; }*/
-
 
     #footer-logo { width: 260px;}
 
-    #footer-widgets #ct_social-2 li {display: block; text-align: initial; font-size: 14px}
-    #footer-widgets #ct_social-2 li a {padding: 0 0 0 0;}
-    #footer-widgets #ct_social-2 li a + a {color: #848484 !important; font-size:16px; font-family: "Brandon Grotesque"}
-    #footer-widgets #ct_social-2 li a:hover {color: #baa360 !important;}
+    #footer-widgets #ct_social-2 li { display: block; text-align: initial; font-size: 14px; }
+    #footer-widgets #ct_social-2 li a { padding: 0; }
+    #footer-widgets #ct_social-2 li a + a { color: #848484 !important; font-size:16px; font-family: "Brandon Grotesque" }
+    #footer-widgets #ct_social-2 li a:hover { color: #baa360 !important; }
+    #footer-widgets .widget_ct_social li:last-child { margin-bottom: 0 !important; }
 
     #footer-widgets { color: #848484; }
     #footer-widgets aside { margin-bottom: 0; }
@@ -529,6 +529,7 @@
 
     #footer-widgets ul#menu-footer { padding-left: 0; }
     #footer-widgets ul#menu-footer li { border-bottom: none; padding-left: 0; }
+    #footer-widgets ul#menu-footer li:first-child { padding-top: 0; }
     #footer-widgets ul#menu-footer li a { text-transform: capitalize; }
     /* info */
     #footer-widgets ul.contact-info li i.fa { display: none; } /* oculta iconos de contacto datos en footer */
@@ -538,9 +539,9 @@
     #footer-widgets ul.contact-social a:hover { background: none; color: #848484 !important; }
     #footer-widgets ul.contact-social li:first-child a { padding-left: 0; }
     #footer-widgets #ct_contactinfo-2 .company-phone .fab { display: none; }
-    #footer-widgets aside.span_3{width: 22%; padding-left: 86px;}
-    #footer-widgets aside:first-child.span_3{width: 28%; padding-left:0;}
-    #footer-widgets aside:nth-child(3).span_3{padding-left:100px;}
+    #footer-widgets aside.span_3{ width: 22%; padding-left: 86px; }
+    #footer-widgets aside:first-child.span_3{ width: 28%; padding-left:0; }
+    #footer-widgets aside:nth-child(3).span_3{ padding-left:100px; }
 
 
 
@@ -554,3 +555,78 @@
     }
 
     .page-template-template-full-width ul { margin: 0; } /* quita margen de elementos del footer. Podría generar conflicto con otros elementos del tema */
+
+    
+    /* Responsive */
+        @media only screen and (max-width: 1098px) {
+            #pre-footer .pre-footer-middletext { text-align: center; }
+            #pre-footer .pre-footer-middletext h5 { margin-top: 0; margin-left: 9%; }
+        }
+
+        @media only screen and (min-width: 1000px) and (max-width: 1098px) {
+            #footer-widgets aside.span_3#ct_contactinfo-2 { padding-left: 5%; }
+            #footer-widgets aside.span_3#nav_menu-2 { padding-left: 7%; }
+            #footer-widgets aside.span_3#ct_social-2 { padding-left: 5%; }
+        }
+
+        @media only screen and (min-width: 828px) and (max-width: 1000px) {
+            #footer-widgets aside.span_3#custom_html-3 { padding-right: 3%; }
+            #footer-widgets aside.span_3#ct_contactinfo-2 { padding-left: 2%; }
+            #footer-widgets aside.span_3#nav_menu-2 { padding-left: 4%; }
+            #footer-widgets aside.span_3#ct_social-2 { padding-left: 2%; }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 828px) {
+            #footer-widgets aside.span_3#custom_html-3 { padding-right: 3%; }
+            #footer-widgets aside.span_3#ct_contactinfo-2 { padding-left: 1%; }
+            #footer-widgets aside.span_3#nav_menu-2 { padding-left: 3%; }
+            #footer-widgets aside.span_3#ct_social-2 { padding-left: 1%; }
+        }
+
+        @media only screen and (max-width: 864px) {
+            #pre-footer .pre-footer-middletext h5 { margin-left: 5%; }
+        }
+
+        @media only screen and (max-width: 768px) {
+            #pre-footer .container .pre-footer-logo { display: none; }
+            #pre-footer .pre-footer-middletext { width: 75%; }
+            #pre-footer .pre-footer-middletext h5 { margin-left: 0; padding: 0 20px; }
+            
+            #footer-widgets .container,
+            footer.footer .container { width: 100%; max-width: 100%; padding-left: 37px !important; padding-right: 37px !important; }
+            #footer-widgets .container { padding-top: 60px; padding-bottom: 60px; }
+            #footer-widgets .widget.col.span_3 { margin-bottom: 55px; }
+            #footer-widgets aside.col { margin-left: 0; }
+            #footer-widgets aside#ct_social-2 { margin-bottom: 0 !important; }
+            #footer-widgets aside.span_3 { float: none; width: 100%; padding-left: 0 !important; }
+            #footer-widgets aside#ct_contactinfo-2 ul.contact-social { display: none; } /* se esconden redes sociales en primera columna: contacto */
+            #footer-logo { width: 192px; }
+        }
+
+        @media only screen and (min-width: 500px) and (max-width: 768px) {
+            #pre-footer .pre-footer-middletext {}
+            #pre-footer .pre-footer-button { padding-right: 10px; }
+            #pre-footer .pre-footer-button button { padding-left: 0; padding-right: 0; width: 100%; }
+        }
+
+        @media only screen and (max-width: 500px) {
+            #pre-footer { height: auto; padding: 51px 0; }
+            #pre-footer .container { }
+            #pre-footer .container * { float: none; width: 100%; }
+            #pre-footer .container .pre-footer-logo { display: block; }
+            #pre-footer .container .pre-footer-logo,
+            #pre-footer .container .pre-footer-button { text-align: center; }
+            #pre-footer .container .pre-footer-logo img { display: initial; }
+            #pre-footer .container .pre-footer-middletext { margin: 12px 0 34px 0; }
+            #pre-footer .pre-footer-middletext h5 { margin-bottom: 0; font-size: 17px; }
+        }
+    /* End responsive */
+
+
+
+
+
+
+
+
+
