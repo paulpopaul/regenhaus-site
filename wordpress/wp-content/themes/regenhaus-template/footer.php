@@ -102,5 +102,7 @@ if(!empty($ct_options['ct_footer_background_img']['url'])) {
     <?php do_action('after_wrapper'); ?>
 
 	<?php wp_footer(); ?>
+
+    <script type="text/javascript" src="<? echo get_stylesheet_directory_uri() ?>/js/custom.js"></script>
 </body>
 </html>
