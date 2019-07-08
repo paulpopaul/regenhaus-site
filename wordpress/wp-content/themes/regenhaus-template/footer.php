@@ -24,9 +24,11 @@ if(!empty($ct_options['ct_footer_background_img']['url'])) {
             
         </section>
         <!-- //Main Content -->
-
-        <!-- Return to Top -->
-        <a href="#" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+        
+        <?php if($ct_footer_back_to_top != 'no') { ?>
+            <!-- Return to Top -->
+            <a href="#" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+        <?php } ?>
 
         <?php do_action('before_footer_widgets'); ?>
         
@@ -81,9 +83,9 @@ if(!empty($ct_options['ct_footer_background_img']['url'])) {
                         'strong' => array(),
                     );
                 ?>
-                    <p class="marB0 right"><?php echo wp_kses(stripslashes($ct_options['ct_footer_text']), $ct_allowed_html); ?>. <?php if($ct_footer_back_to_top != 'no') { echo '<a href="#top">' . esc_html( 'Back to top', 'contempo' ) . '</a>'; } ?></p>
+                    <p class="marB0 right"><?php echo wp_kses(stripslashes($ct_options['ct_footer_text']), $ct_allowed_html); ?>.</p>
                 <?php } else { ?>
-                    <p class="marB0 right">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>, <?php esc_html_e( 'All Rights Reserved.', 'contempo' ); ?> <?php if($ct_footer_back_to_top != 'no') { echo '<a id="back-to-top" href="#top">' . esc_html( 'Back to top ', 'contempo' ) . '</a>'; } ?></p>
+                    <p class="marB0 right">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>, <?php esc_html_e( 'All Rights Reserved.', 'contempo' ); ?></p>
                 <?php } ?>
                 <div class="clear"></div>
 
