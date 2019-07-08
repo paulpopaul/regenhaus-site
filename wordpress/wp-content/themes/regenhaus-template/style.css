@@ -189,6 +189,17 @@
     /* Responsive / mobile menu */
     #cbp-spmenu ul#menu-primary { margin-top: 70px; }
 
+    /* Caja de resultados */
+    #suggestion-box {}
+    #suggestion-box ul.listing-records li.listing_media {} /* cada listado */
+    #suggestion-box ul.listing-records li.listing_media:hover {} /* hover cada listado */
+    #suggestion-box h4.media-heading { font-family: Brandon Grotesque; font-weight: bold; font-size: 17px; } /* nombre de propiedad */
+    #suggestion-box h4.media-heading:hover {} /* hover nombre de propiedad */
+    #suggestion-box ul.amenities li { color: #878C92; font-size: 12px; font-family: Lato; } /* camas, baños, mts */
+    #suggestion-box .search-listingfooter span.search-listingcount {} /* Contador resultados */
+    #advanced_search .listing-search i.fa { margin-right: 10px; } /* Contador resultados */
+
+
 
     /* Responsive */
         @media only screen and (max-width: 1098px) {
@@ -767,12 +778,3 @@
             #pre-footer .pre-footer-middletext h5 { margin-bottom: 0; font-size: 17px; }
         }
     /* End responsive */
-
-
-
-
-
-
-
-
-

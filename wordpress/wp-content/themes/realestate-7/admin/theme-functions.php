@@ -1475,9 +1475,9 @@ if(!function_exists('ct_street_keyword_search_callback')) {
                             <div class="media-body">
                                 <h4 class="media-heading"><a href="' . get_permalink($records->ID) . '">' . $records->post_title . '</a></h4> 
 								<ul class="amenities"> 
-									<li>'. __('Beds: ', 'contempo') . $list_beds.'</li>
-									<li>'. __('Baths: ', 'contempo') . $list_baths . '</li>
-									<li>' . __('Sq Ft: ', 'contempo') . $list_sqft . '</li>
+									<li>'. __('Camas: ', 'contempo') . $list_beds.' /</li>
+									<li>'. __('Baños: ', 'contempo') . $list_baths . ' /</li>
+									<li>' . __('m²: ', 'contempo') . $list_sqft . '</li>
 								</ul>								
                             </div>
                         </li>';
@@ -1486,9 +1486,9 @@ if(!function_exists('ct_street_keyword_search_callback')) {
 				$html .= '</ul>';
 				$html .= '<div class="search-listingfooter">';
 				if(count($posts_data) == 1){
-					$html .= '<span class="search-listingcount">' . __('1 Listing found', 'contempo') . '</span>';
+					$html .= '<span class="search-listingcount">' . __('1 propiedad encontrada', 'contempo') . '</span>';
 				} else {
-					$html .= '<span class="search-listingcount">' . count($posts_data) . __(' Listings found', 'contempo') . '</span>';
+					$html .= '<span class="search-listingcount">' . count($posts_data) . __(' propiedades encontradas', 'contempo') . '</span>';
 				}
 				$html .= '</div>';	
 			} elseif(!empty($post_meta_data)) {			
@@ -1512,9 +1512,9 @@ if(!function_exists('ct_street_keyword_search_callback')) {
                             <div class="media-body">
                                 <h4 class="media-heading"><a href="'.get_permalink($metarecords->ID).'">' . get_post_meta( $metarecords->ID, '_ct_listing_alt_title', true ) . '</a></h4> 
 								<ul class="amenities"> 
-									<li>'. __('Beds: ', 'contempo') . $list_beds.'</li>
-									<li>'. __('Baths: ', 'contempo') . $list_baths . '</li>
-									<li>' . __('Sq Ft: ', 'contempo') . $list_sqft . '</li>
+									<li>'. __('Camas: ', 'contempo') . $list_beds.' /</li>
+									<li>'. __('Baños: ', 'contempo') . $list_baths . ' /</li>
+									<li>' . __('m²: ', 'contempo') . $list_sqft . '</li>
 								</ul>								
                             </div>
                         </li>';
@@ -1523,9 +1523,9 @@ if(!function_exists('ct_street_keyword_search_callback')) {
 				$html .= '</ul>';
 				$html .= '<div class="search-listingfooter">';
 				if(count($post_meta_data) == 1){
-					$html .= '<span class="search-listingcount">' . __('1 Listing found', 'contempo') . '</span>';
+					$html .= '<span class="search-listingcount">' . __('1 propiedad encontrada', 'contempo') . '</span>';
 				} else {
-					$html .= '<span class="search-listingcount">' . count($post_meta_data) . __(' Listings found', 'contempo') . '</span>';
+					$html .= '<span class="search-listingcount">' . count($post_meta_data) . __(' propiedades encontradas', 'contempo') . '</span>';
 				}
 				$html .= '</div>';				
 			} elseif(!empty($post_terms)) {	
@@ -1548,9 +1548,9 @@ if(!function_exists('ct_street_keyword_search_callback')) {
                             <div class="media-body">
                                 <h4 class="media-heading"><a href="' . get_permalink($terms_records->ID) .'">' . $terms_records->post_title . '</a></h4> 
 								<ul class="amenities"> 
-									<li>'. __('Beds: ', 'contempo') . $list_beds.'</li>
-									<li>'. __('Baths: ', 'contempo') . $list_baths . '</li>
-									<li>' . __('Sq Ft: ', 'contempo') . $list_sqft . '</li>
+									<li>'. __('Camas: ', 'contempo') . $list_beds.' /</li>
+									<li>'. __('Baños: ', 'contempo') . $list_baths . ' /</li>
+									<li>' . __('m²: ', 'contempo') . $list_sqft . '</li>
 								</ul>								
                             </div>
                         </li>';
@@ -1558,14 +1558,14 @@ if(!function_exists('ct_street_keyword_search_callback')) {
 				$html .= '</ul>';
 				$html .= '<div class="search-listingfooter">';
 				if(count($post_terms) == 1) {
-					$html .= '<span class="search-listingcount">' . __('1 Listing found', 'contempo') . '</span>';
+					$html .= '<span class="search-listingcount">' . __('1 propiedad encontrada', 'contempo') . '</span>';
 				} else {
-					$html .= '<span class="search-listingcount">' . count($post_terms) . __(' Listings found', 'contempo') . '</span>';
+					$html .= '<span class="search-listingcount">' . count($post_terms) . __(' propiedades encontradas', 'contempo') . '</span>';
 				}
 				$html .= '</div>';	
 				
 			} else {
-				$html .= '<ul><li id="no-listings-found">' . __('No Listings Found', 'contempo') . '</li></ul>';
+				$html .= '<ul><li id="no-listings-found">' . __('No se encontraron propiedades', 'contempo') . '</li></ul>';
 			}
 		}
 		echo $html;
