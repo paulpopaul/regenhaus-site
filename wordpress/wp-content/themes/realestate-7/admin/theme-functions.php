@@ -872,15 +872,15 @@ if(!function_exists('ct_init_scripts')) {
 			wp_enqueue_script('validationEngine', get_template_directory_uri() . '/js/jquery.validationEngine.js', array('jquery'), '1.0', true);
 			// Localize the script with new data
 			$ct_validationEngine_errors = array(
-				'required' => __('* This field is required', 'contempo'),
-				'requiredCheckboxMulti' => __('* Please select an option', 'contempo'),
-				'requiredCheckbox' => __('* This checkbox is required', 'contempo'),
-				'invalidTelephone' => __('* Invalid phone number', 'contempo'),
-				'invalidEmail' => __('* Invalid email address', 'contempo'),
-				'invalidDate' => __('* Invalid date, must be in YYYY-MM-DD format', 'contempo'),
-				'numbersOnly' => __('* Numbers only', 'contempo'),
-				'noSpecialChar' => __('* No special caracters allowed', 'contempo'),
-				'letterOnly' => __('* Letters only', 'contempo'),
+				'required' => __('* Campo requerido', 'contempo'),
+				'requiredCheckboxMulti' => __('* Por favor, ingrese una opción', 'contempo'),
+				'requiredCheckbox' => __('* Esta opción es requerida', 'contempo'),
+				'invalidTelephone' => __('* Número de teléfono no válido', 'contempo'),
+				'invalidEmail' => __('* Ingrese email válido', 'contempo'),
+				'invalidDate' => __('* Fecha no válida, debe tener formato YYYY-MM-DD', 'contempo'),
+				'numbersOnly' => __('* Sólo números', 'contempo'),
+				'noSpecialChar' => __('* No se permiten caracteres especiales', 'contempo'),
+				'letterOnly' => __('* Sólo letras', 'contempo'),
 			);
 			wp_localize_script('validationEngine', 'validationError', $ct_validationEngine_errors);
 		}

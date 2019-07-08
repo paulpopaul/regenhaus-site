@@ -18,15 +18,15 @@
 						"alertTextCheckboxe":validationError.requiredCheckbox},
 					"length":{
 						"regex":"none",
-						"alertText":"*Between ",
-						"alertText2":" and ",
-						"alertText3": " characters allowed"},
+						"alertText":"*Entre ",
+						"alertText2":" y ",
+						"alertText3": " caracteres permitidos"},
 					"minCheckbox":{
 						"regex":"none",
-						"alertText":"* Checks allowed Exceeded"},	
+						"alertText":"* Checks permitidos excedidos"},	
 					"confirm":{
 						"regex":"none",
-						"alertText":"* Your field is not matching"},		
+						"alertText":"* Tu campo no coincide"},		
 					"telephone":{
 						"regex":"/^[0-9\-\(\)\ ]+$/",
 						"alertText":validationError.invalidTelephone},	

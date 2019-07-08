@@ -136,22 +136,27 @@
     form#advanced_search i.fa-search { display: none; }
     form#advanced_search.header-search #ct_keyword { padding-left: 16px; padding-right: 16px; }
     form#advanced_search.header-search #submit { font-weight: 500 !important; }
+    
+    /* Responsive / mobile menu */
+    #cbp-spmenu ul#menu-primary { margin-top: 70px; }
+
 
     /* Responsive */
         @media only screen and (max-width: 1098px) {
             .ct-menu > li.btn-outline { display: block; } /* publicar botón menú contenedor */
         }
 
+
         @media only screen and (max-width: 1053px) {
             .ct-menu > li.btn-outline { display: block; } /* publicar botón menú contenedor */
-
         }
-    /* End Responsive */
-            @media only screen and (max-width: 1100px) {
-                #topbar-wrap .container > div.contact-phone, #topbar-wrap .container > div.contact-email  {width: 34%;}
-                #topbar-wrap .container > div.contact-email {padding-left: 5px;}
-                #topbar-wrap ul.social li {margin-right: 40px;}
-            }
+
+
+        @media only screen and (max-width: 1100px) {
+            #topbar-wrap .container > div.contact-phone, #topbar-wrap .container > div.contact-email  {width: 34%;}
+            #topbar-wrap .container > div.contact-email {padding-left: 5px;}
+            #topbar-wrap ul.social li {margin-right: 40px;}
+        }
 
 
         @media only screen and (max-width: 960px) {
@@ -159,19 +164,14 @@
             #topbar-wrap .container > div.contact-email {padding-left: 5px;}
             #topbar-wrap ul.social li {margin-right: 40px;}
 
-
-
             header#masthead { /* contenedor menú */
                 display: inherit;
                 justify-content: center;
                 align-items: center;
             }
-            header#masthead .logo-wrap.span_3 {height: auto;width: 220px;}
 
-
-
+            header#masthead .logo-wrap.span_3 { height: auto;width: 220px; }
         }
-
 
 
         @media only screen and (max-width: 767px) {
@@ -182,31 +182,31 @@
                 font-weight: 500;
                 color: #fff;
             }
-            #topbar-wrap .container > div {margin: auto 0;}
 
-            #topbar-wrap .contact-phone {padding:0 0; }
+            #topbar-wrap .container > div { margin: auto 0; }
+            #topbar-wrap .contact-phone { padding:0 0; }
 
-            #topbar-wrap div.contact-phone.left { display: initial; width: 100%; text-align: center;}
-            #topbar-wrap .contact-phone i { padding-right: 0 !important;;}
-            #topbar-wrap .contact-phone i .fa {padding-right: 0 !important;;}
+            #topbar-wrap div.contact-phone.left { display: initial; width: 100%; text-align: center; }
+            #topbar-wrap .contact-phone i { padding-right: 0 !important; }
+            #topbar-wrap .contact-phone i .fa { padding-right: 0 !important; }
 
-            #topbar-wrap .container > div.contact-email {width: 100%;display: none; padding-right: 0 !important;;}
-            #topbar-wrap .contact-email i {padding-right: 2px !important;font-size: 22px !important; }
-            #topbar-wrap .contact-email i.fa {padding-right: 0 !important; }
+            #topbar-wrap .container > div.contact-email { width: 100%;display: none; padding-right: 0 !important; }
+            #topbar-wrap .contact-email i { padding-right: 2px !important;font-size: 22px !important; }
+            #topbar-wrap .contact-email i.fa { padding-right: 0 !important; }
 
 
-            #topbar-wrap .container > div.top-links {width: 0;display: none;}
+            #topbar-wrap .container > div.top-links { width: 0;display: none; }
             header#masthead { /* contenedor menú */
                 display: inherit;
                 justify-content: center;
                 align-items: center;
             }
-            header#masthead .logo-wrap.span_3 {padding: 13px 0 13px 0;justify-content: center;}
-            header#masthead .logo-wrap.span_3 img.logo {width: 208px !important;/* height: 160px; */}
 
-
-
+            header#masthead .logo-wrap.span_3 { padding: 13px 0 13px 0;justify-content: center; }
+            header#masthead .logo-wrap.span_3 img.logo { width: 208px !important; /* height: 160px; */ }
         }
+    /* End Responsive */
+
 /* HEADER ----------------------- */
 
 
@@ -337,6 +337,15 @@
     section#main-content #listings-results .back-to i.fas { margin-right: 5px; }
     
 
+    /* Responsive Búsqueda */
+        @media only screen and (max-width: 767px) {
+            section#main-content #listings-results form.formsrch { float: none; }
+            section#main-content #listings-results form.formsrch select#ct_orderby,
+            section#main-content #listings-results form.formsrch span.ct_orderby { width: 100%; }
+        }
+    /* End responsive Búsqueda */
+
+
 
     /* Detalle Propiedad ----------------------- */
 
@@ -378,6 +387,7 @@
     section#main-content .propinfo li { font-size: 12px; }
     section#main-content .propinfo .right { color: #000; }
     section#main-content #listing-sections { background: #baa360; border-bottom: none; }
+    section#main-content #listing-sections li { border-bottom-color: #A89151; }
     section#main-content #listing-sections li a {
         color: #fff;
         text-transform: uppercase;
@@ -441,7 +451,7 @@
     
     #sidebar #sidebar-contact-buttons { margin: 12px; }
     #sidebar #sidebar-contact-buttons input:first-child { margin-bottom: 20px; }
-    #sidebar #sidebar-contact-buttons input { /*background: #000 !important;*/ } /* o sólo comentar */
+    #sidebar #sidebar-contact-buttons input { background: #000 !important; } /* o sólo comentar */
 
     #sidebar .grid-listing-info header h5 a { font-size: 17px; }
     #sidebar .listing { margin-bottom: 30px !important; }
@@ -536,9 +546,9 @@
 
     aside#ct_contactinfo-1 ul.contact-info li { font-family: Brandon Grotesque; font-size: 16px; }
     
-    #contactform input,
-    #contactform textarea { transition: all 0.3s ease; }
-    
+    #contactform input:focus,
+    #contactform textarea:focus { background: #fff; }
+
     #contactform input::placeholder { overflow: visible; line-height: 14px; } /* previene corte texto placeholder en safari */
     #contactform input::placeholder,
     #contactform textarea::placeholder {
@@ -547,6 +557,7 @@
         font-family: Brandon Grotesque;
         font-size: 14px;
         font-weight: 500;
+        transition: all 0.3s ease;
     }
 
     #contactform input:focus::placeholder,
@@ -636,6 +647,8 @@
         text-align: center;
         font-size: 14px;
         color: #484848;
+        font-family: Brandon Grotesque;
+        font-weight: 500;
     }
 
     .page-template-template-full-width ul { margin: 0; } /* quita margen de elementos del footer. Podría generar conflicto con otros elementos del tema */
