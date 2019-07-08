@@ -25,6 +25,9 @@ if(!empty($ct_options['ct_footer_background_img']['url'])) {
         </section>
         <!-- //Main Content -->
 
+        <!-- Return to Top -->
+        <a href="#" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+
         <?php do_action('before_footer_widgets'); ?>
         
         <div id="pre-footer">
@@ -38,7 +41,7 @@ if(!empty($ct_options['ct_footer_background_img']['url'])) {
                 </div>
 
                 <div class="pre-footer-button">
-                    <a href="/contacto"><button>Publicar</button></a>
+                    <a href="/publicar"><button>Publicar</button></a>
                 </div>
             </div>
         </div>

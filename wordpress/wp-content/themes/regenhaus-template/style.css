@@ -21,7 +21,56 @@
 
 /* GENERAL ----------------------- */
 
+    #return-to-top {
+        position: fixed;
+        bottom: 18px;
+        right: 14px;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.9);
+        width: 42px;
+        height: 42px;
+        display: block;
+        text-decoration: none;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        display: none;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        z-index: 3;
+    }
+
+    #return-to-top i {
+        color: #fff;
+        margin: 0;
+        position: relative;
+        left: 13px;
+        top: 7px;
+        font-size: 19px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    #return-to-top:hover {
+        background: rgba(0, 0, 0, 0.9);
+    }
+    
+    #return-to-top:hover i {
+        color: #fff;
+        top: 5px;
+    }
+
     /* Responsive */
+    @media only screen and (min-width: 1366px) {
+        #return-to-top { right: 32px; bottom: 32px; }
+    }
+
     @media only screen and (min-width: 1099px) {
         .container {
             max-width: 1100px;
