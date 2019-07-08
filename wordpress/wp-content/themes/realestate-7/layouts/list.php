@@ -36,7 +36,7 @@ if ( ! $wp_query->have_posts() ) : ?>
     ?>
 
     <li class="listing listing-list col span_12 first">
-
+        
         <?php do_action('before_listing_list_img'); ?>
 
         <?php if(has_post_thumbnail()) { ?>

@@ -192,11 +192,18 @@
     /* Caja de resultados */
     #suggestion-box {}
     #suggestion-box ul.listing-records li.listing_media {} /* cada listado */
-    #suggestion-box ul.listing-records li.listing_media:hover {} /* hover cada listado */
+    #suggestion-box ul.listing-records li.listing_media:hover { background: #f1f1f1; } /* hover cada listado */
     #suggestion-box h4.media-heading { font-family: Brandon Grotesque; font-weight: bold; font-size: 17px; } /* nombre de propiedad */
-    #suggestion-box h4.media-heading:hover {} /* hover nombre de propiedad */
+    #suggestion-box h4.media-heading a:hover { color: #000; opacity: 1; } /* hover nombre de propiedad */
     #suggestion-box ul.amenities li { color: #878C92; font-size: 12px; font-family: Lato; } /* camas, baños, mts */
-    #suggestion-box .search-listingfooter span.search-listingcount {} /* Contador resultados */
+    #suggestion-box .search-listingfooter span.search-listingcount { /* Contador resultados */
+        width: 100%;
+        text-align: center;
+        font-family: Lato;
+        font-weight: normal;
+        font-size: 12px;
+    }
+    
     #advanced_search .listing-search i.fa { margin-right: 10px; } /* Contador resultados */
 
 
@@ -395,6 +402,8 @@
     }
 
     section#main-content #listings-results .back-to i.fas { margin-right: 5px; }
+
+    .nomatches { background: #fff !important; font-family: Brandon Grotesque; font-weight: normal; font-size: 18px; }
     
 
     /* Responsive Búsqueda */
@@ -554,10 +563,6 @@
             .pagination {width: 100%;margin: 30px 0 0 0;background: #efefef;border: 1px solid #d5d9dd;border-radius: 3px;overflow: hidden;}
             .span_9 {width: 100%;}
             #sidebar {margin-bottom: 30px;display: none;}
-
-
-
-
         }
 
 
