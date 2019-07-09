@@ -58,7 +58,7 @@ jQuery(document).ready(function() {
     
     // ===== Suggestion box show/hide ====
     jQuery('#ct_keyword').focus(function() {
-        jQuery('#suggestion-box').fadeIn(200)
+        jQuery('#suggestion-box').fadeIn(100)
     })
     
     jQuery('#ct_keyword').focusout(function() {

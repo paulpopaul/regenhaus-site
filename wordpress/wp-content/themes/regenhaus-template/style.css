@@ -191,12 +191,19 @@
 
     /* Caja de resultados */
     #suggestion-box {}
-    #suggestion-box ul.listing-records li.listing_media {} /* cada listado */
-    #suggestion-box ul.listing-records li.listing_media:hover {} /* hover cada listado */
+    #suggestion-box ul.listing-records li.listing_media { transition: all 0.1s ease; } /* cada listado */
+    #suggestion-box ul.listing-records li.listing_media:hover { background: #f1f1f1; } /* hover cada listado */
     #suggestion-box h4.media-heading { font-family: Brandon Grotesque; font-weight: bold; font-size: 17px; } /* nombre de propiedad */
-    #suggestion-box h4.media-heading:hover {} /* hover nombre de propiedad */
+    #suggestion-box h4.media-heading a:hover { color: #000; } /* hover nombre de propiedad */
     #suggestion-box ul.amenities li { color: #878C92; font-size: 12px; font-family: Lato; } /* camas, baños, mts */
-    #suggestion-box .search-listingfooter span.search-listingcount {} /* Contador resultados */
+    #suggestion-box .search-listingfooter span.search-listingcount { /* Contador resultados */
+        font-family: Lato;
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+        color: #000;
+    }
+
     #advanced_search .listing-search i.fa { margin-right: 10px; } /* Contador resultados */
 
 
@@ -216,6 +223,7 @@
             #topbar-wrap .container > div.contact-phone, #topbar-wrap .container > div.contact-email  {width: 34%;}
             #topbar-wrap .container > div.contact-email {padding-left: 5px;}
             #topbar-wrap ul.social li {margin-right: 40px;}
+            #suggestion-box, .listing-search { width: 32%; }
         }
 
 
@@ -231,6 +239,12 @@
             }
 
             header#masthead .logo-wrap.span_3 { height: auto;width: 220px; }
+        }
+
+
+        @media only screen and (min-width: 768px) and (max-width: 900px) {
+            #suggestion-box .listing-records .amenities li { display: block; }
+            #suggestion-box .listing-records .amenities li:first-child { margin-top: 7px; }
         }
 
 
@@ -264,6 +278,8 @@
 
             header#masthead .logo-wrap.span_3 { padding: 13px 0 13px 0;justify-content: center; }
             header#masthead .logo-wrap.span_3 img.logo { width: 208px !important; /* height: 160px; */ }
+
+            #suggestion-box, .listing-search { width: 100%; margin-top: -10px; }
         }
     /* End Responsive */
 
