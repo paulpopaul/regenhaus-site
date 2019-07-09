@@ -43,7 +43,7 @@ if(!empty($ct_options['ct_footer_background_img']['url'])) {
                 </div>
 
                 <div class="pre-footer-button">
-                    <a href="/publicar"><button>Publicar</button></a>
+                    <a href="<? echo home_url() ?>/publicar"><button>Publicar</button></a>
                 </div>
             </div>
         </div>
