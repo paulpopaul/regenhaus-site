@@ -30,7 +30,7 @@ jQuery(document).ready(function() {
     jQuery('#return-to-top').click(function(e) {
         e.preventDefault()
         
-        jQuery('html').animate({
+        jQuery('html, body').animate({
             scrollTop: 0
         }, 700)
     })
