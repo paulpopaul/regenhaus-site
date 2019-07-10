@@ -7,7 +7,7 @@ jQuery(document).ready(function() {
             var $this = jQuery($this)
             var pointer = jQuery(window).scrollTop() + jQuery(window).height() / 2
 
-            if ( pointer >= $this.offset().top && pointer <= $this.offset().top + $this.height() ) {
+            if ( pointer >= $this.offset().top - 40 && pointer <= $this.offset().top + $this.height() + 40 ) {
                 $this.addClass("hover")
 
             } else {
@@ -35,7 +35,7 @@ jQuery(document).ready(function() {
 
         // ===== Servicios scroll highlight ====
         if ( jQuery('body').hasClass('page-id-4062') ) {
-            if ( jQuery(window).width() <= 500 )
+            if ( jQuery(window).width() <= 768 )
                 jQuery(window).on("scroll", hover_scroll)
 
             else {
