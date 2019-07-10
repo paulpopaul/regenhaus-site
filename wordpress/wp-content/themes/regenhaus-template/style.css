@@ -601,7 +601,8 @@
             header#title-header h5 { justify-content: center; text-align: center; float: none; top: 0; padding-top: 3px; padding-bottom: 3px;}
             section#main-content .searching-on .searching {background: #D8D8D8 !important;display: none;}
 
-            #advanced_search.header-search .customSelect {margin-bottom: 0;}
+            #advanced_search.header-search .customSelect { margin-bottom: 10px; display: block !important; }
+            #advanced_search.header-search #more-search-options .customSelect { margin-bottom: 0px; display: inline-block !important; }
             .page-template-template-advanced-search #advanced_search.header-search {min-height: auto;margin: 0;padding: 11px 27px;border: none;}
             section#main-content header#title-header .muted.right {color: #000 !important;display: none;}
             section#main-content .searching-on .search-params {background: #EFEFEF !important;display: none;}
