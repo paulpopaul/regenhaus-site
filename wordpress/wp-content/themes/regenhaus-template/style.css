@@ -441,8 +441,10 @@
     section#main-content #lead-carousel .listing-actions { display: none; }
     section#main-content #lead-carousel .owl-item { overflow: hidden !important; }
     /* animación hover en imágen en detalle de propiedad */
-        section#main-content #lead-carousel .owl-item img.attachment-listings-slider-image { transition: transform 0.8s ease; }
-        section#main-content #lead-carousel .owl-item:hover img.attachment-listings-slider-image { transform: scale(1.1); }
+        @media only screen and (min-width: 768px) { /* sólo para dispositivos escritorio */
+            section#main-content #lead-carousel .owl-item img.attachment-listings-slider-image { transition: transform 0.8s ease; }
+            section#main-content #lead-carousel .owl-item:hover img.attachment-listings-slider-image { transform: scale(1.1); }
+        }
     /* animación hover en imágen en detalle de propiedad */
 
     section#main-content .listing-location h2 {
