@@ -45,11 +45,18 @@ $ct_listings_login_register_after_x_views = isset( $ct_options['ct_listings_logi
 	<?php wp_head(); ?>
 
 	<?php
-	if(is_singular('listings')) {
+
+	if( is_singular('listings') ) {
 		global $post;
-		$thumbnail_src = wp_get_attachment_image_src(get_post_thumbnail_id( $post->ID));
-		echo '<meta property="og:image" content="' . $thumbnail_src[0] . '" />';
-	} ?>
+
+		$thumbnail_src = get_the_post_thumbnail_url( $post->ID, 'post-thumbnail' );
+		$content_post = $post->post_content;
+	?>
+
+		<meta property="og:image" content="<?php echo $thumbnail_src ?>" />
+		<meta property="og:description" content="<?php echo $content_post ?>" />
+
+	<?php } ?>
 
 	<?php if($ct_listings_login_register_after_x_views == 'yes' && !is_user_logged_in()) {
 		ct_display_login_register_after_x_views();
