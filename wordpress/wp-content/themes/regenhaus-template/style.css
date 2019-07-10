@@ -580,6 +580,30 @@
         /* Servicios */
         #page #main-content {margin: 0;font-family: "brandon grotesque";font-size: 18px;padding: 0 0 0 0;font-weight: 400}
 
+.page-id-4062 .vc_column_container {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
+
+        @media only screen and (max-width: 767px) {
+
+            .page-id-4062 .vc_row {float: left;width: 100%;margin-left: 0;margin-right: 0;}
+            .page-id-4062 .wpb_column {margin-bottom: 8%;width: 50%;float: left; height:200px; }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .page-id-4062 .wpb_column {margin-bottom: 8%;width: 100%;float: left;}
+        }
+
+
+
+
+
+
+
 
         @media only screen and (max-width: 1136px) {
             span.searching {display: inline-block;width: 17%;padding: 8px 20px;background: #29333d;border-top-left-radius: 3px;color: #fff;}
@@ -588,8 +612,6 @@
             .pagination {width: 100%;margin: 30px 0 0 0;background: #efefef;border: 1px solid #d5d9dd;border-radius: 3px;overflow: hidden;}
             .span_9 {width: 100%;}
             #sidebar {margin-bottom: 30px;display: none;}
-
-
 
 
         }
