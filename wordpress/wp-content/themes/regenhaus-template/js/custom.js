@@ -1,9 +1,27 @@
 jQuery(document).ready(function() {
+
+    var $box = jQuery('.vc_column-inner > .wpb_wrapper')
+
+    var hover_scroll = function() {
+        $box.each(function(i, $this) {
+            var $this = jQuery($this)
+            var pointer = jQuery(window).scrollTop() + jQuery(window).height() / 2
+
+            if ( pointer >= $this.offset().top && pointer <= $this.offset().top + $this.height() ) {
+                $this.addClass("hover")
+
+            } else {
+                if ( $this.hasClass("hover") )
+                    $this.removeClass("hover")
+            }
+        })
+    }
+
     
-    // ===== Categoría ajuste selector responsive ==== 
     var span_label = jQuery('#ct_property_type + span.customSelect').find('span.customSelectInner')
     
     jQuery(window).resize(function() {
+        // ===== Categoría ajuste selector responsive ==== 
         let width = jQuery(window).width()
         
         if ( width >= 768 && width <= 950 ) {
@@ -13,6 +31,19 @@ jQuery(document).ready(function() {
             if ( span_label.text().toLowerCase() == "categ." )
                 span_label.text("Categoría")
         }
+
+
+        // ===== Servicios scroll highlight ====
+        if ( jQuery('body').hasClass('page-id-4062') ) {
+            if ( jQuery(window).width() <= 500 )
+                jQuery(window).on("scroll", hover_scroll)
+
+            else {
+                jQuery(window).off("scroll", hover_scroll)
+                $box.removeClass("hover")
+            }
+        }
+
     })
     
     jQuery(window).trigger('resize')
