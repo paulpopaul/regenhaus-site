@@ -7,7 +7,7 @@ jQuery(document).ready(function() {
             var $this = jQuery($this)
             var pointer = jQuery(window).scrollTop() + jQuery(window).height() / 2
 
-            if ( pointer >= $this.offset().top - 40 && pointer <= $this.offset().top + $this.height() + 40 ) {
+            if ( pointer >= $this.offset().top - 60 && pointer <= $this.offset().top + $this.height() + 60 ) {
                 $this.addClass("hover")
 
             } else {

@@ -597,21 +597,21 @@
         @media only screen and (min-width: 768px) {
             .page-id-4062 .vc_column-inner > .wpb_wrapper:hover,
             .page-id-4062 .vc_column-inner > .wpb_wrapper.hover {
-                border: 1px dotted #baa360;
+                border: 1px solid #ebebeb;
             }
         }
 
-        .page-id-4062 .wpb_wrapper .p1 { font-family: Lato; font-size: 16px; font-weight: 600; padding: 0 5px; transition: all 0.2s ease; }
+        .page-id-4062 .wpb_wrapper .p1 { font-family: Lato; font-size: 16px; font-weight: 600; padding: 0 5px; transition: all 0.3s ease; }
         .page-id-4062 .wpb_wrapper:hover .p1,
-        .page-id-4062 .wpb_wrapper.hover .p1 { color: #000; transition: all 0.1s ease; }
-        .page-id-4062 .vc_column-inner > .wpb_wrapper { cursor: pointer; margin: 0 40px; padding: 40px 0; border-radius: 3px; }
+        .page-id-4062 .wpb_wrapper.hover .p1 { color: #000; transition: all 0.2s ease; }
+        .page-id-4062 .vc_column-inner > .wpb_wrapper { cursor: pointer; margin: 0 40px; padding: 60px 0; border-radius: 3px; }
         .page-id-4062 .wpb_wrapper .vc_icon_element-inner { border-radius: 3px !important; }
-        .page-id-4062 .wpb_wrapper .vc_icon_element-icon::before { transform: scale(1.4) rotate(0); transition: all 0.2s ease; }
+        .page-id-4062 .wpb_wrapper .vc_icon_element-icon::before { transform: scale(1.4) rotate(0); transition: all 0.3s ease; }
         .page-id-4062 .wpb_wrapper:hover .vc_icon_element-icon::before,
-        .page-id-4062 .wpb_wrapper.hover .vc_icon_element-icon::before { color: #000; transform: scale(1.9) rotate(5deg); transition: all 0.1s ease; }
-        .page-id-4062 .wpb_wrapper .vc_icon_element-inner { transition: all 0.2s ease; border-radius: 50% !important; }
+        .page-id-4062 .wpb_wrapper.hover .vc_icon_element-icon::before { color: #000; transform: scale(1.9) rotate(5deg); transition: all 0.2s ease; }
+        .page-id-4062 .wpb_wrapper .vc_icon_element-inner { transition: all 0.3s ease; border-radius: 50% !important; }
         .page-id-4062 .wpb_wrapper:hover .vc_icon_element-inner,
-        .page-id-4062 .wpb_wrapper.hover .vc_icon_element-inner { /*background: #ccc !important;*/ transition: all 0.1s ease; }
+        .page-id-4062 .wpb_wrapper.hover .vc_icon_element-inner { /*background: #ccc !important;*/ transition: all 0.2s ease; }
         
 
         /* Responsive */
@@ -785,6 +785,10 @@
         font-family: Brandon Grotesque;
         font-weight: 500;
     }
+
+    footer.footer .marB0.right a:link,
+    footer.footer .marB0.right a:link:hover,
+    footer.footer .marB0.right a:link:visited { color: #484848; margin-right: 0; }
 
     .page-template-template-full-width ul { margin: 0; } /* quita margen de elementos del footer. Podría generar conflicto con otros elementos del tema */
 
