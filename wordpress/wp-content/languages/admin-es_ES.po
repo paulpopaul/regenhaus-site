@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-06-28 17:30:02+0000\n"
+"PO-Revision-Date: 2019-07-10 16:03:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8318,7 +8318,7 @@ msgstr "Si un archivo no se ha adjuntado a ningún contenido podrás verlo en la
 
 #: wp-admin/edit.php:278
 msgid "You can also perform the same types of actions, including narrowing the list by using the filters, acting on a page using the action links that appear when you hover over a row, or using the Bulk Actions menu to edit the metadata for multiple pages at once."
-msgstr "Puedes realizar el mismo tipo de acciones, incluyendo disminuir la lista utilizando filtros, utilizar los enlaces de acción que aparecen al pasar sobre una fila, o utilizando el menú de Acciones en lote para editar los metadatos de varias páginas a la vez. "
+msgstr "Puedes realizar el mismo tipo de acciones, incluyendo disminuir la lista utilizando filtros, utilizar los enlaces de acción que aparecen al pasar sobre una fila, o utilizando el menú de acciones en lote para editar los metadatos de varias páginas a la vez. "
 
 #: wp-admin/edit.php:277
 msgid "Managing pages is very similar to managing posts, and the screens can be customized in the same way."
