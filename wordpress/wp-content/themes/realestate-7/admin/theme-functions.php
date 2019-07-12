@@ -3265,7 +3265,7 @@ if(!function_exists('ct_change_default_title')) {
 	     $screen = get_current_screen();
 	 
 	     if  ( 'listings' == $screen->post_type ) {
-	          $title = __('Enter the listing street address here', 'contempo');
+	          $title = __('Ingrese el nombre de la propiedad aquí', 'contempo');
 	     }
 	 
 	     return $title;
@@ -3281,7 +3281,7 @@ function ct_edit_form_after_title() {
 	$screen = get_current_screen();
 	 
     if  ( 'listings' == $screen->post_type ) {
-		echo '<p class="cmb2-metabox-description">' . __('NOTE: The Listing Title needs to be <strong>only the Street Address</strong> (e.g. 123 Somewhere St.) otherwise the mapping won\'t work properly, use the Alternate Title field below for Listing Names, etc…the Alt Title field will override the street address on the front end of your site.', 'contempo') . '</p>';
+		echo '<p class="cmb2-metabox-description">' . __('NOTA: El título de la propiedad debe ser <strong>sólo el nombre de la calle</strong> (ej. 123 Villa Alemana.) de otra manera el mapa (en caso de haberlo) no funcionará adecuadamente. Usar título alterno para nombrarlas de otra forma.', 'contempo') . '</p>';
 	}
 
 }
