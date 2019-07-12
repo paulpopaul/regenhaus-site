@@ -741,6 +741,8 @@
 
     #footer-logo { width: 260px;}
 
+    .widget_ct_social li a {display: inline-block;min-width: 30px !important;line-height: 28px;padding: 5px 10px;background: #000;color: #fff !important;border-radius: 3px;}
+
     #footer-widgets #ct_social-2 li { display: block; text-align: initial; font-size: 14px; }
     #footer-widgets #ct_social-2 li a { padding: 0; }
     #footer-widgets #ct_social-2 li a + a { color: #848484 !important; font-size:16px; font-family: "Brandon Grotesque" }
