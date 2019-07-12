@@ -578,6 +578,12 @@
 
 
         /* Servicios */
+
+        /*boton menu nav*/
+        .page-id-4062 .fa-bars:before, .fa-navicon:before, .fa-reorder:before {content: "\f0c9";}
+        .page-id-4062 .fa-close:before, .fa-remove:before, .fa-times:before {content: "\f00d";}
+        /*boton menu nav*/
+
         #page #main-content {margin: 0;font-family: "brandon grotesque";font-size: 18px;padding: 0 0 0 0;font-weight: 400}
 
         .page-id-4062 .vc_column_container {
@@ -661,6 +667,10 @@
                 .page-id-4062 .wpb_column {margin-bottom: 8%;width: 100%;float: left;}
             }
         /* End Responsive */
+
+
+
+
 
 
 /* Contacto ----------------------- */
