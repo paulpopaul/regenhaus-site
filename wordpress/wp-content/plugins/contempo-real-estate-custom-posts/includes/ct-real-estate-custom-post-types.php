@@ -330,7 +330,7 @@ add_action( 'admin_menu', 'ct_remove_listing_meta_boxes' );
 	 * Register Brokerage Custom Post Type
 	 */
 
-	add_action( 'init', 'ct_brokerage_init' );
+	//add_action( 'init', 'ct_brokerage_init' );
 
 	function ct_brokerage_init() {
 		$labels = array(
@@ -423,7 +423,7 @@ add_action( 'admin_menu', 'ct_remove_listing_meta_boxes' );
 	 * Register Testimonial Custom Post Type
 	 */
 
-	add_action( 'init', 'ct_testimonial_init' );
+	//add_action( 'init', 'ct_testimonial_init' );
 
 	function ct_testimonial_init() {
 		$labels = array(

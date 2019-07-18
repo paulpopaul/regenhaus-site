@@ -32,7 +32,7 @@ if(!function_exists('ct_styles')) {
 }
 	
 //Create Custom Post type Packages in admin
-add_action('init', 'ct_create_packages');
+//add_action('init', 'ct_create_packages');
 
 if (!function_exists('ct_create_packages')) {
 
