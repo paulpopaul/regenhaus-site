@@ -37,7 +37,9 @@ class ct_Listings extends WP_Widget {
 		
 		$args = array(
             'post_type' => 'listings', 
-            'order' => 'DSC',
+            'order' => 'ASC',
+            'meta_key' => '_ct_listing_home_feat_order',
+			'orderby' => 'meta_value_num',
 			$taxonomy => $tag,
             'posts_per_page' => $number,
             'tax_query' => array(
