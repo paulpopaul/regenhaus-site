@@ -326,6 +326,38 @@ add_action( 'admin_menu', 'ct_remove_listing_meta_boxes' );
 		
 	}
 
+
+	/*
+	*
+	*	Añade ID automático al crear propiedad (listing)
+	*
+	*/
+	function auto_listing_id( $post_id ) {
+		## Si el post que se crea es tipo "listings" y si se tiene los permisos necesarios para crearlo
+		if( $_POST['post_type'] == 'listings' && current_user_can( 'edit_page', $post_id ) ) {
+
+			## Si no existe valor asignado para el ID (nuevo)
+			if ( ! get_post_meta( $post_id, '_ct_mls' ) ) {
+				/*
+				*
+				*	Generamos un identificador único formado por la sucesión de:
+				*	día | mes | año (2 dígitos) | hora (24hrs) | minutos | segundos ; separado por guión cada 4 dígitos
+				*
+				*/
+				$this_exact_moment = date( 'dm-yH-is' );
+
+			    ## Asignamos el nuevo ID generado al post de forma automática
+				update_post_meta( $post_id, '_ct_mls', $this_exact_moment );
+
+			}
+
+		}
+	}
+
+	add_filter( 'save_post', 'auto_listing_id', '99', 2 );
+
+
+
 	/**
 	 * Register Brokerage Custom Post Type
 	 */
