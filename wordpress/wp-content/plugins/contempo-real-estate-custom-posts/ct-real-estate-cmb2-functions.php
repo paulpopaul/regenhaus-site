@@ -132,7 +132,7 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 
 		$ct_post_cmb = new_cmb2_box( array(
 			'id'           => $prefix . 'listing',
-			'title'        => __( 'Listing' ),
+			'title'        => __( 'Propiedad' ),
 			'object_types' => array( 'listings', ), // Post type
 			'priority' => 'high',
 			'tabs'      => array(
@@ -145,10 +145,10 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 					'label' => __( 'Set de imágenes', 'contempo' ),
 					'icon'  => 'dashicons-format-gallery', // Dashicon
 				),
-				'filesdocuments'  => array(
-					'label' => __( 'Documentos adjuntos', 'contempo' ),
-					'icon'  => 'dashicons-media-text', // Dashicon
-				),
+				// 'filesdocuments'  => array(
+				// 	'label' => __( 'Documentos adjuntos', 'contempo' ),
+				// 	'icon'  => 'dashicons-media-text', // Dashicon
+				// ),
 				'video'  => array(
 					'label' => __( 'Video', 'contempo' ),
 					'icon'  => 'dashicons-format-video', // Dashicon
