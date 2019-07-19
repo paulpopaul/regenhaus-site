@@ -327,6 +327,7 @@ add_action( 'admin_menu', 'ct_remove_listing_meta_boxes' );
 	}
 
 
+
 	/*
 	*
 	*	Añade ID automático al crear propiedad (listing)
@@ -364,92 +365,92 @@ add_action( 'admin_menu', 'ct_remove_listing_meta_boxes' );
 
 	//add_action( 'init', 'ct_brokerage_init' );
 
-	function ct_brokerage_init() {
-		$labels = array(
-			'name'                => _x( 'Corredoras', 'Post Type General Name', 'contempo' ),
-			'singular_name'       => _x( 'Corredora', 'Post Type Singular Name', 'contempo' ),
-			'add_new' => __( 'Añadir corredora', 'contempo'),
-			'add_new_item' => __( 'Añadir nueva corredora', 'contempo'),
-			'edit_item' => __( 'Editar corredora', 'contempo'),
-			'new_item' => __( 'Nueva corredora', 'contempo'),
-			'view_item' => __( 'Ver corredora', 'contempo'),
-			'search_items' => __( 'Buscar corredoras', 'contempo'),
-			'not_found' =>  __( 'Corredoras no encontradas', 'contempo'),
-			'not_found_in_trash' => __( 'No hay corredoras en papelera', 'contempo'),
-			'parent_item_colon' => ''
-		);
+	// function ct_brokerage_init() {
+	// 	$labels = array(
+	// 		'name'                => _x( 'Corredoras', 'Post Type General Name', 'contempo' ),
+	// 		'singular_name'       => _x( 'Corredora', 'Post Type Singular Name', 'contempo' ),
+	// 		'add_new' => __( 'Añadir corredora', 'contempo'),
+	// 		'add_new_item' => __( 'Añadir nueva corredora', 'contempo'),
+	// 		'edit_item' => __( 'Editar corredora', 'contempo'),
+	// 		'new_item' => __( 'Nueva corredora', 'contempo'),
+	// 		'view_item' => __( 'Ver corredora', 'contempo'),
+	// 		'search_items' => __( 'Buscar corredoras', 'contempo'),
+	// 		'not_found' =>  __( 'Corredoras no encontradas', 'contempo'),
+	// 		'not_found_in_trash' => __( 'No hay corredoras en papelera', 'contempo'),
+	// 		'parent_item_colon' => ''
+	// 	);
 
-		$supports = array(
-			'title',
-			'editor',
-			'author',
-			'thumbnail',
-			'comments'
-		);
+	// 	$supports = array(
+	// 		'title',
+	// 		'editor',
+	// 		'author',
+	// 		'thumbnail',
+	// 		'comments'
+	// 	);
 
-		$args = array(
-			'labels' => $labels,
-			'show_in_rest' => false,
-			'supports' => $supports,
-			'label' => __('Brokerages', 'contempo'),
-			'public' => true,
-			'publicly_queryable' => true,
-			'show_ui' => true,
-			'query_var' => true,
-			'rewrite' => true,
-			'capability_type' => 'post',
-			'hierarchical' => false,
-			'rewrite' => array('slug' => 'brokerage'),
-			'menu_position' => 5,
-			'menu_icon' => 'dashicons-building',
-			'has_archive' => false,
-			'taxonomies' => array('category')
-		);
+	// 	$args = array(
+	// 		'labels' => $labels,
+	// 		'show_in_rest' => false,
+	// 		'supports' => $supports,
+	// 		'label' => __('Brokerages', 'contempo'),
+	// 		'public' => true,
+	// 		'publicly_queryable' => true,
+	// 		'show_ui' => true,
+	// 		'query_var' => true,
+	// 		'rewrite' => true,
+	// 		'capability_type' => 'post',
+	// 		'hierarchical' => false,
+	// 		'rewrite' => array('slug' => 'brokerage'),
+	// 		'menu_position' => 5,
+	// 		'menu_icon' => 'dashicons-building',
+	// 		'has_archive' => false,
+	// 		'taxonomies' => array('category')
+	// 	);
 
-		register_post_type( 'brokerage', $args );
-	}
+	// 	register_post_type( 'brokerage', $args );
+	// }
 
-	add_filter("manage_edit-brokerage_columns", "ct_brokerage_cols");
+	// add_filter("manage_edit-brokerage_columns", "ct_brokerage_cols");
 
-	// Define columns to filter in the edit posts section
-	function ct_brokerage_cols($columns) {
-		$columns = array(
-			//Create custom columns
-			'cb' => '<input type="checkbox" />',
-			'logo' => __('Logo', 'contempo'),
-			'title' => __('Nombre corredora', 'contempo'),
-			'brokerage_location' => __('Ubicación', 'contempo'),
-		);
-		return $columns;
-	}
+	// // Define columns to filter in the edit posts section
+	// function ct_brokerage_cols($columns) {
+	// 	$columns = array(
+	// 		//Create custom columns
+	// 		'cb' => '<input type="checkbox" />',
+	// 		'logo' => __('Logo', 'contempo'),
+	// 		'title' => __('Nombre corredora', 'contempo'),
+	// 		'brokerage_location' => __('Ubicación', 'contempo'),
+	// 	);
+	// 	return $columns;
+	// }
 
-	add_action("manage_posts_custom_column", "ct_custom_brokerage_cols");
+	// add_action("manage_posts_custom_column", "ct_custom_brokerage_cols");
 
 	// Output custom columns
-	function ct_custom_brokerage_cols($column) {
-		global $post;
-		if ("ID" == $column) echo $post->ID;
+	// function ct_custom_brokerage_cols($column) {
+	// 	global $post;
+	// 	if ("ID" == $column) echo $post->ID;
 
-		switch( $column ) {
+	// 	switch( $column ) {
 
-			// Image
-			case 'logo' :
+	// 		// Image
+	// 		case 'logo' :
 
-				if(has_post_thumbnail()) {
-					the_post_thumbnail('thumb');
-				}
+	// 			if(has_post_thumbnail()) {
+	// 				the_post_thumbnail('thumb');
+	// 			}
 
-			break;
+	// 		break;
 			
-			// Street Address, Address Two, City, State, Zip & Country
-			case 'brokerage_location' :
+	// 		// Street Address, Address Two, City, State, Zip & Country
+	// 		case 'brokerage_location' :
 
-				$postID = get_the_ID();
-				ct_brokerage_address($postID);
+	// 			$postID = get_the_ID();
+	// 			ct_brokerage_address($postID);
 
-			break;
-		}
-	}
+	// 		break;
+	// 	}
+	// }
 
 	/**
 	 * Register Testimonial Custom Post Type
@@ -457,76 +458,76 @@ add_action( 'admin_menu', 'ct_remove_listing_meta_boxes' );
 
 	//add_action( 'init', 'ct_testimonial_init' );
 
-	function ct_testimonial_init() {
-		$labels = array(
-			'name'                => _x( 'Testimonios', 'Post Type General Name', 'contempo' ),
-			'singular_name'       => _x( 'Testimonio', 'Post Type Singular Name', 'contempo' ),
-			'add_new' => __( 'Añadir testimonio', 'contempo'),
-			'add_new_item' => __( 'Añadir nuevo testimonio', 'contempo'),
-			'edit_item' => __( 'Editar testimonio', 'contempo'),
-			'new_item' => __( 'Nuevo testimonio', 'contempo'),
-			'view_item' => __( 'Ver testimonio', 'contempo'),
-			'search_items' => __( 'Encontrar testimonio', 'contempo'),
-			'not_found' =>  __( 'No testimonios encontrados', 'contempo'),
-			'not_found_in_trash' => __( 'No hay testimonios en la papelera', 'contempo'),
-			'parent_item_colon' => ''
-		);
+	// function ct_testimonial_init() {
+	// 	$labels = array(
+	// 		'name'                => _x( 'Testimonios', 'Post Type General Name', 'contempo' ),
+	// 		'singular_name'       => _x( 'Testimonio', 'Post Type Singular Name', 'contempo' ),
+	// 		'add_new' => __( 'Añadir testimonio', 'contempo'),
+	// 		'add_new_item' => __( 'Añadir nuevo testimonio', 'contempo'),
+	// 		'edit_item' => __( 'Editar testimonio', 'contempo'),
+	// 		'new_item' => __( 'Nuevo testimonio', 'contempo'),
+	// 		'view_item' => __( 'Ver testimonio', 'contempo'),
+	// 		'search_items' => __( 'Encontrar testimonio', 'contempo'),
+	// 		'not_found' =>  __( 'No testimonios encontrados', 'contempo'),
+	// 		'not_found_in_trash' => __( 'No hay testimonios en la papelera', 'contempo'),
+	// 		'parent_item_colon' => ''
+	// 	);
 
-		$supports = array(
-			'title',
-			'editor',
-			'author',
-			'page-attributes',
-			'thumbnail'
-		);
+	// 	$supports = array(
+	// 		'title',
+	// 		'editor',
+	// 		'author',
+	// 		'page-attributes',
+	// 		'thumbnail'
+	// 	);
 
-		$args = array(
-			'labels' => $labels,
-			'show_in_rest' => false,
-			'supports' => $supports,
-			'label' => __('Testimonials', 'contempo'),
-			'public' => true,
-			'publicly_queryable' => true,
-			'show_ui' => true,
-			'query_var' => true,
-			'rewrite' => true,
-			'capability_type' => 'post',
-			'hierarchical' => false,
-			'rewrite' => array('slug' => 'testimonials'),
-			'menu_position' => 5,
-			'menu_icon' => 'dashicons-format-quote',
-			'has_archive' => false,
-			'taxonomies' => array('category', 'post_tag')
-		);
+	// 	$args = array(
+	// 		'labels' => $labels,
+	// 		'show_in_rest' => false,
+	// 		'supports' => $supports,
+	// 		'label' => __('Testimonials', 'contempo'),
+	// 		'public' => true,
+	// 		'publicly_queryable' => true,
+	// 		'show_ui' => true,
+	// 		'query_var' => true,
+	// 		'rewrite' => true,
+	// 		'capability_type' => 'post',
+	// 		'hierarchical' => false,
+	// 		'rewrite' => array('slug' => 'testimonials'),
+	// 		'menu_position' => 5,
+	// 		'menu_icon' => 'dashicons-format-quote',
+	// 		'has_archive' => false,
+	// 		'taxonomies' => array('category', 'post_tag')
+	// 	);
 
-		register_post_type( 'testimonial', $args );
-	}
+	// 	register_post_type( 'testimonial', $args );
+	// }
 
-	add_filter("manage_edit-testimonial_columns", "ct_testimonial_cols");
+	// add_filter("manage_edit-testimonial_columns", "ct_testimonial_cols");
 
-	// Define columns to filter in the edit posts section
-	function ct_testimonial_cols($columns) {
-		$columns = array(
-			//Create custom columns
-			'cb' => '<input type="checkbox" />',
-			'image' => __('Image', 'contempo'),
-			'title' => __('Person or Company', 'contempo'),
-			'quote' => __('Quote', 'contempo'),
-			'tags' => __('Tags', 'contempo'),
-			'author' => __('Author', 'contempo'),
-			'date' => __('Created', 'contempo')
-		);
-		return $columns;
-	}
+	// // Define columns to filter in the edit posts section
+	// function ct_testimonial_cols($columns) {
+	// 	$columns = array(
+	// 		//Create custom columns
+	// 		'cb' => '<input type="checkbox" />',
+	// 		'image' => __('Image', 'contempo'),
+	// 		'title' => __('Person or Company', 'contempo'),
+	// 		'quote' => __('Quote', 'contempo'),
+	// 		'tags' => __('Tags', 'contempo'),
+	// 		'author' => __('Author', 'contempo'),
+	// 		'date' => __('Created', 'contempo')
+	// 	);
+	// 	return $columns;
+	// }
 
-	add_action("manage_posts_custom_column", "ct_custom_testimonial_cols");
+	// add_action("manage_posts_custom_column", "ct_custom_testimonial_cols");
 
-	// Output custom columns
-	function ct_custom_testimonial_cols($column) {
-		global $post;
-		if ("ID" == $column) echo $post->ID;
+	// // Output custom columns
+	// function ct_custom_testimonial_cols($column) {
+	// 	global $post;
+	// 	if ("ID" == $column) echo $post->ID;
 		
-		elseif ("quote" == $column) echo $post->post_content;
-	}
+	// 	elseif ("quote" == $column) echo $post->post_content;
+	// }
 
 ?>
