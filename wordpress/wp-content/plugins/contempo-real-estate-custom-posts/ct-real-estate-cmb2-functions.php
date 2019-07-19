@@ -286,7 +286,7 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 
 		$ct_post_cmb->add_field( array(
 			'name'         => __( 'Slider Images', 'contempo' ),
-			'desc'         => __( 'Upload all your slider images here, drag and drop to reorder.', 'contempo' ),
+			'desc'         => __( 'Suba todas las imágenes aquí, se permite arrastrar para ordenar.', 'contempo' ),
 			'id'           => $prefix . 'slider',
 			'type'         => 'file_list',
 			'preview_size' => array( 100, 100 ), // Default: array( 50, 50 )
@@ -395,7 +395,7 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 
 		$ct_post_cmb->add_field( array(
 		    'name' => __('Video', 'contempo'),
-			'desc' => __('Paste your video url here, supports YouTube, Vimeo.', 'contempo'),
+			'desc' => __('Pegue la url del video. Funcionan: YouTube, Vimeo.', 'contempo'),
 			'id' => $prefix . 'video',
 			'type' => 'text_medium',
 		    'tab'  => 'video',
@@ -495,8 +495,8 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 		/*-----------------------------------------------------------------------------------*/
 		
 		$ct_post_cmb->add_field( array(
-		    'name' => __('Home Featured Listing Order', 'contempo'),
-			'desc' => __('If you\'ve marked this listing as Featured under Status you can select the order you would like them displayed on the homepage, e.g. 1, 2, 3, etc&hellip;NOTE: You must also set Real Estate 7 Options > Homepage > Featured Listings > Manually Order Featured Listings? > to Yes, otherwise the ordering won\'t be applied.', 'contempo'),
+		    'name' => __('Orden en propiedades destacadas', 'contempo'),
+			'desc' => __('Las propiedades destacadas se muestran en orden ascendente según el número ingresado. Éstas aparecerán en el costado derecho de cada detalle de propiedad.', 'contempo'),
 			'id' => $prefix . 'listing_home_feat_order',
 			'type' => 'text_medium',
 		    'tab'  => 'homepageorder',
