@@ -4356,13 +4356,13 @@ if(!function_exists('ct_property_type_icon')) {
 /* ct_currency */
 /*-----------------------------------------------------------------------------------*/
 
-if(!function_exists('')) {
+if(!function_exists('ct_currency')) {
 	function ct_currency() {
 		global $ct_options;
-		if($ct_options['']) {
-			echo esc_html($ct_options['']);
+		if($ct_options['ct_currency']) {
+			echo esc_html($ct_options['ct_currency']);
 		} else {
-			echo "";
+			echo "$";
 		}
 	}
 }
