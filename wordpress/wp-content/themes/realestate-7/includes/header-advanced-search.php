@@ -389,7 +389,7 @@ $ct_home_adv_search_fields = isset( $ct_options['ct_home_adv_search_fields']['en
 			        case 'price_from' : ?>
 			            <div class="col span_3">
 			                <label for="ct_price_from"><?php _e('Price From', 'contempo'); ?> (<?php ct_currency(); ?>)</label>
-			                <input type="text" id="ct_price_from" class="number" name="ct_price_from" size="8" placeholder="<?php esc_html_e('Price From', 'contempo'); ?> (<?php ct_currency(); ?>)" />
+			                <input type="text" id="ct_price_from" class="number" name="ct_price_from" size="8" placeholder="<?php esc_html_e('Price From', 'contempo'); ?>" />
 			            </div>
 			        <?php
 					break;
@@ -398,7 +398,7 @@ $ct_home_adv_search_fields = isset( $ct_options['ct_home_adv_search_fields']['en
 			        case 'price_to' : ?>
 			            <div class="col span_3">
 			                <label for="ct_price_to"><?php _e('Price To', 'contempo'); ?> (<?php ct_currency(); ?>)</label>
-			                <input type="text" id="ct_price_to" class="number" name="ct_price_to" size="8" placeholder="<?php esc_html_e('Price To', 'contempo'); ?> (<?php ct_currency(); ?>)" />
+			                <input type="text" id="ct_price_to" class="number" name="ct_price_to" size="8" placeholder="<?php esc_html_e('Price To', 'contempo'); ?>" />
 			            </div>
 			        <?php
 					break;

@@ -4362,7 +4362,7 @@ if(!function_exists('ct_currency')) {
 		if($ct_options['ct_currency']) {
 			echo esc_html($ct_options['ct_currency']);
 		} else {
-			echo "$";
+			echo "";
 		}
 	}
 }
