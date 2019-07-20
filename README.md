@@ -1,10 +1,9 @@
 # Regenhausweb
 
-- **Desarrollo:** "[nombre desarrollo]".
+- **Desarrollo:** "Regenhaus".
 - **Desarrolladores:**
-	- [desarrollador 1].
-	- [desarrollador 2].
-	- [desarrollador 3].
+	- Paul Pineda.
+	- Diego Ulloa.
 - **Stack:** Wordpress, MySQL, PHP, CSS, JS, HTML5.
 - **Servicios:** Wordpress, MySQL, phpMyAdmin.
 - **Año:** 2019.
@@ -19,7 +18,7 @@ curl -L https://git.io/fjgHF | bash
 
 ## Paso 2. Levantar Servicios.
 
-En directorio del proyecto "[nombre repositorio]" ejecutar:
+En directorio del proyecto "regenhausweb" ejecutar:
 
 ```
 docker-compose up
@@ -27,22 +26,7 @@ docker-compose up
 
 --
 
-### Opcional:
-Añadir alias **"[alias proyecto]"** al bash_profile para acceder directamente al directorio de trabajo.
-*(Reemplazar ".bash_profile" por el archivo bash indicado en caso de ser necesario).*
-
-En Terminal:
-```
-echo "alias '[alias proyecto]'='cd `pwd`'" >> ~/.bash_profile && source ~/.bash_profile
-```
-Uso:
-```
-[alias proyecto]
-```
-
+URL: http://www.regenhaus.cl/
 --
 
-URL: [url proyecto]
---
-
-Ensambler® 2019. Ingeniería de Software para Soluciones Empresariales Integradas.
+Regenhaus 2019.
