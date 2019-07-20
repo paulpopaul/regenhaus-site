@@ -192,7 +192,7 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 
 		$ct_post_cmb->add_field( array(
 		    'name' => __('Prefijo precio', 'contempo'),
-			'desc' => __('Ingresar prefijo de precio en caso de ser necesario, ej. (Desde, Aprox, -20% dcto, etc).', 'contempo'),
+			'desc' => __('$', 'contempo'),
 			'id' => $prefix . 'price_prefix',
 			'tab'  => 'information',
 	        'render_row_cb' => array('CMB2_Tabs', 'tabs_render_row_cb'),
@@ -210,7 +210,7 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2-tabs/cmb2-tabs.php' ) ) {
 
 		$ct_post_cmb->add_field( array(
 		    'name' => __('Postfijo precio', 'contempo'),
-			'desc' => __('Ingresar postfijo de precio en caso de ser necesario, ej. (/por mes, /anual, /por noche, pch, USD, etc)', 'contempo'),
+			'desc' => __('UTM', 'contempo'),
 			'id' => $prefix . 'price_postfix',
 			'tab'  => 'information',
 	        'render_row_cb' => array('CMB2_Tabs', 'tabs_render_row_cb'),
