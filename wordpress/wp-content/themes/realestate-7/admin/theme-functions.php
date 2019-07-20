@@ -4410,7 +4410,7 @@ if(!function_exists('ct_listing_price')) {
 			}
 			if(!empty($price_meta)) {
 				echo "<span class='listing-price'>";
-					// ct_currency();
+					ct_currency();
 					echo number_format_i18n($price_meta, $ct_currency_decimal);
 				echo '</span>';
 			}
